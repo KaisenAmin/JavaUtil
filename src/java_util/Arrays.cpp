@@ -38,6 +38,12 @@ auto Arrays::toString(double *doubleArray, size_t size) -> std::string
     return Arrays::iterateOverArrays(doubleArray, size);
 }
 
+/**
+ * @brief Generates a string representation of a char array.
+ * @param charArray - The array to convert.
+ * @param size - Size of the array.
+ * @return A string representation of the array.
+*/
 auto Arrays::toString(char *charArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(charArray, size);
