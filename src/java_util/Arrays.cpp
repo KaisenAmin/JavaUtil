@@ -15,6 +15,11 @@ auto Arrays::toString(float *floatArray, size_t size) -> std::string
     return Arrays::iterateOverArrays(floatArray, size);
 }
 
+auto Arrays::toString(double *doubleArray, size_t size) -> std::string
+{
+    return Arrays::iterateOverArrays(doubleArray, size);
+}
+
 template<typename T>
 auto Arrays::iterateOverArrays(T *array, size_t size) -> std::string
 {
