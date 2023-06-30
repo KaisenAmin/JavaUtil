@@ -24,6 +24,7 @@ public:
     static auto toString(float floatArray[], size_t size) -> std::string;
     static auto toString(double doubleArray[], size_t size) -> std::string;
     static auto toString(char charArray[], size_t size) -> std::string;
+    [[maybe_unused]] static auto toString(short shortArray[], size_t size) -> std::string;
 };
 
 #endif //JAVAUTIL_ARRAYS_H

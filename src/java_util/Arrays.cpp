@@ -50,6 +50,17 @@ auto Arrays::toString(char *charArray, size_t size) -> std::string
 }
 
 /**
+ * @brief Generates a string representation of a short array.
+ * @param shortArray - The array to convert.
+ * @param size - Size of the array.
+ * @return A string representation of the array.
+*/
+[[maybe_unused]] auto Arrays::toString(short *shortArray, size_t size) -> std::string
+{
+    return Arrays::iterateOverArrays(shortArray, size);
+}
+
+/**
  * @brief Iterates over the provided array and generates a string representation.
  * @param array - Pointer to the array.
  * @param size - Size of the array.
