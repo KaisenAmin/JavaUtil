@@ -38,6 +38,11 @@ auto Arrays::toString(double *doubleArray, size_t size) -> std::string
     return Arrays::iterateOverArrays(doubleArray, size);
 }
 
+auto Arrays::toString(char *charArray, size_t size) -> std::string
+{
+    return Arrays::iterateOverArrays(charArray, size);
+}
+
 /**
  * @brief Iterates over the provided array and generates a string representation.
  * @param array - Pointer to the array.
