@@ -1,3 +1,3 @@
-D:/Projects/C++/JavaUtil/cmake-build-debug/CMakeFiles/JavaUtil.dir
-D:/Projects/C++/JavaUtil/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Projects/C++/JavaUtil/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Kaisen/Desktop/JavaUtil/cmake-build-debug/CMakeFiles/JavaUtil.dir
+C:/Users/Kaisen/Desktop/JavaUtil/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kaisen/Desktop/JavaUtil/cmake-build-debug/CMakeFiles/rebuild_cache.dir

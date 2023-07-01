@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Projects/C++/JavaUtil/cmake-build-debug",
-		"source" : "D:/Projects/C++/JavaUtil"
+		"build" : "C:/Users/Kaisen/Desktop/JavaUtil/cmake-build-debug",
+		"source" : "C:/Users/Kaisen/Desktop/JavaUtil"
 	},
 	"version" : 
 	{
