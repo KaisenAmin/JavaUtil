@@ -484,11 +484,10 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
 template<typename T>
 auto Arrays::fill(std::vector<T> &objects, T &value) -> void
 {
-    T arr[objects.size()];
-    size_t counter = 0;
-
-    for (const auto& val : objects)
-        arr[counter++] = value;
+    for (size_t index = 0; index < objects.size(); index++)
+    {
+        objects[index] = value;
+    }
 }
 
 /**
