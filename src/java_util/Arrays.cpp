@@ -344,66 +344,143 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     return Arrays::binarySearchIndex(ubyteArr, fromIndex, toIndex, key);
 }
 
+/**
+ * @brief Fills the given bool array with the specified value.
+ * @param boolArr The bool array to be filled.
+ * @param value The bool value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(bool *boolArr, bool &value, size_t size) -> void
 {
     Arrays::fillArray(boolArr, value, size);
 }
 
+/**
+ * @brief Fills the given int array with the specified value.
+ * @param intArr The int array to be filled.
+ * @param value The int value to be set in all positions of the array.
+ * @param size The size of the array.
+ */
 [[maybe_unused]] auto Arrays::fill(int *intArr, int &value, size_t size) -> void
 {
     Arrays::fillArray(intArr, value, size);
 }
 
+/**
+ * @brief Fills the given float array with the specified value.
+ * @param floatArr The float array to be filled.
+ * @param value The float value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(float *floatArr, float &value, size_t size) -> void
 {
     Arrays::fillArray(floatArr, value, size);
 }
 
+/**
+ * @brief Fills the given double array with the specified value.
+ * @param doubleArr The double array to be filled.
+ * @param value The double value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(double *doubleArr, double &value, size_t size) -> void
 {
     Arrays::fillArray(doubleArr, value, size);
 }
 
+/**
+ * @brief Fills the given char array with the specified value.
+ * @param charArr The char array to be filled.
+ * @param value The char value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(char *charArr, char &value, size_t size) -> void
 {
     Arrays::fillArray(charArr, value, size);
 }
 
+/**
+ * @brief Fills the given short array with the specified value.
+ * @param shortArr The short array to be filled.
+ * @param value The short value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(short *shortArr, short &value, size_t size) -> void
 {
     Arrays::fillArray(shortArr, value, size);
 }
 
+/**
+ * @brief Fills the given long array with the specified value.
+ * @param longArr The long array to be filled.
+ * @param value The long value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(long *longArr, long &value, size_t size) -> void
 {
     Arrays::fillArray(longArr, value, size);
 }
 
+/**
+ * @brief Fills the given long double array with the specified value.
+ * @param longDoubleArr The long double array to be filled.
+ * @param value The long double value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(long double *longDoubleArr, long double &value, size_t size) -> void
 {
     Arrays::fillArray(longDoubleArr, value, size);
 }
 
+/**
+ * @brief Fills the given long long array with the specified value.
+ * @param longLongArr The long long array to be filled.
+ * @param value The long long value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(long long *longLongArr, long long &value, size_t size) -> void
 {
     Arrays::fillArray(longLongArr, value, size);
 }
-
+/**
+ * @brief Fills the given int8_t array with the specified value.
+ * @param byteArr The int8_t array to be filled.
+ * @param value The int8_t value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(int8_t *byteArr, int8_t &value, size_t size) -> void
 {
     Arrays::fillArray(byteArr, value, size);
 }
 
+/**
+ * @brief Fills the given uint8_t array with the specified value.
+ * @param ubyteArr The uint8_t array to be filled.
+ * @param value The uint8_t value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(uint8_t *ubyteArr, uint8_t &value, size_t size) -> void
 {
     Arrays::fillArray(ubyteArr, value, size);
 }
 
+/**
+ * @brief Fills the given uint64_t array with the specified value.
+ * @param ubyteArr The uint64_t array to be filled.
+ * @param value The uint64_t value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 [[maybe_unused]] auto Arrays::fill(uint64_t *ubyteArr, uint64_t &value, size_t size) -> void
 {
     Arrays::fillArray(ubyteArr, value, size);
 }
 
+/**
+ * @brief Fills the given vector with the specified value.
+ * @tparam T The type of elements in the vector.
+ * @param objects The vector to be filled.
+ * @param value The value to be set in all positions of the vector.
+*/
 template<typename T>
 auto Arrays::fill(std::vector<T> &objects, T &value) -> void
 {
