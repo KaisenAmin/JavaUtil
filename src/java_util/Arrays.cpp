@@ -62,13 +62,24 @@ auto Arrays::toString(char *charArray, size_t size) -> std::string
 
 /**
  * @brief Generates a string representation of a bool array.
- * @param shortArray - The array to convert.
+ * @param boolArray - The array to convert.
  * @param size - Size of the array.
  * @return A string representation of the array.
 */
 auto Arrays::toString(bool *boolArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(boolArray, size);
+}
+
+/**
+ * @brief Generates a string representation of a long array.
+ * @param longArray - The array to convert.
+ * @param size - Size of the array.
+ * @return A string representation of the array.
+*/
+auto Arrays::toString(long *longArray, size_t size) -> std::string
+{
+    return Arrays::iterateOverArrays(longArray, size);
 }
 
 /**
