@@ -344,6 +344,76 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     return Arrays::binarySearchIndex(ubyteArr, fromIndex, toIndex, key);
 }
 
+auto Arrays::fill(bool *boolArr, bool &value, size_t size) -> void
+{
+    Arrays::fillArray(boolArr, value, size);
+}
+
+auto Arrays::fill(int *intArr, int &value, size_t size) -> void
+{
+    Arrays::fillArray(intArr, value, size);
+}
+
+auto Arrays::fill(float *floatArr, float &value, size_t size) -> void
+{
+    Arrays::fillArray(floatArr, value, size);
+}
+
+auto Arrays::fill(double *doubleArr, double &value, size_t size) -> void
+{
+    Arrays::fillArray(doubleArr, value, size);
+}
+
+auto Arrays::fill(char *charArr, char &value, size_t size) -> void
+{
+    Arrays::fillArray(charArr, value, size);
+}
+
+auto Arrays::fill(short *shortArr, short &value, size_t size) -> void
+{
+    Arrays::fillArray(shortArr, value, size);
+}
+
+auto Arrays::fill(long *longArr, long &value, size_t size) -> void
+{
+    Arrays::fillArray(longArr, value, size);
+}
+
+auto Arrays::fill(long double *longDoubleArr, long double &value, size_t size) -> void
+{
+    Arrays::fillArray(longDoubleArr, value, size);
+}
+
+auto Arrays::fill(long long *longLongArr, long long &value, size_t size) -> void
+{
+    Arrays::fillArray(longLongArr, value, size);
+}
+
+auto Arrays::fill(int8_t *byteArr, int8_t &value, size_t size) -> void
+{
+    Arrays::fillArray(byteArr, value, size);
+}
+
+auto Arrays::fill(uint8_t *ubyteArr, uint8_t &value, size_t size) -> void
+{
+    Arrays::fillArray(ubyteArr, value, size);
+}
+
+auto Arrays::fill(uint64_t *ubyteArr, uint64_t &value, size_t size) -> void
+{
+    Arrays::fillArray(ubyteArr, value, size);
+}
+
+template<typename T>
+auto Arrays::fill(std::vector<T> &objects, T &value) -> void
+{
+    T arr[objects.size()];
+    size_t counter = 0;
+
+    for (const auto& val : objects)
+        arr[counter++] = value;
+}
+
 /**
  * @brief Perform a binary search on a sorted vector over a specified range.
  * @tparam T The type of elements in the vector.
@@ -464,9 +534,10 @@ auto Arrays::binarySearchIndex(T *array, size_t fromIndex, size_t toIndex, T &ke
 }
 
 template<typename T>
-auto Arrays::fillArray(T *array, T &value) -> void
+auto Arrays::fillArray(T *array, T &value, size_t size) -> void
 {
-
+    for (size_t index = 0; index < size; index++)
+        array[index] = value;
 }
 
 
@@ -510,3 +581,16 @@ template auto Arrays::binarySearch(std::vector<uint8_t> &objects, size_t fromInd
 template auto Arrays::binarySearch(std::vector<long double> &objects, size_t fromIndex, size_t toIndex, long double &key) -> int;
 template auto Arrays::binarySearch(std::vector<long long> &objects, size_t fromIndex, size_t toIndex, long long &key) -> int;
 template auto Arrays::binarySearch(std::vector<uint64_t> &objects, size_t fromIndex, size_t toIndex, uint64_t &key) -> int;
+
+template auto Arrays::fill(std::vector<int>& objects, int& value) -> void;
+template auto Arrays::fill(std::vector<float>& objects, float& value) -> void;
+template auto Arrays::fill(std::vector<double>& objects, double& value) -> void;
+template auto Arrays::fill(std::vector<short>& objects, short& value) -> void;
+template auto Arrays::fill(std::vector<char>& objects, char& value) -> void;
+template auto Arrays::fill(std::vector<long>& objects, long& value) -> void;
+template auto Arrays::fill(std::vector<long double>& objects, long double& value) -> void;
+template auto Arrays::fill(std::vector<uint8_t>& objects, uint8_t& value) -> void;
+template auto Arrays::fill(std::vector<int8_t>& objects, int8_t& value) -> void;
+template auto Arrays::fill(std::vector<uint64_t>& objects, uint64_t& value) -> void;
+template auto Arrays::fill(std::vector<long long>& objects, long long& value) -> void;
+
