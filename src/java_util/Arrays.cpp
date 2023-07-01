@@ -218,6 +218,133 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     return Arrays::binarySearchBeginToEnd(ubyteArr, key, size);
 }
 
+/**
+ * @brief Perform a binary search on a sorted array of integers
+ *
+ * @param intArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(int *intArr, size_t fromIndex, size_t toIndex, int &key) -> int
+{
+    return Arrays::binarySearchIndex(intArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of floats
+ *
+ * @param floatArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(float *floatArr, size_t fromIndex, size_t toIndex, float &key) -> int
+{
+    return Arrays::binarySearchIndex(floatArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of doubles
+ *
+ * @param doubleArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(double *doubleArr, size_t fromIndex, size_t toIndex, double &key) -> int
+{
+    return Arrays::binarySearchIndex(doubleArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of chars
+ *
+ * @param charArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(char *charArr, size_t fromIndex, size_t toIndex, char &key) -> int
+{
+    return Arrays::binarySearchIndex(charArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of longs
+ *
+ * @param longArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(long *longArr, size_t fromIndex, size_t toIndex, long &key) -> int
+{
+    return Arrays::binarySearchIndex(longArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of shorts
+ *
+ * @param shortArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(short *shortArr, size_t fromIndex, size_t toIndex, short &key) -> int
+{
+    return Arrays::binarySearchIndex(shortArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of strings
+ *
+ * @param stringArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(std::string *stringArr, size_t fromIndex, size_t toIndex, std::string &key) -> int
+{
+    return Arrays::binarySearchIndex(stringArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of bytes
+ *
+ * @param byteArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(int8_t *byteArr, size_t fromIndex, size_t toIndex, int8_t &key) -> int
+{
+    return Arrays::binarySearchIndex(byteArr, fromIndex, toIndex, key);
+}
+
+/**
+ * @brief Perform a binary search on a sorted array of unsigned bytes
+ *
+ * @param ubyteArr The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+ */
+[[maybe_unused]] auto Arrays::binarySearch(uint8_t *ubyteArr, size_t fromIndex, size_t toIndex, uint8_t &key) -> int
+{
+    return Arrays::binarySearchIndex(ubyteArr, fromIndex, toIndex, key);
+}
+
+
 template<typename T>
 auto Arrays::binarySearch(std::vector<T> &objects, T &key) -> int
 {
@@ -272,21 +399,43 @@ auto Arrays::binarySearchBeginToEnd(T *array, T key, size_t size) -> int
         size_t mid = left + (right - left) / 2;
 
         if (array[mid] == key)
-        {
             return mid;
-        }
         else if (array[mid] < key)
-        {
             left = mid + 1;
-        }
         else
-        {
             right = mid - 1;
-        }
     }
 
     return -1; // key not found
 }
+
+/**
+ * @brief Perform a binary search on a sorted array
+ *
+ * @tparam T Type of the elements in the array. This type should support the '==' and '<' operators.
+ * @param array The array in which to search for the key. The array should be sorted in ascending order.
+ * @param fromIndex The beginning index from where to start the search.
+ * @param toIndex The ending index where to end the search.
+ * @param key The element to search for.
+ * @return int The index of the element if found, or -1 if the element is not found.
+*/
+template<typename T>
+auto Arrays::binarySearchIndex(T *array, size_t fromIndex, size_t toIndex, T &key) -> int
+{
+    while (fromIndex <= toIndex)
+    {
+        size_t mid = fromIndex + (toIndex - fromIndex) / 2;
+        if (array[mid] == key)
+            return mid;
+        if (array[mid] < key)
+            fromIndex = mid + 1;
+         else
+            toIndex = mid - 1;
+    }
+
+    return -1;  // return -1 if key is not found
+}
+
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
