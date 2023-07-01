@@ -9,7 +9,9 @@ int main()
     double doubleArr[] = {15.32, 65.398, 7.321545, 3.2145, 18536954.312585};
     char charArr[] = {'C', '+', '+'};
     short shortArr[] = {152, 3625, 9625, -3659};
+    bool boolArr[] = {true, false, true, true, false};
 
+    size_t boolSize = sizeof boolArr / sizeof(bool);
     size_t shortSize = sizeof shortArr / sizeof(short);
     size_t charSize = sizeof charArr / sizeof(char);
     size_t doubleSize = sizeof doubleArr / sizeof(double);
@@ -21,6 +23,6 @@ int main()
     std::cout << "float -> " << Arrays::toString(floatArr, floatSize) << '\n';
     std::cout << "double -> " << Arrays::toString(doubleArr, doubleSize) << '\n';
     std::cout << "short -> " << Arrays::toString(shortArr, shortSize) << '\n';
-
+    std::cout << "bool -> " << Arrays::toString(boolArr, boolSize) << '\n';
     return 0;
 }
