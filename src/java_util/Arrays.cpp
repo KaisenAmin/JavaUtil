@@ -117,7 +117,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(int *intArr, int key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(int *intArr, int& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(intArr, key, size);
 }
@@ -129,7 +129,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(float *floatArr, float key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(float *floatArr, float& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(floatArr, key, size);
 }
@@ -141,7 +141,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(long *longArr, long key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(long *longArr, long& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(longArr, key, size);
 }
@@ -153,7 +153,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(double *doubleArr, double key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(double *doubleArr, double& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(doubleArr, key, size);
 }
@@ -165,7 +165,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(char *charArr, char key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(char *charArr, char& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(charArr, key, size);
 }
@@ -177,7 +177,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(short *shortArr, short key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(short *shortArr, short& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(shortArr, key, size);
 }
@@ -201,7 +201,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(int8_t *byteArr, int8_t key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(int8_t *byteArr, int8_t& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(byteArr, key, size);
 }
@@ -213,7 +213,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-[[maybe_unused]] auto Arrays::binarySearch(uint8_t *ubyteArr, uint8_t key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(uint8_t *ubyteArr, uint8_t& key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(ubyteArr, key, size);
 }
