@@ -344,6 +344,18 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     return Arrays::binarySearchIndex(ubyteArr, fromIndex, toIndex, key);
 }
 
+template<typename T>
+auto Arrays::binarySearch(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &key) -> int
+{
+    T arr[objects.size()];
+    int counter = 0;
+
+    for (const auto& value : objects)
+        arr[counter++] = value;
+
+    return Arrays::binarySearchIndex(arr, fromIndex, toIndex, key);
+}
+
 
 template<typename T>
 auto Arrays::binarySearch(std::vector<T> &objects, T &key) -> int
@@ -462,3 +474,18 @@ template auto Arrays::binarySearch(std::vector<long> &objects, long& key) -> int
 template auto Arrays::binarySearch(std::vector<int8_t> &objects, int8_t& key) -> int;
 template auto Arrays::binarySearch(std::vector<uint8_t> &objects, uint8_t & key) -> int;
 template auto Arrays::binarySearch(std::vector<long double> &objects, long double& key) -> int;
+template auto Arrays::binarySearch(std::vector<long long> &objects, long long& key) -> int;
+template auto Arrays::binarySearch(std::vector<uint64_t> &objects, uint64_t & key) -> int;
+
+template auto Arrays::binarySearch(std::vector<std::string> &objects, size_t fromIndex, size_t toIndex, std::string &key) -> int;
+template auto Arrays::binarySearch(std::vector<int> &objects, size_t fromIndex, size_t toIndex, int &key) -> int;
+template auto Arrays::binarySearch(std::vector<float> &objects, size_t fromIndex, size_t toIndex, float &key) -> int;
+template auto Arrays::binarySearch(std::vector<double> &objects, size_t fromIndex, size_t toIndex, double &key) -> int;
+template auto Arrays::binarySearch(std::vector<char> &objects, size_t fromIndex, size_t toIndex, char &key) -> int;
+template auto Arrays::binarySearch(std::vector<long> &objects, size_t fromIndex, size_t toIndex, long &key) -> int;
+template auto Arrays::binarySearch(std::vector<short> &objects, size_t fromIndex, size_t toIndex, short &key) -> int;
+template auto Arrays::binarySearch(std::vector<int8_t> &objects, size_t fromIndex, size_t toIndex, int8_t &key) -> int;
+template auto Arrays::binarySearch(std::vector<uint8_t> &objects, size_t fromIndex, size_t toIndex, uint8_t &key) -> int;
+template auto Arrays::binarySearch(std::vector<long double> &objects, size_t fromIndex, size_t toIndex, long double &key) -> int;
+template auto Arrays::binarySearch(std::vector<long long> &objects, size_t fromIndex, size_t toIndex, long long &key) -> int;
+template auto Arrays::binarySearch(std::vector<uint64_t> &objects, size_t fromIndex, size_t toIndex, uint64_t &key) -> int;

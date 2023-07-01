@@ -64,6 +64,9 @@ public:
     [[maybe_unused]] static auto binarySearch(std::string stringArr[], size_t fromIndex, size_t toIndex, std::string& key) -> int;
     [[maybe_unused]] static auto binarySearch(int8_t byteArr[], size_t fromIndex, size_t toIndex, int8_t & key) -> int;
     [[maybe_unused]] static auto binarySearch(uint8_t ubyteArr[], size_t fromIndex, size_t toIndex, uint8_t & key) -> int;
+
+    template <typename T>
+    static auto binarySearch(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& key) -> int;
 };
 
 #endif //JAVAUTIL_ARRAYS_H
