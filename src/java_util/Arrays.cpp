@@ -344,62 +344,62 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     return Arrays::binarySearchIndex(ubyteArr, fromIndex, toIndex, key);
 }
 
-auto Arrays::fill(bool *boolArr, bool &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(bool *boolArr, bool &value, size_t size) -> void
 {
     Arrays::fillArray(boolArr, value, size);
 }
 
-auto Arrays::fill(int *intArr, int &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(int *intArr, int &value, size_t size) -> void
 {
     Arrays::fillArray(intArr, value, size);
 }
 
-auto Arrays::fill(float *floatArr, float &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(float *floatArr, float &value, size_t size) -> void
 {
     Arrays::fillArray(floatArr, value, size);
 }
 
-auto Arrays::fill(double *doubleArr, double &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(double *doubleArr, double &value, size_t size) -> void
 {
     Arrays::fillArray(doubleArr, value, size);
 }
 
-auto Arrays::fill(char *charArr, char &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(char *charArr, char &value, size_t size) -> void
 {
     Arrays::fillArray(charArr, value, size);
 }
 
-auto Arrays::fill(short *shortArr, short &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(short *shortArr, short &value, size_t size) -> void
 {
     Arrays::fillArray(shortArr, value, size);
 }
 
-auto Arrays::fill(long *longArr, long &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(long *longArr, long &value, size_t size) -> void
 {
     Arrays::fillArray(longArr, value, size);
 }
 
-auto Arrays::fill(long double *longDoubleArr, long double &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(long double *longDoubleArr, long double &value, size_t size) -> void
 {
     Arrays::fillArray(longDoubleArr, value, size);
 }
 
-auto Arrays::fill(long long *longLongArr, long long &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(long long *longLongArr, long long &value, size_t size) -> void
 {
     Arrays::fillArray(longLongArr, value, size);
 }
 
-auto Arrays::fill(int8_t *byteArr, int8_t &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(int8_t *byteArr, int8_t &value, size_t size) -> void
 {
     Arrays::fillArray(byteArr, value, size);
 }
 
-auto Arrays::fill(uint8_t *ubyteArr, uint8_t &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(uint8_t *ubyteArr, uint8_t &value, size_t size) -> void
 {
     Arrays::fillArray(ubyteArr, value, size);
 }
 
-auto Arrays::fill(uint64_t *ubyteArr, uint64_t &value, size_t size) -> void
+[[maybe_unused]] auto Arrays::fill(uint64_t *ubyteArr, uint64_t &value, size_t size) -> void
 {
     Arrays::fillArray(ubyteArr, value, size);
 }
@@ -533,6 +533,13 @@ auto Arrays::binarySearchIndex(T *array, size_t fromIndex, size_t toIndex, T &ke
     return -1;  // return -1 if key is not found
 }
 
+/**
+ * @brief Fills the given array with the specified value.
+ * @tparam T The type of elements in the array.
+ * @param array The array to be filled.
+ * @param value The value to be set in all positions of the array.
+ * @param size The size of the array.
+*/
 template<typename T>
 auto Arrays::fillArray(T *array, T &value, size_t size) -> void
 {
