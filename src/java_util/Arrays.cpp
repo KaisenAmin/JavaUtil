@@ -106,6 +106,102 @@ auto Arrays::binarySearch(int *intArr, int key, int size) -> int
 }
 
 /**
+ * @brief Performs a binary search on the given float array to find the specified key.
+ * @param floatArr The float array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+auto Arrays::binarySearch(float *floatArr, float key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(floatArr, key, size);
+}
+
+/**
+ * @brief Performs a binary search on the given long array to find the specified key.
+ * @param longArr The long array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+auto Arrays::binarySearch(long *longArr, long key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(longArr, key, size);
+}
+
+/**
+ * @brief Performs a binary search on the given double array to find the specified key.
+ * @param doubleArr The double array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+auto Arrays::binarySearch(double *doubleArr, double key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(doubleArr, key, size);
+}
+
+/**
+ * @brief Performs a binary search on the given char array to find the specified key.
+ * @param charArr The char array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+auto Arrays::binarySearch(char *charArr, char key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(charArr, key, size);
+}
+
+/**
+ * @brief Performs a binary search on the given short array to find the specified key.
+ * @param shortArr The float array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+auto Arrays::binarySearch(short *shortArr, short key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(shortArr, key, size);
+}
+
+/**
+ * @brief Performs a binary search on the given string array to find the specified key.
+ * @param stringArr The string array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+auto Arrays::binarySearch(std::string stringArr[], std::string key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(stringArr, key, size);
+}
+
+/**
+ * @brief Performs a binary search on the given int8_t array to find the specified key.
+ * @param byteArr The int8_t array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+[[maybe_unused]] auto Arrays::binarySearch(int8_t *byteArr, int8_t key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(byteArr, key, size);
+}
+
+/**
+ * @brief Performs a binary search on the given uint8_t array to find the specified key.
+ * @param ubyteArr The uint8_t array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+[[maybe_unused]] auto Arrays::binarySearch(uint8_t *ubyteArr, uint8_t key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(ubyteArr, key, size);
+}
+
+/**
  * @brief Generates a string representation of a vector array.
  * @param objects - The array to convert.
  * @return A string representation of the array.
