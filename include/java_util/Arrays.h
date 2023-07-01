@@ -26,8 +26,11 @@ private:
     template <typename T>
     static auto binarySearchBeginToEnd(T *array, T key, size_t size) -> int;
 
-    template<typename T>
+    template <typename T>
     static auto binarySearchIndex(T* array, size_t fromIndex, size_t toIndex, T& key) -> int;
+
+    template <typename T>
+    static auto fillArray(T* array, T& value, size_t size) -> void;
 
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
@@ -68,18 +71,18 @@ public:
     template <typename T>
     static auto binarySearch(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& key) -> int;
 
-    [[maybe_unused]] static auto fill(bool boolArr[], bool& value) -> void;
-    [[maybe_unused]] static auto fill(int intArr[], int& value) -> void;
-    [[maybe_unused]] static auto fill(float floatArr[], float& value) -> void;
-    [[maybe_unused]] static auto fill(double doubleArr[], double& value) -> void;
-    [[maybe_unused]] static auto fill(char charArr[], char& value) -> void;
-    [[maybe_unused]] static auto fill(short shortArr[], short& value) -> void;
-    [[maybe_unused]] static auto fill(long longArr[], long& value) -> void;
-    [[maybe_unused]] static auto fill(long double longDoubleArr[], long double& value) -> void;
-    [[maybe_unused]] static auto fill(long long longLongArr[], long long& value) -> void;
-    [[maybe_unused]] static auto fill(int8_t byteArr[], int8_t& value) -> void;
-    [[maybe_unused]] static auto fill(uint8_t ubyteArr[], uint8_t & value) -> void;
-    [[maybe_unused]] static auto fill(uint64_t ubyteArr[], uint64_t& value) -> void;
+    [[maybe_unused]] static auto fill(bool boolArr[], bool& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(int intArr[], int& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(float floatArr[], float& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(double doubleArr[], double& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(char charArr[], char& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(short shortArr[], short& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(long longArr[], long& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(long double longDoubleArr[], long double& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(long long longLongArr[], long long& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(int8_t byteArr[], int8_t& value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(uint8_t ubyteArr[], uint8_t & value, size_t size) -> void;
+    [[maybe_unused]] static auto fill(uint64_t ubyteArr[], uint64_t& value, size_t size) -> void;
 
     template <typename T>
     static auto fill(std::vector<T>& objects, T& value) -> void;

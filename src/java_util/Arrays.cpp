@@ -344,6 +344,15 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     return Arrays::binarySearchIndex(ubyteArr, fromIndex, toIndex, key);
 }
 
+/**
+ * @brief Perform a binary search on a sorted vector over a specified range.
+ * @tparam T The type of elements in the vector.
+ * @param objects The vector to be searched.
+ * @param fromIndex The starting index for the search.
+ * @param toIndex The ending index for the search.
+ * @param key The value to be searched.
+ * @return The index of the key if it is in the vector, -1 otherwise.
+ */
 template<typename T>
 auto Arrays::binarySearch(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &key) -> int
 {
@@ -356,7 +365,13 @@ auto Arrays::binarySearch(std::vector<T> &objects, size_t fromIndex, size_t toIn
     return Arrays::binarySearchIndex(arr, fromIndex, toIndex, key);
 }
 
-
+/**
+ * @brief Perform a binary search on a sorted vector from the beginning to the end.
+ * @tparam T The type of elements in the vector.
+ * @param objects The vector to be searched.
+ * @param key The value to be searched.
+ * @return The index of the key if it is in the vector, -1 otherwise.
+ */
 template<typename T>
 auto Arrays::binarySearch(std::vector<T> &objects, T &key) -> int
 {
@@ -446,6 +461,12 @@ auto Arrays::binarySearchIndex(T *array, size_t fromIndex, size_t toIndex, T &ke
     }
 
     return -1;  // return -1 if key is not found
+}
+
+template<typename T>
+auto Arrays::fillArray(T *array, T &value) -> void
+{
+
 }
 
 
