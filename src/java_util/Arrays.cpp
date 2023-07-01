@@ -94,13 +94,39 @@ auto Arrays::toString(long *longArray, size_t size) -> std::string
 }
 
 /**
+ * @brief Generates a string representation of a vector array.
+ * @param objects - The array to convert.
+ * @return A string representation of the array.
+*/
+template<typename T>
+auto Arrays::toString(std::vector<T> &objects) -> std::string
+{
+    T arr[objects.size()];
+
+    if (arr)
+    {
+        int counter = 0;
+
+        for (const auto& value : objects)
+            arr[counter++] = value;
+
+        return Arrays::iterateOverArrays(arr, counter);
+    }
+    else
+    {
+        std::cerr << "Can not allocate memory" << '\n';
+        return std::string(nullptr);
+    }
+}
+
+/**
  * @brief Performs a binary search on the given integer array to find the specified key.
  * @param intArr The integer array to search.
  * @param key The key to search for.
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-auto Arrays::binarySearch(int *intArr, int key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(int *intArr, int key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(intArr, key, size);
 }
@@ -112,7 +138,7 @@ auto Arrays::binarySearch(int *intArr, int key, int size) -> int
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-auto Arrays::binarySearch(float *floatArr, float key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(float *floatArr, float key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(floatArr, key, size);
 }
@@ -124,7 +150,7 @@ auto Arrays::binarySearch(float *floatArr, float key, int size) -> int
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-auto Arrays::binarySearch(long *longArr, long key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(long *longArr, long key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(longArr, key, size);
 }
@@ -136,7 +162,7 @@ auto Arrays::binarySearch(long *longArr, long key, int size) -> int
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-auto Arrays::binarySearch(double *doubleArr, double key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(double *doubleArr, double key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(doubleArr, key, size);
 }
@@ -148,7 +174,7 @@ auto Arrays::binarySearch(double *doubleArr, double key, int size) -> int
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-auto Arrays::binarySearch(char *charArr, char key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(char *charArr, char key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(charArr, key, size);
 }
@@ -160,7 +186,7 @@ auto Arrays::binarySearch(char *charArr, char key, int size) -> int
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-auto Arrays::binarySearch(short *shortArr, short key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(short *shortArr, short key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(shortArr, key, size);
 }
@@ -172,7 +198,7 @@ auto Arrays::binarySearch(short *shortArr, short key, int size) -> int
  * @param size The size of the array.
  * @return The index of the key in the array if found, or -1 if the key is not present.
 */
-auto Arrays::binarySearch(std::string stringArr[], std::string key, int size) -> int
+[[maybe_unused]] auto Arrays::binarySearch(std::string stringArr[], std::string &key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(stringArr, key, size);
 }
@@ -199,32 +225,6 @@ auto Arrays::binarySearch(std::string stringArr[], std::string key, int size) ->
 [[maybe_unused]] auto Arrays::binarySearch(uint8_t *ubyteArr, uint8_t key, int size) -> int
 {
     return Arrays::binarySearchBeginToEnd(ubyteArr, key, size);
-}
-
-/**
- * @brief Generates a string representation of a vector array.
- * @param objects - The array to convert.
- * @return A string representation of the array.
-*/
-template<typename T>
-auto Arrays::toString(std::vector<T> &objects) -> std::string
-{
-    std::unique_ptr<T[]> arr(new T[objects.size()]);
-
-    if (arr)
-    {
-        int counter = 0;
-
-        for (const auto& value : objects)
-            arr[counter++] = value;
-
-        return Arrays::iterateOverArrays(arr.get(), objects.size());
-    }
-    else
-    {
-        std::cerr << "Can not allocate memory" << '\n';
-        return std::string(nullptr);
-    }
 }
 
 /**

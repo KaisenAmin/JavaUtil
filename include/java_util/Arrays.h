@@ -39,13 +39,14 @@ public:
     template<typename T>
     static auto toString(std::vector<T>& objects) -> std::string;
 
-    static auto binarySearch(int intArr[], int key, int size) -> int;
-    static auto binarySearch(float floatArr[], float key, int size) -> int;
-    static auto binarySearch(double floatArr[], double key, int size) -> int;
-    static auto binarySearch(long floatArr[], long key, int size) -> int;
-    static auto binarySearch(char floatArr[], char key, int size) -> int;
-    static auto binarySearch(short floatArr[], short key, int size) -> int;
-    static auto binarySearch(std::string stringArr[], std::string key, int size) -> int;
+    [[maybe_unused]] static auto binarySearch(int intArr[], int key, int size) -> int;
+
+    [[maybe_unused]] static auto binarySearch(float floatArr[], float key, int size) -> int;
+    [[maybe_unused]] static auto binarySearch(double doubleArr[], double key, int size) -> int;
+    [[maybe_unused]] static auto binarySearch(long longArr[], long key, int size) -> int;
+    [[maybe_unused]] static auto binarySearch(char charArr[], char key, int size) -> int;
+    [[maybe_unused]] static auto binarySearch(short shortArr[], short key, int size) -> int;
+    [[maybe_unused]] static auto binarySearch(std::string stringArr[], std::string &key, int size) -> int;
     [[maybe_unused]] static auto binarySearch(int8_t byteArr[], int8_t key, int size) -> int;
     [[maybe_unused]] static auto binarySearch(uint8_t ubyteArr[], uint8_t key, int size) -> int;
 };
