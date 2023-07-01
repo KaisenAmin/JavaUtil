@@ -102,21 +102,12 @@ template<typename T>
 auto Arrays::toString(std::vector<T> &objects) -> std::string
 {
     T arr[objects.size()];
+    int counter = 0;
 
-    if (arr)
-    {
-        int counter = 0;
+    for (const auto& value : objects)
+        arr[counter++] = value;
 
-        for (const auto& value : objects)
-            arr[counter++] = value;
-
-        return Arrays::iterateOverArrays(arr, counter);
-    }
-    else
-    {
-        std::cerr << "Can not allocate memory" << '\n';
-        return std::string(nullptr);
-    }
+    return Arrays::iterateOverArrays(arr, counter);
 }
 
 /**
@@ -227,6 +218,18 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     return Arrays::binarySearchBeginToEnd(ubyteArr, key, size);
 }
 
+template<typename T>
+auto Arrays::binarySearch(std::vector<T> &objects, T &key) -> int
+{
+    T arr[objects.size()];
+    int counter = 0;
+
+    for (const auto& value : objects)
+        arr[counter++] = value;
+
+    return Arrays::binarySearchBeginToEnd(arr, key, counter);
+}
+
 /**
  * @brief Iterates over the provided array and generates a string representation.
  * @param array - Pointer to the array.
@@ -299,3 +302,14 @@ template auto Arrays::toString(std::vector<int8_t> &objects) -> std::string;
 template auto Arrays::toString(std::vector<long> &objects) -> std::string;
 template auto Arrays::toString(std::vector<uint16_t> &objects) -> std::string;
 template auto Arrays::toString(std::vector<long double> &objects) -> std::string;
+
+template auto Arrays::binarySearch(std::vector<std::string> &objects, std::string& key) -> int;
+template auto Arrays::binarySearch(std::vector<int> &objects, int& key) -> int;
+template auto Arrays::binarySearch(std::vector<double> &objects, double& key) -> int;
+template auto Arrays::binarySearch(std::vector<float> &objects, float& key) -> int;
+template auto Arrays::binarySearch(std::vector<char> &objects, char& key) -> int;
+template auto Arrays::binarySearch(std::vector<short> &objects, short& key) -> int;
+template auto Arrays::binarySearch(std::vector<long> &objects, long& key) -> int;
+template auto Arrays::binarySearch(std::vector<int8_t> &objects, int8_t& key) -> int;
+template auto Arrays::binarySearch(std::vector<uint8_t> &objects, uint8_t & key) -> int;
+template auto Arrays::binarySearch(std::vector<long double> &objects, long double& key) -> int;

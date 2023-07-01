@@ -129,7 +129,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "examples/java_util/Arrays_toString.cpp",
+			"path" : "examples/java_util/Arrays_binarySearch1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
