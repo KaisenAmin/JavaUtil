@@ -10,6 +10,9 @@ int main()
     char charArr[] = {'C', '+', '+'};
     short shortArr[] = {152, 3625, 9625, -3659};
     bool boolArr[] = {true, false, true, true, false};
+    std::vector<std::string> names{std::string("amin"), std::string("java"), std::string("C++")};
+    std::vector<int> numbers{15, 0, 665, 329};
+
 
     size_t boolSize = sizeof boolArr / sizeof(bool);
     size_t shortSize = sizeof shortArr / sizeof(short);
@@ -24,5 +27,10 @@ int main()
     std::cout << "double -> " << Arrays::toString(doubleArr, doubleSize) << '\n';
     std::cout << "short -> " << Arrays::toString(shortArr, shortSize) << '\n';
     std::cout << "bool -> " << Arrays::toString(boolArr, boolSize) << '\n';
+    std::cout << "Vectors -> " << Arrays::toString(names) << '\n';
+    std::cout << "Int Vectors -> " << Arrays::toString(numbers) << '\n';
+    std::cout << "int binary Search -> " << Arrays::binarySearch(intArr, 20, intSize) << '\n';
+
+    std::cin.get();
     return 0;
 }

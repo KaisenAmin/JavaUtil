@@ -83,6 +83,55 @@ auto Arrays::toString(long *longArray, size_t size) -> std::string
 }
 
 /**
+ * @brief Generates a string representation of a byte(int8_t) array.
+ * @param byteArray - The array to convert.
+ * @param size - Size of the array.
+ * @return A string representation of the array.
+*/
+[[maybe_unused]] auto Arrays::toString(int8_t *byteArray, size_t size) -> std::string
+{
+    return Arrays::iterateOverArrays(byteArray, size);
+}
+
+/**
+ * @brief Performs a binary search on the given integer array to find the specified key.
+ * @param intArr The integer array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+auto Arrays::binarySearch(int *intArr, int key, int size) -> int
+{
+    return Arrays::binarySearchBeginToEnd(intArr, key, size);
+}
+
+/**
+ * @brief Generates a string representation of a vector array.
+ * @param objects - The array to convert.
+ * @return A string representation of the array.
+*/
+template<typename T>
+auto Arrays::toString(std::vector<T> &objects) -> std::string
+{
+    std::unique_ptr<T[]> arr(new T[objects.size()]);
+
+    if (arr)
+    {
+        int counter = 0;
+
+        for (const auto& value : objects)
+            arr[counter++] = value;
+
+        return Arrays::iterateOverArrays(arr.get(), objects.size());
+    }
+    else
+    {
+        std::cerr << "Can not allocate memory" << '\n';
+        return std::string(nullptr);
+    }
+}
+
+/**
  * @brief Iterates over the provided array and generates a string representation.
  * @param array - Pointer to the array.
  * @param size - Size of the array.
@@ -104,3 +153,53 @@ auto Arrays::iterateOverArrays(T *array, size_t size) -> std::string
 
     return ss.str();
 }
+
+/**
+ * @brief Performs a binary search on the given array to find the specified key.
+ * @tparam T The type of elements in the array.
+ * @param array The array to search.
+ * @param key The key to search for.
+ * @param size The size of the array.
+ * @return The index of the key in the array if found, or -1 if the key is not present.
+*/
+template<typename T>
+auto Arrays::binarySearchBeginToEnd(T *array, T key, size_t size) -> int
+{
+    size_t left = 0;
+    size_t right = size - 1;
+
+    while (left <= right)
+    {
+        size_t mid = left + (right - left) / 2;
+
+        if (array[mid] == key)
+        {
+            return mid;
+        }
+        else if (array[mid] < key)
+        {
+            left = mid + 1;
+        }
+        else
+        {
+            right = mid - 1;
+        }
+    }
+
+    return -1; // key not found
+}
+
+template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
+template auto Arrays::toString(std::vector<double> &objects) -> std::string;
+template auto Arrays::toString(std::vector<int> &objects) -> std::string;
+template auto Arrays::toString(std::vector<float> &objects) -> std::string;
+template auto Arrays::toString(std::vector<char> &objects) -> std::string;
+template auto Arrays::toString(std::vector<short> &objects) -> std::string;
+template auto Arrays::toString(std::vector<bool> &objects) -> std::string;
+template auto Arrays::toString(std::vector<char*> &objects) -> std::string;
+template auto Arrays::toString(std::vector<uint8_t> &objects) -> std::string;
+template auto Arrays::toString(std::vector<size_t> &objects) -> std::string;
+template auto Arrays::toString(std::vector<int8_t> &objects) -> std::string;
+template auto Arrays::toString(std::vector<long> &objects) -> std::string;
+template auto Arrays::toString(std::vector<uint16_t> &objects) -> std::string;
+template auto Arrays::toString(std::vector<long double> &objects) -> std::string;
