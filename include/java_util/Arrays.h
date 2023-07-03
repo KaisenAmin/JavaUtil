@@ -40,6 +40,9 @@ private:
     template<typename T>
     static auto hashCodeGenerator(T* array, size_t size) -> int;
 
+    template<typename T>
+    static auto equality(T* arr1, T* arr2, size_t size);
+
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
     static auto toString(float floatArray[], size_t size) -> std::string;
@@ -106,6 +109,7 @@ public:
     [[maybe_unused]] static auto fill(long double longDoubleArr[], size_t fromIndex, size_t toIndex, long double value) -> void;
     [[maybe_unused]] static auto fill(long long longLongArr[], size_t fromIndex, size_t toIndex, long long value) -> void;
     [[maybe_unused]] static auto fill(uint64_t ubyteArr[], size_t fromIndex, size_t toIndex, uint64_t value) -> void;
+    [[maybe_unused]] static auto fill(bool boolArr[], size_t fromIndex, size_t toIndex, bool value) -> void;
 
     template <typename T>
     static auto fill(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& value) -> void;
@@ -121,10 +125,26 @@ public:
     [[maybe_unused]] static auto hashCode(int8_t byteArr[], size_t size) -> int;
     [[maybe_unused]] static auto hashCode(uint8_t ubyteArr[], size_t size) -> int;
     [[maybe_unused]] static auto hashCode(uint64_t ubyteArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(bool boolArr[], size_t size) -> int;
 
     template <typename T>
     static auto hashCode(std::vector<T>& objects) -> int;
 
+    [[maybe_unused]] static auto equal(int intArr1[], int intArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(float floatArr1[], float floatArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(double doubleArr1[], double doubleArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(char charArr1[], char charArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(short shortArr1[], short shortArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(bool boolArr1[], bool boolArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(long longArr1[], long longArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(long long longLongArr1[], long long longLongArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(int8_t byteArr1[], int8_t byteArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(uint8_t ubyteArr1[], uint8_t ubyteArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(long double longDoubleArr1[], long double longDoubleArr2[], size_t size) -> bool;
+    [[maybe_unused]] static auto equal(uint64_t ubyteArr1[], uint64_t ubyteArr2[], size_t size) -> bool;
+
+    template <typename T>
+    static auto equal(std::vector<T>& objects1, std::vector<T>& objects2) -> bool;
 
 };
 

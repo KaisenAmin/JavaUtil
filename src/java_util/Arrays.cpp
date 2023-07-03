@@ -619,6 +619,48 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
 }
 
 /**
+ * @brief Fills the specified range of the provided bool array with the given value.
+ *
+ * @param boolArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
+[[maybe_unused]] auto Arrays::fill(bool *boolArr, size_t fromIndex, size_t toIndex, bool value) -> void
+{
+    Arrays::fillArray(boolArr, fromIndex, toIndex, value);
+}
+
+/**
+ * @brief Fills the specified range of the provided Generic vector with the given value.
+ *
+ * @param objects The vector to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the vector within the specified range.
+*/
+template<typename T>
+auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
+{
+    std::fill(objects.begin(), objects.end(), value);
+}
+
+/**
+ * @brief Fills the given vector with the specified value.
+ * @tparam T The type of elements in the vector.
+ * @param objects The vector to be filled.
+ * @param value The value to be set in all positions of the vector.
+*/
+template<typename T>
+auto Arrays::fill(std::vector<T> &objects, T &value) -> void
+{
+    for (size_t index = 0; index < objects.size(); index++)
+    {
+        objects[index] = value;
+    }
+}
+
+/**
  * @brief Returns a hash code based on the contents of the specified integer array.
  *
  * This function computes the hash value of an array of integers using the Arrays::hashCodeGenerator function.
@@ -795,6 +837,22 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
 }
 
 /**
+ * @brief Returns a hash code based on the contents of the specified bool array.
+ *
+ * This function computes the hash value of an array of bool using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param boolArr The bool array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(bool *boolArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(boolArr, size);
+}
+
+/**
  * @brief Returns a hash code based on the contents of the specified Generic vector.
  *
  * This function computes the hash value of an array of integers using the Arrays::hashCodeGenerator function.
@@ -821,34 +879,72 @@ auto Arrays::hashCode(std::vector<T> &objects) -> int
 
 }
 
-/**
- * @brief Fills the specified range of the provided Generic vector with the given value.
- *
- * @param objects The vector to be filled with the provided value.
- * @param fromIndex The initial index of the range to be filled, inclusive.
- * @param toIndex The final index of the range to be filled, exclusive.
- * @param value The value to be stored in all elements of the vector within the specified range.
-*/
-template<typename T>
-auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
+auto Arrays::equal(int *intArr1, int *intArr2, size_t size) -> bool
 {
-    std::fill(objects.begin(), objects.end(), value);
+    return false;
 }
 
-/**
- * @brief Fills the given vector with the specified value.
- * @tparam T The type of elements in the vector.
- * @param objects The vector to be filled.
- * @param value The value to be set in all positions of the vector.
-*/
-template<typename T>
-auto Arrays::fill(std::vector<T> &objects, T &value) -> void
+auto Arrays::equal(float *floatArr1, float *floatArr2, size_t size) -> bool
 {
-    for (size_t index = 0; index < objects.size(); index++)
-    {
-        objects[index] = value;
-    }
+    return false;
 }
+
+auto Arrays::equal(double *doubleArr1, double *doubleArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(char *charArr1, char *charArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(short *shortArr1, short *shortArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(bool *boolArr1, bool *boolArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(long *longArr1, long *longArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(long long int *longLongArr1, long long int *longLongArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(int8_t *byteArr1, int8_t *byteArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(uint8_t *ubyteArr1, uint8_t *ubyteArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(long double *longDoubleArr1, long double *longDoubleArr2, size_t size) -> bool
+{
+    return false;
+}
+
+auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> bool
+{
+    return false;
+}
+
+template<typename T>
+auto Arrays::equal(std::vector<T> &objects1, std::vector<T> &objects2) -> bool
+{
+    return false;
+}
+
 
 /**
  * @brief Perform a binary search on a sorted vector over a specified range.
@@ -1040,6 +1136,14 @@ auto Arrays::hashCodeGenerator(T *array, size_t size) -> int
     return h;
 }
 
+template<typename T>
+auto Arrays::equality(T *arr1, T *arr2, size_t size)
+{
+    if (arr1 == nullptr || arr2 == nullptr)
+        throw std::invalid_argument("One or both of the arrays are null.");
+
+    return std::equal(arr1, arr1 + size, arr2);
+}
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
@@ -1117,3 +1221,16 @@ template auto Arrays::hashCode(std::vector<long long> &objects) -> int;
 template auto Arrays::hashCode(std::vector<int8_t> &objects) -> int;
 template auto Arrays::hashCode(std::vector<uint8_t> &objects) -> int;
 template auto Arrays::hashCode(std::vector<uint64_t> &objects) -> int;
+
+
+template auto Arrays::equal(std::vector<int>& objects1, std::vector<int>& objects2) -> bool;
+template auto Arrays::equal(std::vector<float>& objects1, std::vector<float>& objects2) -> bool;
+template auto Arrays::equal(std::vector<double>& objects1, std::vector<double>& objects2) -> bool;
+template auto Arrays::equal(std::vector<bool>& objects1, std::vector<bool>& objects2) -> bool;
+template auto Arrays::equal(std::vector<int8_t>& objects1, std::vector<int8_t>& objects2) -> bool;
+template auto Arrays::equal(std::vector<long long>& objects1, std::vector<long long>& objects2) -> bool;
+template auto Arrays::equal(std::vector<long double>& objects1, std::vector<long double>& objects2) -> bool;
+template auto Arrays::equal(std::vector<char>& objects1, std::vector<char>& objects2) -> bool;
+template auto Arrays::equal(std::vector<uint8_t>& objects1, std::vector<uint8_t>& objects2) -> bool;
+template auto Arrays::equal(std::vector<short>& objects1, std::vector<short>& objects2) -> bool;
+template auto Arrays::equal(std::vector<uint64_t>& objects1, std::vector<uint64_t>& objects2) -> bool;
