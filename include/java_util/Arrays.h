@@ -10,6 +10,8 @@
 #include <vector>
 #include <iostream>
 #include <memory>
+#include <functional>
+#include <numeric>
 
 /**
  * @class Arrays
@@ -35,6 +37,9 @@ private:
     template<typename T>
     static auto fillArray(T* array, int fromIndex, int toIndex, T& value) -> void;
 
+    template<typename T>
+    static auto hashCodeGenerator(T* array, size_t size) -> int;
+    
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
     static auto toString(float floatArray[], size_t size) -> std::string;
@@ -104,6 +109,22 @@ public:
 
     template <typename T>
     static auto fill(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& value) -> void;
+
+    [[maybe_unused]] static auto hashCode(int intArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(float floatArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(double doubleArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(char charArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(short shortArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(long longArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(long long longLongArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(long double longDoubleArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(int8_t byteArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(uint8_t ubyteArr[], size_t size) -> int;
+    [[maybe_unused]] static auto hashCode(uint64_t ubyteArr[], size_t size) -> int;
+
+    template <typename T>
+    static auto hashCode(std::vector<T>& objects) -> int;
+
 
 };
 
