@@ -879,72 +879,80 @@ auto Arrays::hashCode(std::vector<T> &objects) -> int
 
 }
 
-auto Arrays::equal(int *intArr1, int *intArr2, size_t size) -> bool
+auto Arrays::equal(int intArr1[], int intArr2[], size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(intArr1, intArr2, size);
 }
 
-auto Arrays::equal(float *floatArr1, float *floatArr2, size_t size) -> bool
+auto Arrays::equal(float floatArr1[], float floatArr2[], size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(floatArr1, floatArr2, size);
 }
 
-auto Arrays::equal(double *doubleArr1, double *doubleArr2, size_t size) -> bool
+auto Arrays::equal(double doubleArr1[], double doubleArr2[], size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(doubleArr1, doubleArr2, size);
 }
 
-auto Arrays::equal(char *charArr1, char *charArr2, size_t size) -> bool
+auto Arrays::equal(char charArr1[], char charArr2[], size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(charArr1, charArr2, size);
 }
 
-auto Arrays::equal(short *shortArr1, short *shortArr2, size_t size) -> bool
+auto Arrays::equal(short shortArr1[], short shortArr2[], size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(shortArr1, shortArr2, size);
 }
 
 auto Arrays::equal(bool *boolArr1, bool *boolArr2, size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(boolArr1, boolArr2, size);
 }
 
 auto Arrays::equal(long *longArr1, long *longArr2, size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(longArr1, longArr2, size);
 }
 
-auto Arrays::equal(long long int *longLongArr1, long long int *longLongArr2, size_t size) -> bool
+auto Arrays::equal(long long *longLongArr1, long long *longLongArr2, size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(longLongArr1, longLongArr2, size);
 }
 
 auto Arrays::equal(int8_t *byteArr1, int8_t *byteArr2, size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(byteArr1, byteArr2, size);
 }
 
 auto Arrays::equal(uint8_t *ubyteArr1, uint8_t *ubyteArr2, size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
 
 auto Arrays::equal(long double *longDoubleArr1, long double *longDoubleArr2, size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(longDoubleArr1, longDoubleArr2, size);
 }
 
 auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> bool
 {
-    return false;
+    return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
 
 template<typename T>
 auto Arrays::equal(std::vector<T> &objects1, std::vector<T> &objects2) -> bool
 {
-    return false;
-}
+    T arr1[objects1.size()];
+    T arr2[objects2.size()];
 
+    for (size_t index = 0; index < objects1.size(); index++)
+    {
+        arr1[index] = objects1[index];
+        arr2[index] = objects2[index];
+    }
+
+    return Arrays::equality(arr1, arr2, objects1.size());
+}
 
 /**
  * @brief Perform a binary search on a sorted vector over a specified range.
@@ -1221,7 +1229,6 @@ template auto Arrays::hashCode(std::vector<long long> &objects) -> int;
 template auto Arrays::hashCode(std::vector<int8_t> &objects) -> int;
 template auto Arrays::hashCode(std::vector<uint8_t> &objects) -> int;
 template auto Arrays::hashCode(std::vector<uint64_t> &objects) -> int;
-
 
 template auto Arrays::equal(std::vector<int>& objects1, std::vector<int>& objects2) -> bool;
 template auto Arrays::equal(std::vector<float>& objects1, std::vector<float>& objects2) -> bool;

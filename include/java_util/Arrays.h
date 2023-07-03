@@ -41,7 +41,7 @@ private:
     static auto hashCodeGenerator(T* array, size_t size) -> int;
 
     template<typename T>
-    static auto equality(T* arr1, T* arr2, size_t size);
+    static auto equality(T* arr1, T* arr2, size_t size) -> bool;
 
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
