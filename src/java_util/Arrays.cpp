@@ -880,6 +880,19 @@ auto Arrays::fillArray(T *array, int fromIndex, int toIndex, T &value) -> void
     }
 }
 
+/**
+ * @brief Returns a hash code based on the contents of the specified array.
+ *
+ * The value returned by this method is computed by invoking std::hash on each element in the array
+ * and combining the result into a single hash value.
+ *
+ * @tparam T The type of the array elements.
+ * @param array The array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the array.
+ * @throws std::invalid_argument If the size of the array is not valid.
+ *
+*/
 template<typename T>
 auto Arrays::hashCodeGenerator(T *array, size_t size) -> int
 {
@@ -961,3 +974,14 @@ template auto Arrays::fill(std::vector<int8_t>& objects, size_t fromIndex, size_
 template auto Arrays::fill(std::vector<uint8_t>& objects, size_t fromIndex, size_t toIndex, uint8_t & value) -> void;
 template auto Arrays::fill(std::vector<uint64_t>& objects, size_t fromIndex, size_t toIndex, uint64_t & value) -> void;
 
+template auto Arrays::hashCode(std::vector<int>& objects) -> int;
+template auto Arrays::hashCode(std::vector<double> &objects) -> int;
+template auto Arrays::hashCode(std::vector<float> &objects) -> int;
+template auto Arrays::hashCode(std::vector<char> &objects) -> int;
+template auto Arrays::hashCode(std::vector<short> &objects) -> int;
+template auto Arrays::hashCode(std::vector<long> &objects) -> int;
+template auto Arrays::hashCode(std::vector<long double> &objects) -> int;
+template auto Arrays::hashCode(std::vector<long long> &objects) -> int;
+template auto Arrays::hashCode(std::vector<int8_t> &objects) -> int;
+template auto Arrays::hashCode(std::vector<uint8_t> &objects) -> int;
+template auto Arrays::hashCode(std::vector<uint64_t> &objects) -> int;
