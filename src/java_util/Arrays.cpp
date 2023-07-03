@@ -618,61 +618,193 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     Arrays::fillArray(ubyteArr, fromIndex, toIndex, value);
 }
 
-auto Arrays::hashCode(int *intArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of integers using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param intArr The integer array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(int *intArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(intArr, size);
 }
 
-auto Arrays::hashCode(float *floatArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of floats using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param floatArr The float array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(float *floatArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(floatArr, size);
 }
 
-auto Arrays::hashCode(double *doubleArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of doubles using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param doubleArr The double array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(double *doubleArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(doubleArr, size);
 }
 
-auto Arrays::hashCode(char *charArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of chars using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param charArr The char array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(char *charArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(charArr, size);
 }
 
-auto Arrays::hashCode(short *shortArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of shorts using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param shortArr The short array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(short *shortArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(shortArr, size);
 }
 
-auto Arrays::hashCode(long *longArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of longs using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param longArr The char array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(long *longArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(longArr, size);
 }
 
-auto Arrays::hashCode(long long int *longLongArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of long long int using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param longLongArr The char array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(long long *longLongArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(longLongArr, size);
 }
 
-auto Arrays::hashCode(long double *longDoubleArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified integer array.
+ *
+ * This function computes the hash value of an array of long doubles using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param longDoubleArr The long double array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(long double *longDoubleArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(longDoubleArr, size);
 }
 
-auto Arrays::hashCode(int8_t *byteArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified int8_t array.
+ *
+ * This function computes the hash value of an array of integers using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param byteArr The int8_t array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(int8_t *byteArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(byteArr, size);
 }
 
-auto Arrays::hashCode(uint8_t *ubyteArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified uint8_t array.
+ *
+ * This function computes the hash value of an array of integers using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param ubyteArr The ubyte array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(uint8_t *ubyteArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(ubyteArr, size);
 }
 
-auto Arrays::hashCode(uint64_t *ubyteArr, size_t size) -> int
+/**
+ * @brief Returns a hash code based on the contents of the specified uint64_t array.
+ *
+ * This function computes the hash value of an array of integers using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param ubyteArr The char array whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
+[[maybe_unused]] auto Arrays::hashCode(uint64_t *ubyteArr, size_t size) -> int
 {
     return Arrays::hashCodeGenerator(ubyteArr, size);
 }
 
+/**
+ * @brief Returns a hash code based on the contents of the specified Generic vector.
+ *
+ * This function computes the hash value of an array of integers using the Arrays::hashCodeGenerator function.
+ * It is designed to generate a unique (or nearly unique) hash value for each distinct input.
+ * The value returned by this method can be used, for example, in hash tables.
+ *
+ * @param objects The generic vector whose hash value to compute.
+ * @param size The number of elements in the array.
+ * @return A content-based hash code for the integer array.
+*/
 template<typename T>
 auto Arrays::hashCode(std::vector<T> &objects) -> int
 {
