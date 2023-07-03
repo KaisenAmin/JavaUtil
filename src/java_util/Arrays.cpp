@@ -475,6 +475,67 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     Arrays::fillArray(ubyteArr, value, size);
 }
 
+[[maybe_unused]] auto Arrays::fill(int *intArr, size_t fromIndex, size_t toIndex, int value) -> void
+{
+    return 0;
+}
+
+[[maybe_unused]] auto Arrays::fill(double doubleArr[], size_t fromIndex, size_t toIndex, double value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(float floatArr[], size_t fromIndex, size_t toIndex, float value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(char charArr[], size_t fromIndex, size_t toIndex, char value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(short shortArr[], size_t fromIndex, size_t toIndex, short value) -> void
+{
+
+}
+
+1[[maybe_unused]] auto Arrays::fill(long longArr[], size_t fromIndex, size_t toIndex, long value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(int8_t byteArr[], size_t fromIndex, size_t toIndex, int8_t value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(uint8_t ubyteArr[], size_t fromIndex, size_t toIndex, uint8_t value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(long double longDoubleArr[], size_t fromIndex, size_t toIndex, long double value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(long long longLongArr[], size_t fromIndex, size_t toIndex, long long value) -> void
+{
+
+}
+
+[[maybe_unused]] auto Arrays::fill(uint64_t ubyteArr[], size_t fromIndex, size_t toIndex, uint64_t value) -> void
+{
+
+}
+
+template<typename T>
+auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
+{
+
+}
+
 /**
  * @brief Fills the given vector with the specified value.
  * @tparam T The type of elements in the vector.
@@ -623,6 +684,12 @@ auto Arrays::fillArray(T *array, T &value, size_t size) -> void
         array[index] = value;
 }
 
+
+template<typename T>
+auto Arrays::fillArray(T *array, int fromIndex, int toIndex, T &value) -> void
+{
+
+}
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;

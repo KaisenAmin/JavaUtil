@@ -32,6 +32,9 @@ private:
     template <typename T>
     static auto fillArray(T* array, T& value, size_t size) -> void;
 
+    template<typename T>
+    static auto fillArray(T* array, int fromIndex, int toIndex, T& value) -> void;
+
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
     static auto toString(float floatArray[], size_t size) -> std::string;
@@ -86,6 +89,22 @@ public:
 
     template <typename T>
     static auto fill(std::vector<T>& objects, T& value) -> void;
+
+    [[maybe_unused]] static auto fill(int intArr[], size_t fromIndex, size_t toIndex, int value) -> void;
+    [[maybe_unused]] static auto fill(double doubleArr[], size_t fromIndex, size_t toIndex, double value) -> void;
+    [[maybe_unused]] static auto fill(float floatArr[], size_t fromIndex, size_t toIndex, float value) -> void;
+    [[maybe_unused]] static auto fill(char charArr[], size_t fromIndex, size_t toIndex, char value) -> void;
+    [[maybe_unused]] static auto fill(short shortArr[], size_t fromIndex, size_t toIndex, short value) -> void;
+    [[maybe_unused]] static auto fill(long longArr[], size_t fromIndex, size_t toIndex, long value) -> void;
+    [[maybe_unused]] static auto fill(int8_t byteArr[], size_t fromIndex, size_t toIndex, int8_t value) -> void;
+    [[maybe_unused]] static auto fill(uint8_t ubyteArr[], size_t fromIndex, size_t toIndex, uint8_t value) -> void;
+    [[maybe_unused]] static auto fill(long double longDoubleArr[], size_t fromIndex, size_t toIndex, long double value) -> void;
+    [[maybe_unused]] static auto fill(long long longLongArr[], size_t fromIndex, size_t toIndex, long long value) -> void;
+    [[maybe_unused]] static auto fill(uint64_t ubyteArr[], size_t fromIndex, size_t toIndex, uint64_t value) -> void;
+
+    template <typename T>
+    static auto fill(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& value) -> void;
+
 };
 
 #endif //JAVAUTIL_ARRAYS_H
