@@ -475,61 +475,157 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     Arrays::fillArray(ubyteArr, value, size);
 }
 
+/**
+ * @brief Fills the specified range of the provided int array with the given value.
+ *
+ * @param intArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(int *intArr, size_t fromIndex, size_t toIndex, int value) -> void
 {
     Arrays::fillArray(intArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided double array with the given value.
+ *
+ * @param doubleArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(double doubleArr[], size_t fromIndex, size_t toIndex, double value) -> void
 {
     Arrays::fillArray(doubleArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided float array with the given value.
+ *
+ * @param floatArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+ */
 [[maybe_unused]] auto Arrays::fill(float floatArr[], size_t fromIndex, size_t toIndex, float value) -> void
 {
     Arrays::fillArray(floatArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided char array with the given value.
+ *
+ * @param charArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(char charArr[], size_t fromIndex, size_t toIndex, char value) -> void
 {
     Arrays::fillArray(charArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided short array with the given value.
+ *
+ * @param shortArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(short shortArr[], size_t fromIndex, size_t toIndex, short value) -> void
 {
     Arrays::fillArray(shortArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided long array with the given value.
+ *
+ * @param longArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(long longArr[], size_t fromIndex, size_t toIndex, long value) -> void
 {
     Arrays::fillArray(longArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided int8_t array with the given value.
+ *
+ * @param byteArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(int8_t byteArr[], size_t fromIndex, size_t toIndex, int8_t value) -> void
 {
     Arrays::fillArray(byteArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided uint8_t array with the given value.
+ *
+ * @param ubyteArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(uint8_t ubyteArr[], size_t fromIndex, size_t toIndex, uint8_t value) -> void
 {
     Arrays::fillArray(ubyteArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided long double array with the given value.
+ *
+ * @param longDoubleArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(long double longDoubleArr[], size_t fromIndex, size_t toIndex, long double value) -> void
 {
     Arrays::fillArray(longDoubleArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided long long array with the given value.
+ *
+ * @param longLongArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(long long longLongArr[], size_t fromIndex, size_t toIndex, long long value) -> void
 {
     Arrays::fillArray(longLongArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided uint64_t array with the given value.
+ *
+ * @param ubyteArr The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+*/
 [[maybe_unused]] auto Arrays::fill(uint64_t ubyteArr[], size_t fromIndex, size_t toIndex, uint64_t value) -> void
 {
     Arrays::fillArray(ubyteArr, fromIndex, toIndex, value);
 }
 
+/**
+ * @brief Fills the specified range of the provided Generic vector with the given value.
+ *
+ * @param objects The vector to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the vector within the specified range.
+*/
 template<typename T>
 auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
 {
@@ -684,7 +780,20 @@ auto Arrays::fillArray(T *array, T &value, size_t size) -> void
         array[index] = value;
 }
 
-
+/**
+ * @brief Fills the specified range of the provided array with the given value.
+ *
+ * The range to be filled extends from index `fromIndex`, inclusive, to index `toIndex`, exclusive.
+ * (If `fromIndex` and `toIndex` are equal, the range to be filled is empty.)
+ *
+ * @tparam T The type of the array elements.
+ * @param array The array to be filled with the provided value.
+ * @param fromIndex The initial index of the range to be filled, inclusive.
+ * @param toIndex The final index of the range to be filled, exclusive.
+ * @param value The value to be stored in all elements of the array within the specified range.
+ *
+ * @throws std::invalid_argument If `array` is null, or if `fromIndex` is greater than `toIndex`.
+ */
 template<typename T>
 auto Arrays::fillArray(T *array, int fromIndex, int toIndex, T &value) -> void
 {
