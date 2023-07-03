@@ -879,66 +879,221 @@ auto Arrays::hashCode(std::vector<T> &objects) -> int
 
 }
 
+/**
+ * @brief Checks if two given arrays of integers are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param intArr1 The first array to be tested for equality.
+ * @param intArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(int intArr1[], int intArr2[], size_t size) -> bool
 {
     return Arrays::equality(intArr1, intArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of float are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param floatArr1 The first array to be tested for equality.
+ * @param floatArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(float floatArr1[], float floatArr2[], size_t size) -> bool
 {
     return Arrays::equality(floatArr1, floatArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of double are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param doubleArr1 The first array to be tested for equality.
+ * @param doubleArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(double doubleArr1[], double doubleArr2[], size_t size) -> bool
 {
     return Arrays::equality(doubleArr1, doubleArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of char are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param charArr1 The first array to be tested for equality.
+ * @param charArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(char charArr1[], char charArr2[], size_t size) -> bool
 {
     return Arrays::equality(charArr1, charArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of short are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param shortArr1 The first array to be tested for equality.
+ * @param shortArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(short shortArr1[], short shortArr2[], size_t size) -> bool
 {
     return Arrays::equality(shortArr1, shortArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of bool are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param boolArr1 The first array to be tested for equality.
+ * @param boolArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(bool *boolArr1, bool *boolArr2, size_t size) -> bool
 {
     return Arrays::equality(boolArr1, boolArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of long are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param longArr1 The first array to be tested for equality.
+ * @param longArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(long *longArr1, long *longArr2, size_t size) -> bool
 {
     return Arrays::equality(longArr1, longArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of long long are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param longLongArr1 The first array to be tested for equality.
+ * @param longLongArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(long long *longLongArr1, long long *longLongArr2, size_t size) -> bool
 {
     return Arrays::equality(longLongArr1, longLongArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of int8_t are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param byteArr1 The first array to be tested for equality.
+ * @param byteArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(int8_t *byteArr1, int8_t *byteArr2, size_t size) -> bool
 {
     return Arrays::equality(byteArr1, byteArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of uint8_t are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param ubyteArr1 The first array to be tested for equality.
+ * @param ubyteArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(uint8_t *ubyteArr1, uint8_t *ubyteArr2, size_t size) -> bool
 {
     return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of long double are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param longDoubleArr1 The first array to be tested for equality.
+ * @param longDoubleArr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(long double *longDoubleArr1, long double *longDoubleArr2, size_t size) -> bool
 {
     return Arrays::equality(longDoubleArr1, longDoubleArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of uint64 are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param uint64Arr1 The first array to be tested for equality.
+ * @param uint64Arr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> bool
 {
     return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
 
+/**
+ * @brief Checks if two given arrays of generic vector are equal.
+ *
+ * This function uses Arrays::equality() to determine if the two input arrays are equal.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * This method also treats two null arrays as equal.
+ *
+ * @param objects1 The first array to be tested for equality.
+ * @param objects2 The second array to be tested for equality.
+ * @return Returns true if the two arrays are equal, false otherwise.
+*/
 template<typename T>
 auto Arrays::equal(std::vector<T> &objects1, std::vector<T> &objects2) -> bool
 {
@@ -1144,8 +1299,21 @@ auto Arrays::hashCodeGenerator(T *array, size_t size) -> int
     return h;
 }
 
+/**
+ * @brief Checks if two given arrays are equal.
+ *
+ * This is a template function that checks for the equality of two arrays.
+ * Two arrays are considered equal if they contain the same elements in the same order.
+ * Also, two array references are considered equal if both are null.
+ *
+ * @param arr1 The first array to be tested for equality.
+ * @param arr2 The second array to be tested for equality.
+ * @param size The number of elements in the arrays.
+ * @return Returns true if the two arrays are equal, false otherwise.
+ * @throws std::invalid_argument if one or both of the arrays are null.
+*/
 template<typename T>
-auto Arrays::equality(T *arr1, T *arr2, size_t size)
+auto Arrays::equality(T *arr1, T *arr2, size_t size) -> bool
 {
     if (arr1 == nullptr || arr2 == nullptr)
         throw std::invalid_argument("One or both of the arrays are null.");
