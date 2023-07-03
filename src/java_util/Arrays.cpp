@@ -477,63 +477,68 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
 
 [[maybe_unused]] auto Arrays::fill(int *intArr, size_t fromIndex, size_t toIndex, int value) -> void
 {
-    return 0;
+    Arrays::fillArray(intArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(double doubleArr[], size_t fromIndex, size_t toIndex, double value) -> void
 {
-
+    Arrays::fillArray(doubleArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(float floatArr[], size_t fromIndex, size_t toIndex, float value) -> void
 {
-
+    Arrays::fillArray(floatArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(char charArr[], size_t fromIndex, size_t toIndex, char value) -> void
 {
-
+    Arrays::fillArray(charArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(short shortArr[], size_t fromIndex, size_t toIndex, short value) -> void
 {
-
+    Arrays::fillArray(shortArr, fromIndex, toIndex, value);
 }
 
-1[[maybe_unused]] auto Arrays::fill(long longArr[], size_t fromIndex, size_t toIndex, long value) -> void
+[[maybe_unused]] auto Arrays::fill(long longArr[], size_t fromIndex, size_t toIndex, long value) -> void
 {
-
+    Arrays::fillArray(longArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(int8_t byteArr[], size_t fromIndex, size_t toIndex, int8_t value) -> void
 {
-
+    Arrays::fillArray(byteArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(uint8_t ubyteArr[], size_t fromIndex, size_t toIndex, uint8_t value) -> void
 {
-
+    Arrays::fillArray(ubyteArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(long double longDoubleArr[], size_t fromIndex, size_t toIndex, long double value) -> void
 {
-
+    Arrays::fillArray(longDoubleArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(long long longLongArr[], size_t fromIndex, size_t toIndex, long long value) -> void
 {
-
+    Arrays::fillArray(longLongArr, fromIndex, toIndex, value);
 }
 
 [[maybe_unused]] auto Arrays::fill(uint64_t ubyteArr[], size_t fromIndex, size_t toIndex, uint64_t value) -> void
 {
-
+    Arrays::fillArray(ubyteArr, fromIndex, toIndex, value);
 }
 
 template<typename T>
 auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
 {
+    T arr[objects.size()];
 
+    for (size_t index = 0; index < objects.size(); index++)
+            arr[index] = value;
+
+    Arrays::fillArray(arr, fromIndex, toIndex, value);
 }
 
 /**
@@ -688,8 +693,18 @@ auto Arrays::fillArray(T *array, T &value, size_t size) -> void
 template<typename T>
 auto Arrays::fillArray(T *array, int fromIndex, int toIndex, T &value) -> void
 {
+    if (array == nullptr) {
+        throw std::invalid_argument("The provided array is null.");
+    }
+    if (fromIndex > toIndex) {
+        throw std::invalid_argument("fromIndex is greater than toIndex.");
+    }
 
+    for (int i = fromIndex; i < toIndex; i++) {
+        array[i] = value;
+    }
 }
+
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
