@@ -618,6 +618,77 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
     Arrays::fillArray(ubyteArr, fromIndex, toIndex, value);
 }
 
+auto Arrays::hashCode(int *intArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(intArr, size);
+}
+
+auto Arrays::hashCode(float *floatArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(floatArr, size);
+}
+
+auto Arrays::hashCode(double *doubleArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(doubleArr, size);
+}
+
+auto Arrays::hashCode(char *charArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(charArr, size);
+}
+
+auto Arrays::hashCode(short *shortArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(shortArr, size);
+}
+
+auto Arrays::hashCode(long *longArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(longArr, size);
+}
+
+auto Arrays::hashCode(long long int *longLongArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(longLongArr, size);
+}
+
+auto Arrays::hashCode(long double *longDoubleArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(longDoubleArr, size);
+}
+
+auto Arrays::hashCode(int8_t *byteArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(byteArr, size);
+}
+
+auto Arrays::hashCode(uint8_t *ubyteArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(ubyteArr, size);
+}
+
+auto Arrays::hashCode(uint64_t *ubyteArr, size_t size) -> int
+{
+    return Arrays::hashCodeGenerator(ubyteArr, size);
+}
+
+template<typename T>
+auto Arrays::hashCode(std::vector<T> &objects) -> int
+{
+    T arr[objects.size()];
+    size_t size = objects.size();
+
+    if (!size)
+        throw std::invalid_argument("size of array is not valid");
+
+    for (size_t index = 0; index < size; index++)
+        arr[index] = objects[index];
+
+    return Arrays::hashCodeGenerator(arr, size);
+
+}
+
 /**
  * @brief Fills the specified range of the provided Generic vector with the given value.
  *
@@ -807,6 +878,21 @@ auto Arrays::fillArray(T *array, int fromIndex, int toIndex, T &value) -> void
     for (int i = fromIndex; i < toIndex; i++) {
         array[i] = value;
     }
+}
+
+template<typename T>
+auto Arrays::hashCodeGenerator(T *array, size_t size) -> int
+{
+    std::hash<T> hasher;
+    int h = 0;
+
+    if (!size)
+        throw std::invalid_argument("size of array is not valid");
+
+    for (size_t i = 0; i < size; ++i)
+        h = h ^ (hasher(array[i]) + 0x9e3779b9 + (h << 6) + (h >> 2));
+
+    return h;
 }
 
 

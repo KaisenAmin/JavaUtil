@@ -39,7 +39,7 @@ private:
 
     template<typename T>
     static auto hashCodeGenerator(T* array, size_t size) -> int;
-    
+
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
     static auto toString(float floatArray[], size_t size) -> std::string;
