@@ -533,12 +533,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
 template<typename T>
 auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
 {
-    T arr[objects.size()];
-
-    for (size_t index = 0; index < objects.size(); index++)
-            arr[index] = value;
-
-    Arrays::fillArray(arr, fromIndex, toIndex, value);
+    std::fill(objects.begin(), objects.end(), value);
 }
 
 /**
@@ -758,4 +753,16 @@ template auto Arrays::fill(std::vector<uint8_t>& objects, uint8_t& value) -> voi
 template auto Arrays::fill(std::vector<int8_t>& objects, int8_t& value) -> void;
 template auto Arrays::fill(std::vector<uint64_t>& objects, uint64_t& value) -> void;
 template auto Arrays::fill(std::vector<long long>& objects, long long& value) -> void;
+
+template auto Arrays::fill(std::vector<int>& objects, size_t fromIndex, size_t toIndex, int& value) -> void;
+template auto Arrays::fill(std::vector<double>& objects, size_t fromIndex, size_t toIndex, double& value) -> void;
+template auto Arrays::fill(std::vector<float>& objects, size_t fromIndex, size_t toIndex, float& value) -> void;
+template auto Arrays::fill(std::vector<char>& objects, size_t fromIndex, size_t toIndex, char& value) -> void;
+template auto Arrays::fill(std::vector<short>& objects, size_t fromIndex, size_t toIndex, short& value) -> void;
+template auto Arrays::fill(std::vector<long>& objects, size_t fromIndex, size_t toIndex, long& value) -> void;
+template auto Arrays::fill(std::vector<long double>& objects, size_t fromIndex, size_t toIndex, long double& value) -> void;
+template auto Arrays::fill(std::vector<long long>& objects, size_t fromIndex, size_t toIndex, long long& value) -> void;
+template auto Arrays::fill(std::vector<int8_t>& objects, size_t fromIndex, size_t toIndex, int8_t & value) -> void;
+template auto Arrays::fill(std::vector<uint8_t>& objects, size_t fromIndex, size_t toIndex, uint8_t & value) -> void;
+template auto Arrays::fill(std::vector<uint64_t>& objects, size_t fromIndex, size_t toIndex, uint64_t & value) -> void;
 
