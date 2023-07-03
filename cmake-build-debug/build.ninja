@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Kaisen/Desktop/JavaUtil/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/Science/Desktop/JavaUtil/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target JavaUtil
 
@@ -49,23 +49,1775 @@ cmake_ninja_workdir = C$:/Users/Kaisen/Desktop/JavaUtil/cmake-build-debug/
 
 build cmake_object_order_depends_target_JavaUtil: phony || CMakeFiles/JavaUtil.dir
 
-build CMakeFiles/JavaUtil.dir/main.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Kaisen/Desktop/JavaUtil/main.cpp || cmake_object_order_depends_target_JavaUtil
+build CMakeFiles/JavaUtil.dir/main.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/main.cpp || cmake_object_order_depends_target_JavaUtil
   DEP_FILE = CMakeFiles\JavaUtil.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles\JavaUtil.dir
   OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir
 
-build CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Kaisen/Desktop/JavaUtil/src/java_util/Arrays.cpp || cmake_object_order_depends_target_JavaUtil
+build CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/src/java_util/Arrays.cpp || cmake_object_order_depends_target_JavaUtil
   DEP_FILE = CMakeFiles\JavaUtil.dir\src\java_util\Arrays.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles\JavaUtil.dir
   OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\src\java_util
 
-build CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_hashCode.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Kaisen/Desktop/JavaUtil/examples/java_util/Arrays_hashCode.cpp || cmake_object_order_depends_target_JavaUtil
-  DEP_FILE = CMakeFiles\JavaUtil.dir\examples\java_util\Arrays_hashCode.cpp.obj.d
+build CMakeFiles/JavaUtil.dir/include/java_lang/Object.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Object.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Object.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles\JavaUtil.dir
-  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\examples\java_util
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/String.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/String.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\String.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Integer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Integer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Integer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Double.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Double.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Double.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Boolean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Boolean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Boolean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Long.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Long.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Long.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Short.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Short.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Short.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Character.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Character.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Character.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Float.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Float.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Float.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Math.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Math.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Math.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/System.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/System.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\System.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Thread.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Thread.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Thread.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Runnable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Runnable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Runnable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Exception.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Exception.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Exception.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/RuntimeException.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/RuntimeException.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\RuntimeException.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/NullPointerException.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/NullPointerException.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\NullPointerException.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/IllegalArgumentException.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/IllegalArgumentException.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\IllegalArgumentException.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Class.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Class.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Class.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Method.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/Method.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\Method.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Field.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/Field.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\Field.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_util/List.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/List.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\List.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/ArrayList.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/ArrayList.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\ArrayList.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/LinkedList.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/LinkedList.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\LinkedList.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Set.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Set.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Set.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/HashSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/HashSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\HashSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/TreeSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/TreeSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\TreeSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/LinkedHashSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/LinkedHashSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\LinkedHashSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Map.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Map.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Map.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/HashMap.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/HashMap.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\HashMap.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/TreeMap.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/TreeMap.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\TreeMap.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/LinkedHashMap.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/LinkedHashMap.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\LinkedHashMap.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Collections.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Collections.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Collections.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Iterator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Iterator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Iterator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Comparator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Comparator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Comparator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/PriorityQueue.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/PriorityQueue.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\PriorityQueue.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Queue.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Queue.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Queue.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Deque.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Deque.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Deque.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/ArrayDeque.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/ArrayDeque.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\ArrayDeque.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/ConcurrentHashMap.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/ConcurrentHashMap.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\ConcurrentHashMap.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/Executors.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/Executors.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\Executors.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/ExecutorService.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/ExecutorService.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\ExecutorService.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/Future.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/Future.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\Future.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicInteger.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/atomic/AtomicInteger.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic\AtomicInteger.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicLong.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/atomic/AtomicLong.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic\AtomicLong.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/locks/Lock.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/locks/Lock.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\locks\Lock.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\locks
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/locks/ReentrantLock.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/locks/ReentrantLock.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\locks\ReentrantLock.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\locks
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Date.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Date.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Date.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Calendar.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Calendar.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Calendar.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/GregorianCalendar.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/GregorianCalendar.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\GregorianCalendar.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Locale.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Locale.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Locale.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Scanner.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Scanner.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Scanner.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/regex/Pattern.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/regex/Pattern.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\regex\Pattern.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\regex
+
+build CMakeFiles/JavaUtil.dir/include/java_util/regex/Matcher.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/regex/Matcher.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\regex\Matcher.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\regex
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Stack.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Stack.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Stack.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Properties.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Properties.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Properties.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Observable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Observable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Observable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Observer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Observer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Observer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_time/LocalDate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/LocalDate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\LocalDate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/LocalDateTime.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/LocalDateTime.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\LocalDateTime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/LocalTime.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/LocalTime.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\LocalTime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/ZonedDateTime.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/ZonedDateTime.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\ZonedDateTime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/Duration.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/Duration.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\Duration.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/Period.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/Period.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\Period.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/Instant.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/Instant.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\Instant.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/ZoneId.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/ZoneId.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\ZoneId.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/format/DateTimeFormatter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/format/DateTimeFormatter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\format\DateTimeFormatter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time\format
+
+build CMakeFiles/JavaUtil.dir/include/java_time/temporal/ChronoUnit.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/temporal/ChronoUnit.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\temporal\ChronoUnit.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time\temporal
+
+build CMakeFiles/JavaUtil.dir/include/java_time/temporal/TemporalAdjusters.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/temporal/TemporalAdjusters.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\temporal\TemporalAdjusters.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time\temporal
+
+build CMakeFiles/JavaUtil.dir/include/java_io/File.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/File.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\File.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/FileInputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/FileInputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\FileInputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/FileOutputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/FileOutputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\FileOutputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/ObjectInputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/ObjectInputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\ObjectInputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/ObjectOutputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/ObjectOutputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\ObjectOutputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/FileReader.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/FileReader.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\FileReader.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/FileWriter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/FileWriter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\FileWriter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/BufferedReader.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/BufferedReader.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\BufferedReader.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/BufferedWriter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/BufferedWriter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\BufferedWriter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/InputStreamReader.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/InputStreamReader.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\InputStreamReader.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/OutputStreamWriter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/OutputStreamWriter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\OutputStreamWriter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/PrintStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/PrintStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\PrintStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/PrintWriter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/PrintWriter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\PrintWriter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_net/URL.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_net/URL.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_net\URL.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_net
+
+build CMakeFiles/JavaUtil.dir/include/java_net/URI.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_net/URI.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_net\URI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_net
+
+build CMakeFiles/JavaUtil.dir/include/java_net/URLConnection.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_net/URLConnection.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_net\URLConnection.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_net
+
+build CMakeFiles/JavaUtil.dir/include/java_net/HttpURLConnection.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_net/HttpURLConnection.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_net\HttpURLConnection.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_net
+
+build CMakeFiles/JavaUtil.dir/include/java_net/ServerSocket.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_net/ServerSocket.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_net\ServerSocket.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_net
+
+build CMakeFiles/JavaUtil.dir/include/java_net/Socket.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_net/Socket.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_net\Socket.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_net
+
+build CMakeFiles/JavaUtil.dir/include/java_nio/file/Path.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_nio/file/Path.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_nio\file\Path.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_nio\file
+
+build CMakeFiles/JavaUtil.dir/include/java_nio/file/Paths.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_nio/file/Paths.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_nio\file\Paths.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_nio\file
+
+build CMakeFiles/JavaUtil.dir/include/java_nio/file/Files.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_nio/file/Files.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_nio\file\Files.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_nio\file
+
+build CMakeFiles/JavaUtil.dir/include/java_nio/ByteBuffer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_nio/ByteBuffer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_nio\ByteBuffer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_nio
+
+build CMakeFiles/JavaUtil.dir/include/java_nio/channels/FileChannel.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_nio/channels/FileChannel.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_nio\channels\FileChannel.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_nio\channels
+
+build CMakeFiles/JavaUtil.dir/include/java_nio/charset/Charset.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_nio/charset/Charset.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_nio\charset\Charset.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_nio\charset
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLContext.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/SSLContext.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\SSLContext.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLSocketFactory.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/SSLSocketFactory.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\SSLSocketFactory.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/StringBuffer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/StringBuffer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\StringBuffer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/StringBuilder.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/StringBuilder.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\StringBuilder.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/ProccessBuilder.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/ProccessBuilder.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\ProccessBuilder.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Package.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Package.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Package.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/ClassLoader.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/ClassLoader.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\ClassLoader.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/ThreadLocal.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/ThreadLocal.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\ThreadLocal.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/ref/WeakReference.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/ref/WeakReference.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\ref\WeakReference.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\ref
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/ThreadPoolExecutor.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/ThreadPoolExecutor.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\ThreadPoolExecutor.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/Semaphore.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/Semaphore.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\Semaphore.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/CountDownLatch.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/CountDownLatch.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\CountDownLatch.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/CyclicBarrier.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/CyclicBarrier.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\CyclicBarrier.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/locks/Condition.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/locks/Condition.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\locks\Condition.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\locks
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicBoolean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/atomic/AtomicBoolean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic\AtomicBoolean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicReference.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/atomic/AtomicReference.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic\AtomicReference.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\atomic
+
+build CMakeFiles/JavaUtil.dir/include/java_util/concurrent/FutureTask.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/concurrent/FutureTask.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\concurrent\FutureTask.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\concurrent
+
+build CMakeFiles/JavaUtil.dir/include/java_util/Optional.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/Optional.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\Optional.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/OptionalInt.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/OptionalInt.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\OptionalInt.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/OptionalLong.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/OptionalLong.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\OptionalLong.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/OptionalDouble.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/OptionalDouble.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\OptionalDouble.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/StringTokenizer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/StringTokenizer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\StringTokenizer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/Function.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/Function.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\Function.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/Predicate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/Predicate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\Predicate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/Consumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/Consumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\Consumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/Supplier.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/Supplier.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\Supplier.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/stream/Stream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/stream/Stream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\stream\Stream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\stream
+
+build CMakeFiles/JavaUtil.dir/include/java_util/stream/IntStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/stream/IntStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\stream\IntStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\stream
+
+build CMakeFiles/JavaUtil.dir/include/java_util/stream/LongStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/stream/LongStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\stream\LongStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\stream
+
+build CMakeFiles/JavaUtil.dir/include/java_util/stream/DoubleStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/stream/DoubleStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\stream\DoubleStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\stream
+
+build CMakeFiles/JavaUtil.dir/include/java_util/stream/Collectors.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/stream/Collectors.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\stream\Collectors.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\stream
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipFile.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/ZipFile.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\ZipFile.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipEntry.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/ZipEntry.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\ZipEntry.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipOutputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/ZipOutputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\ZipOutputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipInputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/ZipInputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\ZipInputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/DeflaterOutputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/DeflaterOutputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\DeflaterOutputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/InflaterInputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/InflaterInputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\InflaterInputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/GZIPOutputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/GZIPOutputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\GZIPOutputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_util/zip/GZIPInputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/zip/GZIPInputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\zip\GZIPInputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\zip
+
+build CMakeFiles/JavaUtil.dir/include/java_text/SimpleDateFormat.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/SimpleDateFormat.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\SimpleDateFormat.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/DecimalFormat.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/DecimalFormat.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\DecimalFormat.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/MessageFormat.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/MessageFormat.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\MessageFormat.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/ChoiceFormat.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/ChoiceFormat.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\ChoiceFormat.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/NumberFormat.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/NumberFormat.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\NumberFormat.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/DateFormat.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/DateFormat.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\DateFormat.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_time/OffsetDateTime.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/OffsetDateTime.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\OffsetDateTime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/OffsetTime.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/OffsetTime.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\OffsetTime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/YearMonth.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/YearMonth.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\YearMonth.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/MonthDay.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/MonthDay.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\MonthDay.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/ZoneOffset.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/ZoneOffset.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\ZoneOffset.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_time/Clock.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_time/Clock.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_time\Clock.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_time
+
+build CMakeFiles/JavaUtil.dir/include/java_security/MessageDigest.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/MessageDigest.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\MessageDigest.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/Connection.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/Connection.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\Connection.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/DriverManager.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/DriverManager.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\DriverManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/ResultSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/ResultSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\ResultSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/Statement.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/Statement.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\Statement.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/PreparedStatement.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/PreparedStatement.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\PreparedStatement.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/CallableStatement.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/CallableStatement.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\CallableStatement.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/DatabaseMetaData.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/DatabaseMetaData.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\DatabaseMetaData.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/ResultSetMetaData.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/ResultSetMetaData.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\ResultSetMetaData.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/Date.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/Date.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\Date.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/Time.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/Time.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\Time.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/Timestamp.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/Timestamp.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\Timestamp.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/Types.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/Types.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\Types.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/java_sql/Savepoint.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_sql/Savepoint.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_sql\Savepoint.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_sql
+
+build CMakeFiles/JavaUtil.dir/include/javax_sql/DataSource.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_sql/DataSource.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_sql\DataSource.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_sql
+
+build CMakeFiles/JavaUtil.dir/include/javax_sql/RowSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_sql/RowSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_sql\RowSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_sql
+
+build CMakeFiles/JavaUtil.dir/include/javax_sql/rowset/CachedRowSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_sql/rowset/CachedRowSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_sql\rowset\CachedRowSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_sql\rowset
+
+build CMakeFiles/JavaUtil.dir/include/javax_sql/rowset/JdbcRowSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_sql/rowset/JdbcRowSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_sql\rowset\JdbcRowSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_sql\rowset
+
+build CMakeFiles/JavaUtil.dir/include/javax_sql/rowset/WebRowSet.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_sql/rowset/WebRowSet.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_sql\rowset\WebRowSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_sql\rowset
+
+build CMakeFiles/JavaUtil.dir/include/java_rmi/Remote.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_rmi/Remote.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_rmi\Remote.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_rmi
+
+build CMakeFiles/JavaUtil.dir/include/java_rmi/Naming.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_rmi/Naming.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_rmi\Naming.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_rmi
+
+build CMakeFiles/JavaUtil.dir/include/java_rmi/registry/Registry.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_rmi/registry/Registry.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_rmi\registry\Registry.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_rmi\registry
+
+build CMakeFiles/JavaUtil.dir/include/java_rmi/server/UnicastRemoteObject.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_rmi/server/UnicastRemoteObject.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_rmi\server\UnicastRemoteObject.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_rmi\server
+
+build CMakeFiles/JavaUtil.dir/include/java_rmi/server/RemoteObject.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_rmi/server/RemoteObject.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_rmi\server\RemoteObject.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_rmi\server
+
+build CMakeFiles/JavaUtil.dir/include/java_rmi/server/RemoteStub.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_rmi/server/RemoteStub.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_rmi\server\RemoteStub.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_rmi\server
+
+build CMakeFiles/JavaUtil.dir/include/java_rmi/server/RemoteCall.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_rmi/server/RemoteCall.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_rmi\server\RemoteCall.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_rmi\server
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/Cipher.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/Cipher.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\Cipher.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/SecretKey.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/SecretKey.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\SecretKey.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/SecretKeyFactory.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/SecretKeyFactory.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\SecretKeyFactory.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/KeyGenerator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/KeyGenerator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\KeyGenerator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/Mac.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/Mac.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\Mac.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/spec/SecretKeySpec.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/spec/SecretKeySpec.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\spec\SecretKeySpec.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto\spec
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/spec/PBEKeySpec.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/spec/PBEKeySpec.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\spec\PBEKeySpec.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto\spec
+
+build CMakeFiles/JavaUtil.dir/include/javax_crypto/spec/IvParameterSpec.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_crypto/spec/IvParameterSpec.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_crypto\spec\IvParameterSpec.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_crypto\spec
+
+build CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageIO.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_imageio/ImageIO.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_imageio\ImageIO.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_imageio
+
+build CMakeFiles/JavaUtil.dir/include/javax_imageio/stream/ImageInputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_imageio/stream/ImageInputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_imageio\stream\ImageInputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_imageio\stream
+
+build CMakeFiles/JavaUtil.dir/include/javax_imageio/stream/ImageOutputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_imageio/stream/ImageOutputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_imageio\stream\ImageOutputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_imageio\stream
+
+build CMakeFiles/JavaUtil.dir/include/javax_imageio/metadata/IIOMetadata.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_imageio/metadata/IIOMetadata.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_imageio\metadata\IIOMetadata.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_imageio\metadata
+
+build CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageReader.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_imageio/ImageReader.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_imageio\ImageReader.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_imageio
+
+build CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageWriter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_imageio/ImageWriter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_imageio\ImageWriter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_imageio
+
+build CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageTranscoder.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_imageio/ImageTranscoder.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_imageio\ImageTranscoder.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_imageio
+
+build CMakeFiles/JavaUtil.dir/include/java_security/KeyStore.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/KeyStore.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\KeyStore.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_security/PublicKey.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/PublicKey.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\PublicKey.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_security/PrivateKey.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/PrivateKey.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\PrivateKey.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_security/KeyPair.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/KeyPair.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\KeyPair.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_security/KeyPairGenerator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/KeyPairGenerator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\KeyPairGenerator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_security/Signature.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/Signature.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\Signature.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_security/SecureRandom.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/SecureRandom.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\SecureRandom.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security
+
+build CMakeFiles/JavaUtil.dir/include/java_security/cert/Certificate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/cert/Certificate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\cert\Certificate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security\cert
+
+build CMakeFiles/JavaUtil.dir/include/java_security/cert/CertificateFactory.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/cert/CertificateFactory.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\cert\CertificateFactory.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security\cert
+
+build CMakeFiles/JavaUtil.dir/include/java_security/cert/X509Certificate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/cert/X509Certificate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\cert\X509Certificate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security\cert
+
+build CMakeFiles/JavaUtil.dir/include/java_security/spec/X509EncodedKeySpec.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/spec/X509EncodedKeySpec.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\spec\X509EncodedKeySpec.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security\spec
+
+build CMakeFiles/JavaUtil.dir/include/java_security/spec/PKCS8EncodedKeySpec.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_security/spec/PKCS8EncodedKeySpec.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_security\spec\PKCS8EncodedKeySpec.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_security\spec
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLSocket.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/SSLSocket.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\SSLSocket.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/HttpsURLConnection.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/HttpsURLConnection.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\HttpsURLConnection.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLServerSocket.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/SSLServerSocket.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\SSLServerSocket.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLServerSocketFactory.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/SSLServerSocketFactory.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\SSLServerSocketFactory.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/TrustManager.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/TrustManager.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\TrustManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/X509TrustManager.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/X509TrustManager.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\X509TrustManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/KeyManager.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/KeyManager.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\KeyManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/X509KeyManager.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/javax_net/net/ssl/X509KeyManager.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl\X509KeyManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\javax_net\net\ssl
+
+build CMakeFiles/JavaUtil.dir/include/java_util/logging/Logger.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/logging/Logger.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\logging\Logger.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\logging
+
+build CMakeFiles/JavaUtil.dir/include/java_util/logging/Level.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/logging/Level.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\logging\Level.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\logging
+
+build CMakeFiles/JavaUtil.dir/include/java_util/logging/LogManager.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/logging/LogManager.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\logging\LogManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\logging
+
+build CMakeFiles/JavaUtil.dir/include/java_util/logging/ConsoleHandler.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/logging/ConsoleHandler.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\logging\ConsoleHandler.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\logging
+
+build CMakeFiles/JavaUtil.dir/include/java_util/logging/FileHandler.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/logging/FileHandler.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\logging\FileHandler.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\logging
+
+build CMakeFiles/JavaUtil.dir/include/java_util/logging/SimpleFormatter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/logging/SimpleFormatter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\logging\SimpleFormatter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\logging
+
+build CMakeFiles/JavaUtil.dir/include/java_util/logging/XmlFormatter.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/logging/XmlFormatter.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\logging\XmlFormatter.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\logging
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/BiFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/BiFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\BiFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/UnaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/UnaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\UnaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/BinaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/BinaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\BinaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/IntFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/IntFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\IntFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/LongFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/LongFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\LongFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/DoubleFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\DoubleFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ToIntFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ToIntFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ToIntFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ToLongFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ToLongFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ToLongFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ToDoubleFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ToDoubleFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ToDoubleFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/IntUnaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/IntUnaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\IntUnaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/LongUnaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/LongUnaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\LongUnaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleUnaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/DoubleUnaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\DoubleUnaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/IntBinaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/IntBinaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\IntBinaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/LongBinaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/LongBinaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\LongBinaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleBinaryOperator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/DoubleBinaryOperator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\DoubleBinaryOperator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/IntPredicate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/IntPredicate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\IntPredicate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/LongPredicate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/LongPredicate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\LongPredicate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/DoublePredicate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/DoublePredicate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\DoublePredicate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/IntConsumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/IntConsumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\IntConsumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/LongConsumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/LongConsumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\LongConsumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleConsumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/DoubleConsumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\DoubleConsumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/IntSupplier.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/IntSupplier.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\IntSupplier.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/LongSupplier.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/LongSupplier.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\LongSupplier.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleSupplier.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/DoubleSupplier.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\DoubleSupplier.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/BiConsumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/BiConsumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\BiConsumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/BiPredicate.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/BiPredicate.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\BiPredicate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ToIntBiFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ToIntBiFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ToIntBiFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ToLongBiFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ToLongBiFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ToLongBiFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ToDoubleBiFunction.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ToDoubleBiFunction.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ToDoubleBiFunction.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ObjIntConsumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ObjIntConsumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ObjIntConsumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ObjLongConsumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ObjLongConsumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ObjLongConsumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_util/function/ObjDoubleConsumer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_util/function/ObjDoubleConsumer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_util\function\ObjDoubleConsumer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_util\function
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Process.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Process.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Process.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Runtime.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Runtime.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Runtime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/SecurityManager.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/SecurityManager.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\SecurityManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/ref/SoftReference.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/ref/SoftReference.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\ref\SoftReference.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\ref
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/ref/PhantomReference.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/ref/PhantomReference.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\ref\PhantomReference.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\ref
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/ref/ReferenceQueue.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/ref/ReferenceQueue.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\ref\ReferenceQueue.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\ref
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Constructor.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/Constructor.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\Constructor.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Modifier.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/Modifier.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\Modifier.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Array.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/Array.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\Array.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Proxy.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/Proxy.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\Proxy.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/InvocationHandler.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/InvocationHandler.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\InvocationHandler.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/InvocationTargetException.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/InvocationTargetException.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\InvocationTargetException.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/reflect/ReflectPermission.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/reflect/ReflectPermission.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\reflect\ReflectPermission.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\reflect
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/instrument/ClassFileTransformer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/instrument/ClassFileTransformer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\instrument\ClassFileTransformer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\instrument
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/instrument/IllegalClassFormatException.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/instrument/IllegalClassFormatException.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\instrument\IllegalClassFormatException.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\instrument
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/ManagementFactory.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/ManagementFactory.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\ManagementFactory.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/ThreadMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/ThreadMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\ThreadMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/ClassLoadingMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/ClassLoadingMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\ClassLoadingMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/MemoryMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/MemoryMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\MemoryMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/GarbageCollectorMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/GarbageCollectorMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\GarbageCollectorMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/MemoryManagerMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/MemoryManagerMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\MemoryManagerMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/MemoryPoolMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/MemoryPoolMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\MemoryPoolMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/BufferPoolMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/BufferPoolMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\BufferPoolMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/PlatformLoggingMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/PlatformLoggingMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\PlatformLoggingMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/OperatingSystemMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/OperatingSystemMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\OperatingSystemMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/CompilationMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/CompilationMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\CompilationMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/management/RuntimeMXBean.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/management/RuntimeMXBean.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\management\RuntimeMXBean.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang\management
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Void.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Void.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Void.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/StackTraceElement.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/StackTraceElement.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\StackTraceElement.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Enum.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Enum.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Enum.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Iterable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Iterable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Iterable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Cloneable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Cloneable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Cloneable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/AutoCloseable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/AutoCloseable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\AutoCloseable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Readable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Readable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Readable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Appendable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Appendable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Appendable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/CharSequence.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/CharSequence.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\CharSequence.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_lang/Comparable.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_lang/Comparable.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_lang\Comparable.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_lang
+
+build CMakeFiles/JavaUtil.dir/include/java_text/ParseException.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/ParseException.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\ParseException.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/Collator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/Collator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\Collator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/RuleBasedCollator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/RuleBasedCollator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\RuleBasedCollator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/BreakIterator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/BreakIterator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\BreakIterator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/StringCharacterIterator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/StringCharacterIterator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\StringCharacterIterator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/AttributedCharacterIterator.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/AttributedCharacterIterator.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\AttributedCharacterIterator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/AttributedString.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/AttributedString.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\AttributedString.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/FieldPosition.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/FieldPosition.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\FieldPosition.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/ParsePosition.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/ParsePosition.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\ParsePosition.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_text/Normalizer.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_text/Normalizer.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_text\Normalizer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_text
+
+build CMakeFiles/JavaUtil.dir/include/java_io/DataInputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/DataInputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\DataInputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
+
+build CMakeFiles/JavaUtil.dir/include/java_io/DataOutputStream.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/include/java_io/DataOutputStream.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\include\java_io\DataOutputStream.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles\JavaUtil.dir
+  OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\include\java_io
 
 
 # =============================================================================
@@ -75,7 +1827,7 @@ build CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_hashCode.cpp.obj: CXX_CO
 #############################################
 # Link the executable JavaUtil.exe
 
-build JavaUtil.exe: CXX_EXECUTABLE_LINKER__JavaUtil_Debug CMakeFiles/JavaUtil.dir/main.cpp.obj CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_hashCode.cpp.obj
+build JavaUtil.exe: CXX_EXECUTABLE_LINKER__JavaUtil_Debug CMakeFiles/JavaUtil.dir/main.cpp.obj CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Object.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/String.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Integer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Double.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Boolean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Long.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Short.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Character.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Float.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Math.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/System.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Thread.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Runnable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Exception.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/RuntimeException.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/NullPointerException.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/IllegalArgumentException.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Class.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Method.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Field.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/List.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/ArrayList.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/LinkedList.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Set.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/HashSet.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/TreeSet.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/LinkedHashSet.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Map.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/HashMap.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/TreeMap.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/LinkedHashMap.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Collections.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Iterator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Comparator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/PriorityQueue.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Queue.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Deque.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/ArrayDeque.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/ConcurrentHashMap.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/Executors.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/ExecutorService.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/Future.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicInteger.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicLong.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/locks/Lock.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/locks/ReentrantLock.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Date.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Calendar.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/GregorianCalendar.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Locale.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Scanner.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/regex/Pattern.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/regex/Matcher.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Stack.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Properties.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Observable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Observer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/LocalDate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/LocalDateTime.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/LocalTime.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/ZonedDateTime.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/Duration.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/Period.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/Instant.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/ZoneId.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/format/DateTimeFormatter.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/temporal/ChronoUnit.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/temporal/TemporalAdjusters.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/File.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/FileInputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/FileOutputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/ObjectInputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/ObjectOutputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/FileReader.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/FileWriter.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/BufferedReader.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/BufferedWriter.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/InputStreamReader.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/OutputStreamWriter.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/PrintStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/PrintWriter.cpp.obj CMakeFiles/JavaUtil.dir/include/java_net/URL.cpp.obj CMakeFiles/JavaUtil.dir/include/java_net/URI.cpp.obj CMakeFiles/JavaUtil.dir/include/java_net/URLConnection.cpp.obj CMakeFiles/JavaUtil.dir/include/java_net/HttpURLConnection.cpp.obj CMakeFiles/JavaUtil.dir/include/java_net/ServerSocket.cpp.obj CMakeFiles/JavaUtil.dir/include/java_net/Socket.cpp.obj CMakeFiles/JavaUtil.dir/include/java_nio/file/Path.cpp.obj CMakeFiles/JavaUtil.dir/include/java_nio/file/Paths.cpp.obj CMakeFiles/JavaUtil.dir/include/java_nio/file/Files.cpp.obj CMakeFiles/JavaUtil.dir/include/java_nio/ByteBuffer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_nio/channels/FileChannel.cpp.obj CMakeFiles/JavaUtil.dir/include/java_nio/charset/Charset.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLContext.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLSocketFactory.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/StringBuffer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/StringBuilder.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/ProccessBuilder.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Package.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/ClassLoader.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/ThreadLocal.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/ref/WeakReference.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/ThreadPoolExecutor.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/Semaphore.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/CountDownLatch.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/CyclicBarrier.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/locks/Condition.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicBoolean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/atomic/AtomicReference.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/concurrent/FutureTask.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/Optional.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/OptionalInt.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/OptionalLong.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/OptionalDouble.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/StringTokenizer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/Function.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/Predicate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/Consumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/Supplier.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/stream/Stream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/stream/IntStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/stream/LongStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/stream/DoubleStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/stream/Collectors.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipFile.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipEntry.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipOutputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/ZipInputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/DeflaterOutputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/InflaterInputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/GZIPOutputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/zip/GZIPInputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/SimpleDateFormat.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/DecimalFormat.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/MessageFormat.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/ChoiceFormat.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/NumberFormat.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/DateFormat.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/OffsetDateTime.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/OffsetTime.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/YearMonth.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/MonthDay.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/ZoneOffset.cpp.obj CMakeFiles/JavaUtil.dir/include/java_time/Clock.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/MessageDigest.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/Connection.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/DriverManager.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/ResultSet.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/Statement.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/PreparedStatement.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/CallableStatement.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/DatabaseMetaData.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/ResultSetMetaData.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/Date.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/Time.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/Timestamp.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/Types.cpp.obj CMakeFiles/JavaUtil.dir/include/java_sql/Savepoint.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_sql/DataSource.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_sql/RowSet.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_sql/rowset/CachedRowSet.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_sql/rowset/JdbcRowSet.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_sql/rowset/WebRowSet.cpp.obj CMakeFiles/JavaUtil.dir/include/java_rmi/Remote.cpp.obj CMakeFiles/JavaUtil.dir/include/java_rmi/Naming.cpp.obj CMakeFiles/JavaUtil.dir/include/java_rmi/registry/Registry.cpp.obj CMakeFiles/JavaUtil.dir/include/java_rmi/server/UnicastRemoteObject.cpp.obj CMakeFiles/JavaUtil.dir/include/java_rmi/server/RemoteObject.cpp.obj CMakeFiles/JavaUtil.dir/include/java_rmi/server/RemoteStub.cpp.obj CMakeFiles/JavaUtil.dir/include/java_rmi/server/RemoteCall.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/Cipher.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/SecretKey.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/SecretKeyFactory.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/KeyGenerator.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/Mac.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/spec/SecretKeySpec.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/spec/PBEKeySpec.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_crypto/spec/IvParameterSpec.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageIO.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_imageio/stream/ImageInputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_imageio/stream/ImageOutputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_imageio/metadata/IIOMetadata.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageReader.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageWriter.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_imageio/ImageTranscoder.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/KeyStore.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/PublicKey.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/PrivateKey.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/KeyPair.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/KeyPairGenerator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/Signature.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/SecureRandom.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/cert/Certificate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/cert/CertificateFactory.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/cert/X509Certificate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/spec/X509EncodedKeySpec.cpp.obj CMakeFiles/JavaUtil.dir/include/java_security/spec/PKCS8EncodedKeySpec.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLSocket.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/HttpsURLConnection.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLServerSocket.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/SSLServerSocketFactory.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/TrustManager.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/X509TrustManager.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/KeyManager.cpp.obj CMakeFiles/JavaUtil.dir/include/javax_net/net/ssl/X509KeyManager.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/logging/Logger.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/logging/Level.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/logging/LogManager.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/logging/ConsoleHandler.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/logging/FileHandler.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/logging/SimpleFormatter.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/logging/XmlFormatter.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/BiFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/UnaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/BinaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/IntFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/LongFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ToIntFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ToLongFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ToDoubleFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/IntUnaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/LongUnaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleUnaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/IntBinaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/LongBinaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleBinaryOperator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/IntPredicate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/LongPredicate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/DoublePredicate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/IntConsumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/LongConsumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleConsumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/IntSupplier.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/LongSupplier.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/DoubleSupplier.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/BiConsumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/BiPredicate.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ToIntBiFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ToLongBiFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ToDoubleBiFunction.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ObjIntConsumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ObjLongConsumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_util/function/ObjDoubleConsumer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Process.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Runtime.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/SecurityManager.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/ref/SoftReference.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/ref/PhantomReference.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/ref/ReferenceQueue.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Constructor.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Modifier.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Array.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/Proxy.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/InvocationHandler.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/InvocationTargetException.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/reflect/ReflectPermission.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/instrument/ClassFileTransformer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/instrument/IllegalClassFormatException.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/ManagementFactory.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/ThreadMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/ClassLoadingMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/MemoryMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/GarbageCollectorMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/MemoryManagerMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/MemoryPoolMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/BufferPoolMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/PlatformLoggingMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/OperatingSystemMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/CompilationMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/management/RuntimeMXBean.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Void.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/StackTraceElement.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Enum.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Iterable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Cloneable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/AutoCloseable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Readable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Appendable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/CharSequence.cpp.obj CMakeFiles/JavaUtil.dir/include/java_lang/Comparable.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/ParseException.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/Collator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/RuleBasedCollator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/BreakIterator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/StringCharacterIterator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/AttributedCharacterIterator.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/AttributedString.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/FieldPosition.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/ParsePosition.cpp.obj CMakeFiles/JavaUtil.dir/include/java_text/Normalizer.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/DataInputStream.cpp.obj CMakeFiles/JavaUtil.dir/include/java_io/DataOutputStream.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\JavaUtil.dir
@@ -84,13 +1836,14 @@ build JavaUtil.exe: CXX_EXECUTABLE_LINKER__JavaUtil_Debug CMakeFiles/JavaUtil.di
   TARGET_FILE = JavaUtil.exe
   TARGET_IMPLIB = libJavaUtil.dll.a
   TARGET_PDB = JavaUtil.exe.dbg
+  RSP_FILE = CMakeFiles\JavaUtil.rsp
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Kaisen\Desktop\JavaUtil\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Science\Desktop\JavaUtil\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -101,7 +1854,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Kaisen\Desktop\JavaUtil\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Kaisen\Desktop\JavaUtil -BC:\Users\Kaisen\Desktop\JavaUtil\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Science\Desktop\JavaUtil\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Science\Desktop\JavaUtil -BC:\Users\Science\Desktop\JavaUtil\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -119,7 +1872,7 @@ build JavaUtil: phony JavaUtil.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Kaisen/Desktop/JavaUtil/cmake-build-debug
+# Folder: C:/Users/Science/Desktop/JavaUtil/cmake-build-debug
 
 build all: phony JavaUtil.exe
 
@@ -130,14 +1883,14 @@ build all: phony JavaUtil.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/Kaisen/Desktop/JavaUtil/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/Science/Desktop/JavaUtil/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/Kaisen/Desktop/JavaUtil/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/Science/Desktop/JavaUtil/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################
