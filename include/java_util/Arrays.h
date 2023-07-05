@@ -12,6 +12,8 @@
 #include <memory>
 #include <functional>
 #include <numeric>
+#include <stdexcept>
+#include <cstring>
 
 /**
  * @class Arrays
@@ -42,6 +44,9 @@ private:
 
     template<typename T>
     static auto equality(T* arr1, T* arr2, size_t size) -> bool;
+
+    template<typename T>
+    static auto copyArray(T* arr, size_t arrSize, size_t newSize) -> std::unique_ptr<T[]>;
 
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
@@ -145,6 +150,22 @@ public:
 
     template <typename T>
     static auto equal(std::vector<T>& objects1, std::vector<T>& objects2) -> bool;
+
+    [[maybe_unused]] static auto copyOf(int intArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<int[]>;
+    [[maybe_unused]] static auto copyOf(float floatArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<float[]>;
+    [[maybe_unused]] static auto copyOf(double doubleArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<double[]>;
+    [[maybe_unused]] static auto copyOf(char charArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<char[]>;
+    [[maybe_unused]] static auto copyOf(short shortArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<short[]>;
+    [[maybe_unused]] static auto copyOf(long longArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<long[]>;
+    [[maybe_unused]] static auto copyOf(long long longLongArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<long long[]>;
+    [[maybe_unused]] static auto copyOf(int8_t byteArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<int8_t[]>;
+    [[maybe_unused]] static auto copyOf(uint8_t ubyteArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<uint8_t[]>;
+    [[maybe_unused]] static auto copyOf(long double longDoubleArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<long double[]>;
+    [[maybe_unused]] static auto copyOf(bool boolArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<bool[]>;
+    [[maybe_unused]] static auto copyOf(uint64_t ubyteArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<uint64_t[]>;
+
+    template<typename T>
+    static auto copyOf(std::vector<T>& objects, size_t newSize);
 
 };
 

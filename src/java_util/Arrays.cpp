@@ -1321,6 +1321,23 @@ auto Arrays::equality(T *arr1, T *arr2, size_t size) -> bool
     return std::equal(arr1, arr1 + size, arr2);
 }
 
+template<typename T>
+auto Arrays::copyArray(T *arr, size_t arrSize, size_t newSize) -> std::unique_ptr<T[]>
+{
+    if (arr == nullptr)
+        throw std::invalid_argument("original should not be null");
+
+    if (newSize < 0)
+        throw std::invalid_argument("newLength should not be negative");
+
+    auto copy = std::make_unique<T[]>(newSize);
+
+    for (size_t i = 0; i < newSize; ++i)
+        copy[i] = (i < arrSize) ? arr[i] : false;
+
+    return copy;
+}
+
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
 template auto Arrays::toString(std::vector<int> &objects) -> std::string;
