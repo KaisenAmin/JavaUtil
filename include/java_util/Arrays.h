@@ -165,7 +165,7 @@ public:
     [[maybe_unused]] static auto copyOf(uint64_t ubyteArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<uint64_t[]>;
 
     template<typename T>
-    static auto copyOf(std::vector<T>& objects, size_t newSize);
+    static auto copyOf(std::vector<T>& objects, size_t newSize) -> std::unique_ptr<T[]>;
 
 };
 

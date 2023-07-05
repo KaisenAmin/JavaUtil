@@ -1083,75 +1083,188 @@ auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> boo
     return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
 
+/**
+ * @brief Copies a dynamically allocated integer array to a new array with a specified size.
+ *
+ * @param intArr Pointer to the original integer array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<int[]> Pointer to the copied integer array.
+*/
 auto Arrays::copyOf(int *intArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int[]>
 {
     return Arrays::copyArray(intArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated float array to a new array with a specified size.
+ *
+ * @param floatArr Pointer to the original float array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<float[]> Pointer to the copied float array.
+*/
 auto Arrays::copyOf(float *floatArr, size_t arrSize, size_t newSize) -> std::unique_ptr<float[]>
 {
-    return Arrays::copyOf(floatArr, arrSize, newSize);
+    return Arrays::copyArray(floatArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated double array to a new array with a specified size.
+ *
+ * @param doubleArr Pointer to the original double array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<double[]> Pointer to the copied double array.
+*/
 auto Arrays::copyOf(double *doubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<double[]>
 {
     return Arrays::copyArray(doubleArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated char array to a new array with a specified size.
+ *
+ * @param charArr Pointer to the original char array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<char[]> Pointer to the copied char array.
+*/
 auto Arrays::copyOf(char *charArr, size_t arrSize, size_t newSize) -> std::unique_ptr<char[]>
 {
     return Arrays::copyArray(charArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated short array to a new array with a specified size.
+ *
+ * @param shortArr Pointer to the original short array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<short[]> Pointer to the copied short array.
+*/
 auto Arrays::copyOf(short *shortArr, size_t arrSize, size_t newSize) -> std::unique_ptr<short[]>
 {
     return Arrays::copyArray(shortArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated long array to a new array with a specified size.
+ *
+ * @param longArr Pointer to the original long array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<long[]> Pointer to the copied long array.
+*/
 auto Arrays::copyOf(long *longArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long[]>
 {
     return Arrays::copyArray(longArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated long long int array to a new array with a specified size.
+ *
+ * @param longLongArr Pointer to the original long long int array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<long long[]> Pointer to the copied long long int array.
+*/
 auto Arrays::copyOf(long long int *longLongArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long long[]>
 {
     return Arrays::copyArray(longLongArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated int8_t (byte) array to a new array with a specified size.
+ *
+ * @param byteArr Pointer to the original int8_t array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<int8_t[]> Pointer to the copied int8_t array.
+*/
 auto Arrays::copyOf(int8_t *byteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int8_t[]>
 {
     return Arrays::copyArray(byteArr, arrSize, newSize);
 }
 
+/**
+ * @brief Copies a dynamically allocated uint8_t (ubyte) array to a new array with a specified size.
+ *
+ * @param ubyteArr Pointer to the original uint8_t array.
+ * @param arrSize Size of the original array.
+ * @param newSize New size of the copied array.
+ *
+ * @return std::unique_ptr<uint8_t[]> Pointer to the copied uint8_t array.
+*/
 auto Arrays::copyOf(uint8_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint8_t[]>
 {
     return Arrays::copyArray(ubyteArr, arrSize, newSize);
 }
 
+/**
+ * Copies a dynamically allocated long double array to a new array with a specified size.
+ *
+ * @param longDoubleArr Pointer to the original long double array.
+ * @param arrSize Size of the original array.
+ * @param newSize Size of the new array.
+ * @return Pointer to the new dynamically allocated long double array.
+ */
 auto Arrays::copyOf(long double *longDoubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long double[]>
 {
     return Arrays::copyArray(longDoubleArr, arrSize, newSize);
 }
 
+/**
+ * Copies a dynamically allocated bool array to a new array with a specified size.
+ *
+ * @param boolArr Pointer to the original bool array.
+ * @param arrSize Size of the original array.
+ * @param newSize Size of the new array.
+ * @return Pointer to the new dynamically allocated bool array.
+ */
 auto Arrays::copyOf(bool *boolArr, size_t arrSize, size_t newSize) -> std::unique_ptr<bool[]>
 {
     return Arrays::copyArray(boolArr, arrSize, newSize);
 }
 
+/**
+ * Copies a dynamically allocated uint64_t array to a new array with a specified size.
+ *
+ * @param ubyteArr Pointer to the original uint64_t array.
+ * @param arrSize Size of the original array.
+ * @param newSize Size of the new array.
+ * @return Pointer to the new dynamically allocated uint64_t array.
+*/
 auto Arrays::copyOf(uint64_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint64_t[]>
 {
     return Arrays::copyArray(ubyteArr, arrSize, newSize);
 }
 
+/**
+ * Copies a dynamically allocated objects array to a new array with a specified size.
+ *
+ * @param objects Pointer to the original objects array.
+ * @param arrSize Size of the original array.
+ * @param newSize Size of the new array.
+ * @return Pointer to the new dynamically allocated objects array.
+*/
 template<typename T>
-auto Arrays::copyOf(std::vector<T> &objects, size_t newSize)
+auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<T[]>
 {
-    T arr[objects.size()];
+    auto arr = std::make_unique<T[]>(objects.size());
 
     for (size_t index = 0; index < objects.size(); index++)
         arr[index] = objects[index];
 
-    return Arrays::copyArray(arr, objects.size(), newSize);
+    return Arrays::copyArray(arr.get(), objects.size(), newSize);
 }
 
 /**
@@ -1392,6 +1505,21 @@ auto Arrays::equality(T *arr1, T *arr2, size_t size) -> bool
     return std::equal(arr1, arr1 + size, arr2);
 }
 
+/**
+ * @brief Copies an array and resizes it to a new size.
+ *
+ * This function copies the elements from the original array to a new array of the specified size.
+ * If the original array is null, an std::invalid_argument exception is thrown.
+ * If the new size is negative, an std::invalid_argument exception is thrown.
+ *
+ * @tparam T The type of elements in the array.
+ * @param arr Pointer to the original array.
+ * @param arrSize The size of the original array.
+ * @param newSize The new size of the copied array.
+ * @return std::unique_ptr<T[]> A unique pointer to the copied array.
+ *
+ * @throws std::invalid_argument if the original array is null or if the new size is negative.
+ */
 template<typename T>
 auto Arrays::copyArray(T *arr, size_t arrSize, size_t newSize) -> std::unique_ptr<T[]>
 {
@@ -1404,10 +1532,11 @@ auto Arrays::copyArray(T *arr, size_t arrSize, size_t newSize) -> std::unique_pt
     auto copy = std::make_unique<T[]>(newSize);
 
     for (size_t i = 0; i < newSize; ++i)
-        copy[i] = (i < arrSize) ? arr[i] : false;
+        copy[i] = (i < arrSize) ? arr[i] : T();
 
     return copy;
 }
+
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
@@ -1497,3 +1626,16 @@ template auto Arrays::equal(std::vector<char>& objects1, std::vector<char>& obje
 template auto Arrays::equal(std::vector<uint8_t>& objects1, std::vector<uint8_t>& objects2) -> bool;
 template auto Arrays::equal(std::vector<short>& objects1, std::vector<short>& objects2) -> bool;
 template auto Arrays::equal(std::vector<uint64_t>& objects1, std::vector<uint64_t>& objects2) -> bool;
+
+template auto Arrays::copyOf(std::vector<int>& objects, size_t newSize) -> std::unique_ptr<int[]>;
+template auto Arrays::copyOf(std::vector<float>& objects, size_t newSize) -> std::unique_ptr<float[]>;
+template auto Arrays::copyOf(std::vector<double>& objects, size_t newSize) -> std::unique_ptr<double[]>;
+template auto Arrays::copyOf(std::vector<char>& objects, size_t newSize) -> std::unique_ptr<char[]>;
+template auto Arrays::copyOf(std::vector<long>& objects, size_t newSize) -> std::unique_ptr<long[]>;
+template auto Arrays::copyOf(std::vector<long long>& objects, size_t newSize) -> std::unique_ptr<long long[]>;
+template auto Arrays::copyOf(std::vector<long double>& objects, size_t newSize) -> std::unique_ptr<long double[]>;
+template auto Arrays::copyOf(std::vector<short>& objects, size_t newSize) -> std::unique_ptr<short[]>;
+template auto Arrays::copyOf(std::vector<int8_t>& objects, size_t newSize) -> std::unique_ptr<int8_t[]>;
+template auto Arrays::copyOf(std::vector<uint8_t>& objects, size_t newSize) -> std::unique_ptr<uint8_t[]>;
+template auto Arrays::copyOf(std::vector<uint64_t>& objects, size_t newSize) -> std::unique_ptr<uint64_t[]>;
+template auto Arrays::copyOf(std::vector<bool>& objects, size_t newSize) -> std::unique_ptr<bool[]>;
