@@ -37,7 +37,7 @@ private:
     static auto fillArray(T* array, T& value, size_t size) -> void;
 
     template<typename T>
-    static auto fillArray(T* array, int fromIndex, int toIndex, T& value) -> void;
+    static auto fillArray(T* array, size_t fromIndex, size_t toIndex, T& value) -> void;
 
     template<typename T>
     static auto hashCodeGenerator(T* array, size_t size) -> int;
@@ -58,17 +58,17 @@ private:
     static auto sortArray(T *arr, size_t arrSize, size_t fromIndex, size_t toIndex) -> void;
 
 public:
-    static auto toString(int intArray[], size_t size) -> std::string;
-    static auto toString(float floatArray[], size_t size) -> std::string;
-    static auto toString(double doubleArray[], size_t size) -> std::string;
-    static auto toString(char charArray[], size_t size) -> std::string;
+    [[maybe_unused]] static auto toString(int intArray[], size_t size) -> std::string;
+    [[maybe_unused]] static auto toString(float floatArray[], size_t size) -> std::string;
+    [[maybe_unused]] static auto toString(double doubleArray[], size_t size) -> std::string;
+    [[maybe_unused]] static auto toString(char charArray[], size_t size) -> std::string;
     [[maybe_unused]] static auto toString(short shortArray[], size_t size) -> std::string;
-    static auto toString(bool boolArray[], size_t size) -> std::string;
-    static auto toString(long longArray[], size_t size) -> std::string;
+    [[maybe_unused]] static auto toString(bool boolArray[], size_t size) -> std::string;
+    [[maybe_unused]] static auto toString(long longArray[], size_t size) -> std::string;
     [[maybe_unused]] static auto toString(int8_t byteArray[], size_t size) -> std::string;
 
     template<typename T>
-    static auto toString(std::vector<T>& objects) -> std::string;
+    [[maybe_unused]] [[maybe_unused]] static auto toString([[maybe_unused]] std::vector<T>& objects) -> std::string;
 
     [[maybe_unused]] static auto binarySearch(int intArr[], int& key, int size) -> int;
     [[maybe_unused]] static auto binarySearch(float floatArr[], float& key, int size) -> int;
@@ -81,7 +81,7 @@ public:
     [[maybe_unused]] static auto binarySearch(uint8_t ubyteArr[], uint8_t& key, int size) -> int;
 
     template <typename T>
-    static auto binarySearch(std::vector<T>& objects, T& key) -> int;
+    [[maybe_unused]] static auto binarySearch(std::vector<T>& objects, T& key) -> int;
 
     [[maybe_unused]] static auto binarySearch(int intArr[], size_t fromIndex, size_t toIndex, int& key) -> int;
     [[maybe_unused]] static auto binarySearch(float floatArr[], size_t fromIndex, size_t toIndex, float& key) -> int;
@@ -94,7 +94,7 @@ public:
     [[maybe_unused]] static auto binarySearch(uint8_t ubyteArr[], size_t fromIndex, size_t toIndex, uint8_t & key) -> int;
 
     template <typename T>
-    static auto binarySearch(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& key) -> int;
+    [[maybe_unused]] static auto binarySearch(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& key) -> int;
 
     [[maybe_unused]] static auto fill(bool boolArr[], bool& value, size_t size) -> void;
     [[maybe_unused]] static auto fill(int intArr[], int& value, size_t size) -> void;
@@ -110,7 +110,7 @@ public:
     [[maybe_unused]] static auto fill(uint64_t ubyteArr[], uint64_t& value, size_t size) -> void;
 
     template <typename T>
-    static auto fill(std::vector<T>& objects, T& value) -> void;
+    [[maybe_unused]] static auto fill(std::vector<T>& objects, T& value) -> void;
 
     [[maybe_unused]] static auto fill(int intArr[], size_t fromIndex, size_t toIndex, int value) -> void;
     [[maybe_unused]] static auto fill(double doubleArr[], size_t fromIndex, size_t toIndex, double value) -> void;
@@ -126,7 +126,7 @@ public:
     [[maybe_unused]] static auto fill(bool boolArr[], size_t fromIndex, size_t toIndex, bool value) -> void;
 
     template <typename T>
-    static auto fill(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& value) -> void;
+    [[maybe_unused]] static auto fill(std::vector<T>& objects, size_t fromIndex, size_t toIndex, T& value) -> void;
 
     [[maybe_unused]] static auto hashCode(int intArr[], size_t size) -> int;
     [[maybe_unused]] static auto hashCode(float floatArr[], size_t size) -> int;
@@ -142,7 +142,7 @@ public:
     [[maybe_unused]] static auto hashCode(bool boolArr[], size_t size) -> int;
 
     template <typename T>
-    static auto hashCode(std::vector<T>& objects) -> int;
+    [[maybe_unused]] static auto hashCode(std::vector<T>& objects) -> int;
 
     [[maybe_unused]] static auto equal(int intArr1[], int intArr2[], size_t size) -> bool;
     [[maybe_unused]] static auto equal(float floatArr1[], float floatArr2[], size_t size) -> bool;
@@ -158,7 +158,7 @@ public:
     [[maybe_unused]] static auto equal(uint64_t ubyteArr1[], uint64_t ubyteArr2[], size_t size) -> bool;
 
     template <typename T>
-    static auto equal(std::vector<T>& objects1, std::vector<T>& objects2) -> bool;
+    [[maybe_unused]] static auto equal(std::vector<T>& objects1, std::vector<T>& objects2) -> bool;
 
     [[maybe_unused]] static auto copyOf(int intArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<int[]>;
     [[maybe_unused]] static auto copyOf(float floatArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<float[]>;
@@ -174,7 +174,7 @@ public:
     [[maybe_unused]] static auto copyOf(uint64_t ubyteArr[], size_t arrSize, size_t newSize) -> std::unique_ptr<uint64_t[]>;
 
     template<typename T>
-    static auto copyOf(std::vector<T>& objects, size_t newSize) -> std::unique_ptr<T[]>;
+    [[maybe_unused]] static auto copyOf(std::vector<T>& objects, size_t newSize) -> std::unique_ptr<T[]>;
 
     [[maybe_unused]] static auto copyOfRange(int intArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<int[]>;
     [[maybe_unused]] static auto copyOfRange(float floatArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<float[]>;
@@ -192,18 +192,18 @@ public:
     template<typename T>
     [[maybe_unused]] static auto copyOfRange(std::vector<T>& objects, size_t from, size_t to) -> std::unique_ptr<T[]>;
 
-    [[maybe_unused]] static void sort(int intArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(float floatArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(double doubleArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(char charArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(short shortArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(long longArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(long long longLongArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(int8_t byteArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(uint8_t ubyteArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(long double longDoubleArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(bool boolArr[], size_t arrSize);
-    [[maybe_unused]] static void sort(uint64_t ubyteArr[], size_t arrSize);
+    [[maybe_unused]] static void sort(int intArr[], int arrSize);
+    [[maybe_unused]] static void sort(float floatArr[], int arrSize);
+    [[maybe_unused]] static void sort(double doubleArr[], int arrSize);
+    [[maybe_unused]] static void sort(char charArr[], int arrSize);
+    [[maybe_unused]] static void sort(short shortArr[], int arrSize);
+    [[maybe_unused]] static void sort(long longArr[], int arrSize);
+    [[maybe_unused]] static void sort(long long longLongArr[], int arrSize);
+    [[maybe_unused]] static void sort(int8_t byteArr[], int arrSize);
+    [[maybe_unused]] static void sort(uint8_t ubyteArr[], int arrSize);
+    [[maybe_unused]] static void sort(long double longDoubleArr[], int arrSize);
+    [[maybe_unused]] static void sort(bool boolArr[], int arrSize);
+    [[maybe_unused]] static void sort(uint64_t ubyteArr[], int arrSize);
 
     template<typename T>
     [[maybe_unused]] static void sort(std::vector<T>& objects);
@@ -223,7 +223,6 @@ public:
 
     template <typename T>
     [[maybe_unused]] static void sort(std::vector<T>& objects, size_t fromIndex, size_t toIndex);
-
 
 };
 

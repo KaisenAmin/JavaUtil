@@ -11,7 +11,7 @@
  * @param size - Size of the array.
  * @return A string representation of the array.
 */
-auto Arrays::toString(int *intArray, size_t size) -> std::string
+[[maybe_unused]] auto Arrays::toString(int *intArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(intArray, size);
 }
@@ -22,7 +22,7 @@ auto Arrays::toString(int *intArray, size_t size) -> std::string
  * @param size - Size of the array.
  * @return A string representation of the array.
 */
-auto Arrays::toString(float *floatArray, size_t size) -> std::string
+[[maybe_unused]] auto Arrays::toString(float *floatArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(floatArray, size);
 }
@@ -33,7 +33,7 @@ auto Arrays::toString(float *floatArray, size_t size) -> std::string
  * @param size - Size of the array.
  * @return A string representation of the array.
 */
-auto Arrays::toString(double *doubleArray, size_t size) -> std::string
+[[maybe_unused]] auto Arrays::toString(double *doubleArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(doubleArray, size);
 }
@@ -44,7 +44,7 @@ auto Arrays::toString(double *doubleArray, size_t size) -> std::string
  * @param size - Size of the array.
  * @return A string representation of the array.
 */
-auto Arrays::toString(char *charArray, size_t size) -> std::string
+[[maybe_unused]] auto Arrays::toString(char *charArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(charArray, size);
 }
@@ -66,7 +66,7 @@ auto Arrays::toString(char *charArray, size_t size) -> std::string
  * @param size - Size of the array.
  * @return A string representation of the array.
 */
-auto Arrays::toString(bool *boolArray, size_t size) -> std::string
+[[maybe_unused]] auto Arrays::toString(bool *boolArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(boolArray, size);
 }
@@ -77,7 +77,7 @@ auto Arrays::toString(bool *boolArray, size_t size) -> std::string
  * @param size - Size of the array.
  * @return A string representation of the array.
 */
-auto Arrays::toString(long *longArray, size_t size) -> std::string
+[[maybe_unused]] auto Arrays::toString(long *longArray, size_t size) -> std::string
 {
     return Arrays::iterateOverArrays(longArray, size);
 }
@@ -99,7 +99,7 @@ auto Arrays::toString(long *longArray, size_t size) -> std::string
  * @return A string representation of the array.
 */
 template<typename T>
-auto Arrays::toString(std::vector<T> &objects) -> std::string
+[[maybe_unused]] [[maybe_unused]] auto Arrays::toString([[maybe_unused]] std::vector<T> &objects) -> std::string
 {
     T arr[objects.size()];
     int counter = 0;
@@ -640,7 +640,7 @@ auto Arrays::toString(std::vector<T> &objects) -> std::string
  * @param value The value to be stored in all elements of the vector within the specified range.
 */
 template<typename T>
-auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
+[[maybe_unused]] auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &value) -> void
 {
     std::fill(objects.begin(), objects.end(), value);
 }
@@ -652,7 +652,7 @@ auto Arrays::fill(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &
  * @param value The value to be set in all positions of the vector.
 */
 template<typename T>
-auto Arrays::fill(std::vector<T> &objects, T &value) -> void
+[[maybe_unused]] auto Arrays::fill(std::vector<T> &objects, T &value) -> void
 {
     for (size_t index = 0; index < objects.size(); index++)
     {
@@ -864,7 +864,7 @@ auto Arrays::fill(std::vector<T> &objects, T &value) -> void
  * @return A content-based hash code for the integer array.
 */
 template<typename T>
-auto Arrays::hashCode(std::vector<T> &objects) -> int
+[[maybe_unused]] auto Arrays::hashCode(std::vector<T> &objects) -> int
 {
     T arr[objects.size()];
     size_t size = objects.size();
@@ -891,7 +891,7 @@ auto Arrays::hashCode(std::vector<T> &objects) -> int
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(int intArr1[], int intArr2[], size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(int intArr1[], int intArr2[], size_t size) -> bool
 {
     return Arrays::equality(intArr1, intArr2, size);
 }
@@ -908,7 +908,7 @@ auto Arrays::equal(int intArr1[], int intArr2[], size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(float floatArr1[], float floatArr2[], size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(float floatArr1[], float floatArr2[], size_t size) -> bool
 {
     return Arrays::equality(floatArr1, floatArr2, size);
 }
@@ -925,7 +925,7 @@ auto Arrays::equal(float floatArr1[], float floatArr2[], size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(double doubleArr1[], double doubleArr2[], size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(double doubleArr1[], double doubleArr2[], size_t size) -> bool
 {
     return Arrays::equality(doubleArr1, doubleArr2, size);
 }
@@ -942,7 +942,7 @@ auto Arrays::equal(double doubleArr1[], double doubleArr2[], size_t size) -> boo
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(char charArr1[], char charArr2[], size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(char charArr1[], char charArr2[], size_t size) -> bool
 {
     return Arrays::equality(charArr1, charArr2, size);
 }
@@ -959,7 +959,7 @@ auto Arrays::equal(char charArr1[], char charArr2[], size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(short shortArr1[], short shortArr2[], size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(short shortArr1[], short shortArr2[], size_t size) -> bool
 {
     return Arrays::equality(shortArr1, shortArr2, size);
 }
@@ -976,7 +976,7 @@ auto Arrays::equal(short shortArr1[], short shortArr2[], size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(bool *boolArr1, bool *boolArr2, size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(bool *boolArr1, bool *boolArr2, size_t size) -> bool
 {
     return Arrays::equality(boolArr1, boolArr2, size);
 }
@@ -993,7 +993,7 @@ auto Arrays::equal(bool *boolArr1, bool *boolArr2, size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(long *longArr1, long *longArr2, size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(long *longArr1, long *longArr2, size_t size) -> bool
 {
     return Arrays::equality(longArr1, longArr2, size);
 }
@@ -1010,7 +1010,7 @@ auto Arrays::equal(long *longArr1, long *longArr2, size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(long long *longLongArr1, long long *longLongArr2, size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(long long *longLongArr1, long long *longLongArr2, size_t size) -> bool
 {
     return Arrays::equality(longLongArr1, longLongArr2, size);
 }
@@ -1027,7 +1027,7 @@ auto Arrays::equal(long long *longLongArr1, long long *longLongArr2, size_t size
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(int8_t *byteArr1, int8_t *byteArr2, size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(int8_t *byteArr1, int8_t *byteArr2, size_t size) -> bool
 {
     return Arrays::equality(byteArr1, byteArr2, size);
 }
@@ -1044,7 +1044,7 @@ auto Arrays::equal(int8_t *byteArr1, int8_t *byteArr2, size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(uint8_t *ubyteArr1, uint8_t *ubyteArr2, size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(uint8_t *ubyteArr1, uint8_t *ubyteArr2, size_t size) -> bool
 {
     return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
@@ -1061,7 +1061,7 @@ auto Arrays::equal(uint8_t *ubyteArr1, uint8_t *ubyteArr2, size_t size) -> bool
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(long double *longDoubleArr1, long double *longDoubleArr2, size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(long double *longDoubleArr1, long double *longDoubleArr2, size_t size) -> bool
 {
     return Arrays::equality(longDoubleArr1, longDoubleArr2, size);
 }
@@ -1078,7 +1078,7 @@ auto Arrays::equal(long double *longDoubleArr1, long double *longDoubleArr2, siz
  * @param size The number of elements in the arrays.
  * @return Returns true if the two arrays are equal, false otherwise.
 */
-auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> bool
+[[maybe_unused]] auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> bool
 {
     return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
@@ -1092,7 +1092,7 @@ auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> boo
  *
  * @return std::unique_ptr<int[]> Pointer to the copied integer array.
 */
-auto Arrays::copyOf(int *intArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int[]>
+[[maybe_unused]] auto Arrays::copyOf(int *intArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int[]>
 {
     return Arrays::copyArray(intArr, arrSize, newSize);
 }
@@ -1106,7 +1106,7 @@ auto Arrays::copyOf(int *intArr, size_t arrSize, size_t newSize) -> std::unique_
  *
  * @return std::unique_ptr<float[]> Pointer to the copied float array.
 */
-auto Arrays::copyOf(float *floatArr, size_t arrSize, size_t newSize) -> std::unique_ptr<float[]>
+[[maybe_unused]] auto Arrays::copyOf(float *floatArr, size_t arrSize, size_t newSize) -> std::unique_ptr<float[]>
 {
     return Arrays::copyArray(floatArr, arrSize, newSize);
 }
@@ -1120,7 +1120,7 @@ auto Arrays::copyOf(float *floatArr, size_t arrSize, size_t newSize) -> std::uni
  *
  * @return std::unique_ptr<double[]> Pointer to the copied double array.
 */
-auto Arrays::copyOf(double *doubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<double[]>
+[[maybe_unused]] auto Arrays::copyOf(double *doubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<double[]>
 {
     return Arrays::copyArray(doubleArr, arrSize, newSize);
 }
@@ -1134,7 +1134,7 @@ auto Arrays::copyOf(double *doubleArr, size_t arrSize, size_t newSize) -> std::u
  *
  * @return std::unique_ptr<char[]> Pointer to the copied char array.
 */
-auto Arrays::copyOf(char *charArr, size_t arrSize, size_t newSize) -> std::unique_ptr<char[]>
+[[maybe_unused]] auto Arrays::copyOf(char *charArr, size_t arrSize, size_t newSize) -> std::unique_ptr<char[]>
 {
     return Arrays::copyArray(charArr, arrSize, newSize);
 }
@@ -1148,7 +1148,7 @@ auto Arrays::copyOf(char *charArr, size_t arrSize, size_t newSize) -> std::uniqu
  *
  * @return std::unique_ptr<short[]> Pointer to the copied short array.
 */
-auto Arrays::copyOf(short *shortArr, size_t arrSize, size_t newSize) -> std::unique_ptr<short[]>
+[[maybe_unused]] auto Arrays::copyOf(short *shortArr, size_t arrSize, size_t newSize) -> std::unique_ptr<short[]>
 {
     return Arrays::copyArray(shortArr, arrSize, newSize);
 }
@@ -1162,7 +1162,7 @@ auto Arrays::copyOf(short *shortArr, size_t arrSize, size_t newSize) -> std::uni
  *
  * @return std::unique_ptr<long[]> Pointer to the copied long array.
 */
-auto Arrays::copyOf(long *longArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long[]>
+[[maybe_unused]] auto Arrays::copyOf(long *longArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long[]>
 {
     return Arrays::copyArray(longArr, arrSize, newSize);
 }
@@ -1176,7 +1176,7 @@ auto Arrays::copyOf(long *longArr, size_t arrSize, size_t newSize) -> std::uniqu
  *
  * @return std::unique_ptr<long long[]> Pointer to the copied long long int array.
 */
-auto Arrays::copyOf(long long int *longLongArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long long[]>
+[[maybe_unused]] auto Arrays::copyOf(long long int *longLongArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long long[]>
 {
     return Arrays::copyArray(longLongArr, arrSize, newSize);
 }
@@ -1190,7 +1190,7 @@ auto Arrays::copyOf(long long int *longLongArr, size_t arrSize, size_t newSize) 
  *
  * @return std::unique_ptr<int8_t[]> Pointer to the copied int8_t array.
 */
-auto Arrays::copyOf(int8_t *byteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int8_t[]>
+[[maybe_unused]] auto Arrays::copyOf(int8_t *byteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int8_t[]>
 {
     return Arrays::copyArray(byteArr, arrSize, newSize);
 }
@@ -1204,7 +1204,7 @@ auto Arrays::copyOf(int8_t *byteArr, size_t arrSize, size_t newSize) -> std::uni
  *
  * @return std::unique_ptr<uint8_t[]> Pointer to the copied uint8_t array.
 */
-auto Arrays::copyOf(uint8_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint8_t[]>
+[[maybe_unused]] auto Arrays::copyOf(uint8_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint8_t[]>
 {
     return Arrays::copyArray(ubyteArr, arrSize, newSize);
 }
@@ -1217,7 +1217,7 @@ auto Arrays::copyOf(uint8_t *ubyteArr, size_t arrSize, size_t newSize) -> std::u
  * @param newSize Size of the new array.
  * @return Pointer to the new dynamically allocated long double array.
  */
-auto Arrays::copyOf(long double *longDoubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long double[]>
+[[maybe_unused]] auto Arrays::copyOf(long double *longDoubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long double[]>
 {
     return Arrays::copyArray(longDoubleArr, arrSize, newSize);
 }
@@ -1230,7 +1230,7 @@ auto Arrays::copyOf(long double *longDoubleArr, size_t arrSize, size_t newSize) 
  * @param newSize Size of the new array.
  * @return Pointer to the new dynamically allocated bool array.
  */
-auto Arrays::copyOf(bool *boolArr, size_t arrSize, size_t newSize) -> std::unique_ptr<bool[]>
+[[maybe_unused]] auto Arrays::copyOf(bool *boolArr, size_t arrSize, size_t newSize) -> std::unique_ptr<bool[]>
 {
     return Arrays::copyArray(boolArr, arrSize, newSize);
 }
@@ -1243,7 +1243,7 @@ auto Arrays::copyOf(bool *boolArr, size_t arrSize, size_t newSize) -> std::uniqu
  * @param newSize Size of the new array.
  * @return Pointer to the new dynamically allocated uint64_t array.
 */
-auto Arrays::copyOf(uint64_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint64_t[]>
+[[maybe_unused]] auto Arrays::copyOf(uint64_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint64_t[]>
 {
     return Arrays::copyArray(ubyteArr, arrSize, newSize);
 }
@@ -1257,7 +1257,7 @@ auto Arrays::copyOf(uint64_t *ubyteArr, size_t arrSize, size_t newSize) -> std::
  * @return Pointer to the new dynamically allocated objects array.
 */
 template<typename T>
-auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<T[]>
+[[maybe_unused]] auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<T[]>
 {
     auto arr = std::make_unique<T[]>(objects.size());
 
@@ -1441,7 +1441,7 @@ auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<
  * @param intArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(int *intArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(int *intArr, int arrSize)
 {
     Arrays::quickSort(intArr, 0, arrSize - 1);
 }
@@ -1452,7 +1452,7 @@ void Arrays::sort(int *intArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(float *floatArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(float *floatArr, int arrSize)
 {
     Arrays::quickSort(floatArr, 0, arrSize - 1);
 }
@@ -1463,7 +1463,7 @@ void Arrays::sort(float *floatArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(double *doubleArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(double *doubleArr, int arrSize)
 {
     Arrays::quickSort(doubleArr, 0, arrSize - 1);
 }
@@ -1474,7 +1474,7 @@ void Arrays::sort(double *doubleArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(char *charArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(char *charArr, int arrSize)
 {
     Arrays::quickSort(charArr, 0, arrSize - 1);
 }
@@ -1485,7 +1485,7 @@ void Arrays::sort(char *charArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(short *shortArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(short *shortArr, int arrSize)
 {
     Arrays::quickSort(shortArr, 0, arrSize - 1);
 }
@@ -1496,7 +1496,7 @@ void Arrays::sort(short *shortArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(long *longArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(long *longArr, int arrSize)
 {
     Arrays::quickSort(longArr, 0, arrSize - 1);
 }
@@ -1507,7 +1507,7 @@ void Arrays::sort(long *longArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(long long *longLongArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(long long *longLongArr, int arrSize)
 {
     Arrays::quickSort(longLongArr, 0, arrSize - 1);
 }
@@ -1518,7 +1518,7 @@ void Arrays::sort(long long *longLongArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(int8_t *byteArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(int8_t *byteArr, int arrSize)
 {
     Arrays::quickSort(byteArr, 0, arrSize - 1);
 }
@@ -1529,7 +1529,7 @@ void Arrays::sort(int8_t *byteArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(uint8_t *ubyteArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(uint8_t *ubyteArr, int arrSize)
 {
     Arrays::quickSort(ubyteArr, 0, arrSize - 1);
 }
@@ -1540,18 +1540,18 @@ void Arrays::sort(uint8_t *ubyteArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(long double *longDoubleArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(long double *longDoubleArr, int arrSize)
 {
     Arrays::quickSort(longDoubleArr, 0, arrSize - 1);
 }
 
 /**
- * Sorts an array of bools in ascending order.
+ * Sorts an array of bool in ascending order.
  *
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(bool *boolArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(bool *boolArr, int arrSize)
 {
     Arrays::quickSort(boolArr, 0, arrSize - 1);
 }
@@ -1562,7 +1562,7 @@ void Arrays::sort(bool *boolArr, size_t arrSize)
  * @param floatArr Pointer to the array to be sorted.
  * @param arrSize Size of the array.
  */
-void Arrays::sort(uint64_t *ubyteArr, size_t arrSize)
+[[maybe_unused]] void Arrays::sort(uint64_t *ubyteArr, int arrSize)
 {
     Arrays::quickSort(ubyteArr, 0, arrSize - 1);
 }
@@ -1576,7 +1576,7 @@ void Arrays::sort(uint64_t *ubyteArr, size_t arrSize)
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(int *intArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(int *intArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(intArr, arrSize, fromIndex, toIndex);
 }
@@ -1590,7 +1590,7 @@ void Arrays::sort(int *intArr, size_t arrSize, size_t fromIndex, size_t toIndex)
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(float *floatArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(float *floatArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(floatArr, arrSize, fromIndex, toIndex);
 }
@@ -1604,7 +1604,7 @@ void Arrays::sort(float *floatArr, size_t arrSize, size_t fromIndex, size_t toIn
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(double *doubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(double *doubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(doubleArr, arrSize, fromIndex, toIndex);
 }
@@ -1618,7 +1618,7 @@ void Arrays::sort(double *doubleArr, size_t arrSize, size_t fromIndex, size_t to
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(char *charArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(char *charArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(charArr, arrSize, fromIndex, toIndex);
 }
@@ -1632,7 +1632,7 @@ void Arrays::sort(char *charArr, size_t arrSize, size_t fromIndex, size_t toInde
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(short *shortArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(short *shortArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(shortArr, arrSize, fromIndex, toIndex);
 }
@@ -1646,7 +1646,7 @@ void Arrays::sort(short *shortArr, size_t arrSize, size_t fromIndex, size_t toIn
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(long *longArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(long *longArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(longArr, arrSize, fromIndex, toIndex);
 }
@@ -1660,7 +1660,7 @@ void Arrays::sort(long *longArr, size_t arrSize, size_t fromIndex, size_t toInde
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(long long *longLongArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(long long *longLongArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(longLongArr, arrSize, fromIndex, toIndex);
 }
@@ -1674,7 +1674,7 @@ void Arrays::sort(long long *longLongArr, size_t arrSize, size_t fromIndex, size
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(int8_t *byteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(int8_t *byteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(byteArr, arrSize, fromIndex, toIndex);
 }
@@ -1688,7 +1688,7 @@ void Arrays::sort(int8_t *byteArr, size_t arrSize, size_t fromIndex, size_t toIn
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(uint8_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(uint8_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(ubyteArr, arrSize, fromIndex, toIndex);
 }
@@ -1702,7 +1702,7 @@ void Arrays::sort(uint8_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t to
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(long double *longDoubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(long double *longDoubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(longDoubleArr, arrSize, fromIndex, toIndex);
 }
@@ -1716,7 +1716,7 @@ void Arrays::sort(long double *longDoubleArr, size_t arrSize, size_t fromIndex, 
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(bool *boolArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(bool *boolArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(boolArr, arrSize, fromIndex, toIndex);
 }
@@ -1730,13 +1730,13 @@ void Arrays::sort(bool *boolArr, size_t arrSize, size_t fromIndex, size_t toInde
  * @throw std::invalid_argument If fromIndex > toIndex.
  * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
  */
-void Arrays::sort(uint64_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(uint64_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(ubyteArr, arrSize, fromIndex, toIndex);
 }
 
 template<typename T>
-void Arrays::sort(std::vector<T> &objects, size_t fromIndex, size_t toIndex)
+[[maybe_unused]] void Arrays::sort(std::vector<T> &objects, size_t fromIndex, size_t toIndex)
 {
     if(toIndex > objects.size() || fromIndex < 0 || toIndex < fromIndex){
         throw std::invalid_argument("Invalid fromIndex or toIndex");
@@ -1773,7 +1773,7 @@ auto Arrays::sortArray(T *arr, size_t arrSize, size_t fromIndex, size_t toIndex)
  * @param arrSize Size of the array.
  */
 template<typename T>
-void Arrays::sort(std::vector<T> &objects)
+[[maybe_unused]] void Arrays::sort(std::vector<T> &objects)
 {
     std::sort(objects.begin(), objects.end());
 }
@@ -1822,7 +1822,7 @@ template<typename T>
  * @return Returns true if the two arrays are equal, false otherwise.
 */
 template<typename T>
-auto Arrays::equal(std::vector<T> &objects1, std::vector<T> &objects2) -> bool
+[[maybe_unused]] auto Arrays::equal(std::vector<T> &objects1, std::vector<T> &objects2) -> bool
 {
     T arr1[objects1.size()];
     T arr2[objects2.size()];
@@ -1846,7 +1846,7 @@ auto Arrays::equal(std::vector<T> &objects1, std::vector<T> &objects2) -> bool
  * @return The index of the key if it is in the vector, -1 otherwise.
  */
 template<typename T>
-auto Arrays::binarySearch(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &key) -> int
+[[maybe_unused]] auto Arrays::binarySearch(std::vector<T> &objects, size_t fromIndex, size_t toIndex, T &key) -> int
 {
     T arr[objects.size()];
     int counter = 0;
@@ -1865,7 +1865,7 @@ auto Arrays::binarySearch(std::vector<T> &objects, size_t fromIndex, size_t toIn
  * @return The index of the key if it is in the vector, -1 otherwise.
  */
 template<typename T>
-auto Arrays::binarySearch(std::vector<T> &objects, T &key) -> int
+[[maybe_unused]] auto Arrays::binarySearch(std::vector<T> &objects, T &key) -> int
 {
     T arr[objects.size()];
     int counter = 0;
@@ -1918,7 +1918,7 @@ auto Arrays::binarySearchBeginToEnd(T *array, T key, size_t size) -> int
         size_t mid = left + (right - left) / 2;
 
         if (array[mid] == key)
-            return mid;
+            return (int)mid;
         else if (array[mid] < key)
             left = mid + 1;
         else
@@ -1945,10 +1945,10 @@ auto Arrays::binarySearchIndex(T *array, size_t fromIndex, size_t toIndex, T &ke
     {
         size_t mid = fromIndex + (toIndex - fromIndex) / 2;
         if (array[mid] == key)
-            return mid;
+            return (int)mid;
         if (array[mid] < key)
             fromIndex = mid + 1;
-         else
+        else
             toIndex = mid - 1;
     }
 
@@ -1984,7 +1984,7 @@ auto Arrays::fillArray(T *array, T &value, size_t size) -> void
  * @throws std::invalid_argument If `array` is null, or if `fromIndex` is greater than `toIndex`.
  */
 template<typename T>
-auto Arrays::fillArray(T *array, int fromIndex, int toIndex, T &value) -> void
+auto Arrays::fillArray(T *array, size_t fromIndex, size_t toIndex, T &value) -> void
 {
     if (array == nullptr) {
         throw std::invalid_argument("The provided array is null.");
@@ -1993,7 +1993,7 @@ auto Arrays::fillArray(T *array, int fromIndex, int toIndex, T &value) -> void
         throw std::invalid_argument("fromIndex is greater than toIndex.");
     }
 
-    for (int i = fromIndex; i < toIndex; i++) {
+    for (size_t i = fromIndex; i < toIndex; i++) {
         array[i] = value;
     }
 }
@@ -2161,7 +2161,7 @@ auto Arrays::quickSort(T arr[], int left, int right) -> void
     }
 }
 
-template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
+template auto Arrays::toString(std::vector<std::string> &objects) -> std::string ;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
 template auto Arrays::toString(std::vector<int> &objects) -> std::string;
 template auto Arrays::toString(std::vector<float> &objects) -> std::string;
@@ -2176,7 +2176,7 @@ template auto Arrays::toString(std::vector<long> &objects) -> std::string;
 template auto Arrays::toString(std::vector<uint16_t> &objects) -> std::string;
 template auto Arrays::toString(std::vector<long double> &objects) -> std::string;
 
-template auto Arrays::binarySearch(std::vector<std::string> &objects, std::string& key) -> int;
+template auto Arrays::binarySearch[[maybe_unused]](std::vector<std::string> &objects, std::string& key) -> int;
 template auto Arrays::binarySearch(std::vector<int> &objects, int& key) -> int;
 template auto Arrays::binarySearch(std::vector<double> &objects, double& key) -> int;
 template auto Arrays::binarySearch(std::vector<float> &objects, float& key) -> int;
