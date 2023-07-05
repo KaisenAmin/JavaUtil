@@ -1267,66 +1267,183 @@ auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<
     return Arrays::copyArray(arr.get(), objects.size(), newSize);
 }
 
+/**
+ * Copy a range of elements from an int array.
+ *
+ * @param intArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(int intArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<int[]>
 {
     return Arrays::copyOfRangeArray(intArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an float array.
+ *
+ * @param floatArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(float floatArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<float[]>
 {
     return Arrays::copyOfRangeArray(floatArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an double array.
+ *
+ * @param doubleArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(double doubleArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<double[]>
 {
     return Arrays::copyOfRangeArray(doubleArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an char array.
+ *
+ * @param charArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(char charArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<char[]>
 {
     return Arrays::copyOfRangeArray(charArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an short array.
+ *
+ * @param shortArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(short shortArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<short[]>
 {
     return Arrays::copyOfRangeArray(shortArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an long array.
+ *
+ * @param longArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(long longArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long[]>
 {
     return Arrays::copyOfRangeArray(longArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an long long array.
+ *
+ * @param intArr The source long long array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(long long longLongArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long long[]>
 {
     return Arrays::copyOfRangeArray(longLongArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an int8_t array.
+ *
+ * @param int8_tArr The source int8_t array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(int8_t byteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<int8_t[]>
 {
     return Arrays::copyOfRangeArray(byteArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an uint8_t array.
+ *
+ * @param ubyteArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(uint8_t ubyteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<uint8_t[]>
 {
     Arrays::copyOfRangeArray(ubyteArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an long double array.
+ *
+ * @param longDoubleArr The source long double array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(long double longDoubleArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long double[]>
 {
     return Arrays::copyOfRangeArray(longDoubleArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an bool array.
+ *
+ * @param boolArr The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(bool boolArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<bool[]>
 {
     return Arrays::copyOfRangeArray(boolArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an uint64_t array.
+ *
+ * @param ubyteArr The source uint8_t array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 [[maybe_unused]] auto Arrays::copyOfRange(uint64_t ubyteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<uint64_t[]>
 {
     return Arrays::copyOfRangeArray(ubyteArr, arrSize, from, to);
 }
 
+/**
+ * Copy a range of elements from an object array.
+ *
+ * @param objects The source int array.
+ * @param arrSize The size of the source array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique pointer to the copied range of elements.
+ */
 template<typename T>
 [[maybe_unused]] auto Arrays::copyOfRange(std::vector<T>& objects, size_t from, size_t to) -> std::unique_ptr<T[]>
 {
@@ -1349,7 +1466,6 @@ template<typename T>
 
     return copy;
 }
-
 
 /**
  * @brief Checks if two given arrays of generic vector are equal.
