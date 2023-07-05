@@ -2288,3 +2288,15 @@ template void Arrays::sort(std::vector<int8_t>& objects);
 template void Arrays::sort(std::vector<uint8_t>& objects);
 template void Arrays::sort(std::vector<uint64_t>& objects);
 template void Arrays::sort(std::vector<bool>& objects);
+
+template void Arrays::sort(std::vector<int>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<float>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<double>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<char>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<long>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<long long>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<long double>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<int8_t>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<uint8_t>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<uint64_t>&objects, size_t fromIndex, size_t toIndex);
+template void Arrays::sort(std::vector<bool>&objects, size_t fromIndex, size_t toIndex);

@@ -61,8 +61,8 @@ build CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj: CXX_COMPILER__JavaUt
   OBJECT_DIR = CMakeFiles\JavaUtil.dir
   OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\src\java_util
 
-build CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_sort.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/examples/java_util/Arrays_sort.cpp || cmake_object_order_depends_target_JavaUtil
-  DEP_FILE = CMakeFiles\JavaUtil.dir\examples\java_util\Arrays_sort.cpp.obj.d
+build CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_sort1.cpp.obj: CXX_COMPILER__JavaUtil_Debug C$:/Users/Science/Desktop/JavaUtil/examples/java_util/Arrays_sort1.cpp || cmake_object_order_depends_target_JavaUtil
+  DEP_FILE = CMakeFiles\JavaUtil.dir\examples\java_util\Arrays_sort1.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles\JavaUtil.dir
   OBJECT_FILE_DIR = CMakeFiles\JavaUtil.dir\examples\java_util
@@ -75,7 +75,7 @@ build CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_sort.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable JavaUtil.exe
 
-build JavaUtil.exe: CXX_EXECUTABLE_LINKER__JavaUtil_Debug CMakeFiles/JavaUtil.dir/main.cpp.obj CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_sort.cpp.obj
+build JavaUtil.exe: CXX_EXECUTABLE_LINKER__JavaUtil_Debug CMakeFiles/JavaUtil.dir/main.cpp.obj CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj CMakeFiles/JavaUtil.dir/examples/java_util/Arrays_sort1.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\JavaUtil.dir
