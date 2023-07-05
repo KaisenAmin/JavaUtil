@@ -1567,6 +1567,84 @@ void Arrays::sort(uint64_t *ubyteArr, size_t arrSize)
     Arrays::quickSort(ubyteArr, 0, arrSize - 1);
 }
 
+void Arrays::sort(int *intArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(float *floatArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(double *doubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(char *charArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(short *shortArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(long *longArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(long long int *longLongArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(int8_t *byteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(uint8_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(long double *longDoubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(bool *boolArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+void Arrays::sort(uint64_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+{
+
+}
+
+template<typename T>
+void Arrays::sort(std::vector<T> &objects, size_t fromIndex, size_t toIndex) 
+{
+
+}
+
+template<typename T>
+auto Arrays::sortArray(T *arr, size_t arrSize, size_t fromIndex, size_t toIndex) -> void
+{
+    if (fromIndex > toIndex)
+        throw std::invalid_argument("fromIndex > toIndex");
+
+    if (fromIndex < 0 || toIndex > (arrSize))
+        throw std::out_of_range("Index out of bounds");
+
+    std::sort(arr + fromIndex, arr + toIndex);
+}
+
 /**
  * Sorts an array of objects in ascending order.
  *

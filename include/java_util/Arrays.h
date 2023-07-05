@@ -54,6 +54,9 @@ private:
     template<typename T>
     static auto quickSort(T arr[], int left, int right) -> void;
 
+    template<typename T>
+    static auto sortArray(T *arr, size_t arrSize, size_t fromIndex, size_t toIndex) -> void;
+
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
     static auto toString(float floatArray[], size_t size) -> std::string;
@@ -205,6 +208,21 @@ public:
     template<typename T>
     [[maybe_unused]] static void sort(std::vector<T>& objects);
 
+    [[maybe_unused]] static void sort(int intArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(float floatArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(double doubleArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(char charArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(short shortArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(long longArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(long long longLongArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(int8_t byteArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(uint8_t ubyteArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(long double longDoubleArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(bool boolArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+    [[maybe_unused]] static void sort(uint64_t ubyteArr[], size_t arrSize, size_t fromIndex, size_t toIndex);
+
+    template <typename T>
+    [[maybe_unused]] static void sort(std::vector<T>& objects, size_t fromIndex, size_t toIndex);
 
 
 };
