@@ -1083,6 +1083,77 @@ auto Arrays::equal(uint64_t *ubyteArr1, uint64_t *ubyteArr2, size_t size) -> boo
     return Arrays::equality(ubyteArr1, ubyteArr2, size);
 }
 
+auto Arrays::copyOf(int *intArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int[]>
+{
+    return Arrays::copyArray(intArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(float *floatArr, size_t arrSize, size_t newSize) -> std::unique_ptr<float[]>
+{
+    return Arrays::copyOf(floatArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(double *doubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<double[]>
+{
+    return Arrays::copyArray(doubleArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(char *charArr, size_t arrSize, size_t newSize) -> std::unique_ptr<char[]>
+{
+    return Arrays::copyArray(charArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(short *shortArr, size_t arrSize, size_t newSize) -> std::unique_ptr<short[]>
+{
+    return Arrays::copyArray(shortArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(long *longArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long[]>
+{
+    return Arrays::copyArray(longArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(long long int *longLongArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long long[]>
+{
+    return Arrays::copyArray(longLongArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(int8_t *byteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<int8_t[]>
+{
+    return Arrays::copyArray(byteArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(uint8_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint8_t[]>
+{
+    return Arrays::copyArray(ubyteArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(long double *longDoubleArr, size_t arrSize, size_t newSize) -> std::unique_ptr<long double[]>
+{
+    return Arrays::copyArray(longDoubleArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(bool *boolArr, size_t arrSize, size_t newSize) -> std::unique_ptr<bool[]>
+{
+    return Arrays::copyArray(boolArr, arrSize, newSize);
+}
+
+auto Arrays::copyOf(uint64_t *ubyteArr, size_t arrSize, size_t newSize) -> std::unique_ptr<uint64_t[]>
+{
+    return Arrays::copyArray(ubyteArr, arrSize, newSize);
+}
+
+template<typename T>
+auto Arrays::copyOf(std::vector<T> &objects, size_t newSize)
+{
+    T arr[objects.size()];
+
+    for (size_t index = 0; index < objects.size(); index++)
+        arr[index] = objects[index];
+
+    return Arrays::copyArray(arr, objects.size(), newSize);
+}
+
 /**
  * @brief Checks if two given arrays of generic vector are equal.
  *
