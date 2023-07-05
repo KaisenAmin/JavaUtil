@@ -1737,6 +1737,18 @@ auto Arrays::copyArray(T *arr, size_t arrSize, size_t newSize) -> std::unique_pt
     return copy;
 }
 
+/**
+ * Copies a range of elements from an array and returns a new array.
+ *
+ * @tparam T The type of the elements in the array.
+ * @param objects Pointer to the original array.
+ * @param arrSize The size of the original array.
+ * @param from The starting index of the range (inclusive).
+ * @param to The ending index of the range (exclusive).
+ * @return A unique_ptr to the new array containing the copied elements.
+ * @throws std::invalid_argument if the original array is null or if from is invalid.
+ * @throws std::out_of_range if from is greater than the length of the original array.
+ */
 template <typename T>
 auto Arrays::copyOfRangeArray(T *objects, size_t arrSize, size_t from, size_t to) -> std::unique_ptr<T[]>
 {
@@ -1754,16 +1766,18 @@ auto Arrays::copyOfRangeArray(T *objects, size_t arrSize, size_t from, size_t to
     size_t newSize = to - from;
     auto copy = std::make_unique<T[]>(newSize);
 
-    for (size_t i = 0; i < newSize; ++i) {
-        if ((from + i) < originalLength) {
+    for (size_t i = 0; i < newSize; ++i)
+    {
+        if ((from + i) < originalLength)
             copy[i] = objects[from + i];
-        } else {
+        else
             copy[i] = T();
-        }
+
     }
 
     return copy;
 }
+
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
