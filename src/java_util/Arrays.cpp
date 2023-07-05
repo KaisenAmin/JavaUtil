@@ -1569,68 +1569,72 @@ void Arrays::sort(uint64_t *ubyteArr, size_t arrSize)
 
 void Arrays::sort(int *intArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(intArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(float *floatArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(floatArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(double *doubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(doubleArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(char *charArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(charArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(short *shortArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(shortArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(long *longArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(longArr, arrSize, fromIndex, toIndex);
 }
 
-void Arrays::sort(long long int *longLongArr, size_t arrSize, size_t fromIndex, size_t toIndex)
+void Arrays::sort(long long *longLongArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(longLongArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(int8_t *byteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(byteArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(uint8_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(ubyteArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(long double *longDoubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(longDoubleArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(bool *boolArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(boolArr, arrSize, fromIndex, toIndex);
 }
 
 void Arrays::sort(uint64_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
-
+    Arrays::sortArray(ubyteArr, arrSize, fromIndex, toIndex);
 }
 
 template<typename T>
-void Arrays::sort(std::vector<T> &objects, size_t fromIndex, size_t toIndex) 
+void Arrays::sort(std::vector<T> &objects, size_t fromIndex, size_t toIndex)
 {
+    if(toIndex > objects.size() || fromIndex < 0 || toIndex < fromIndex){
+        throw std::invalid_argument("Invalid fromIndex or toIndex");
+    }
 
+    std::sort(objects.begin() + fromIndex, objects.begin() + toIndex);
 }
 
 template<typename T>
