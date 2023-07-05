@@ -1750,3 +1750,16 @@ template auto Arrays::copyOf(std::vector<int8_t>& objects, size_t newSize) -> st
 template auto Arrays::copyOf(std::vector<uint8_t>& objects, size_t newSize) -> std::unique_ptr<uint8_t[]>;
 template auto Arrays::copyOf(std::vector<uint64_t>& objects, size_t newSize) -> std::unique_ptr<uint64_t[]>;
 template auto Arrays::copyOf(std::vector<bool>& objects, size_t newSize) -> std::unique_ptr<bool[]>;
+
+template auto Arrays::copyOfRange(std::vector<int>& objects, size_t from, size_t to) -> std::unique_ptr<int[]>;
+template auto Arrays::copyOfRange(std::vector<float>& objects, size_t from, size_t to) -> std::unique_ptr<float[]>;
+template auto Arrays::copyOfRange(std::vector<double>& objects, size_t from, size_t to) -> std::unique_ptr<double[]>;
+template auto Arrays::copyOfRange(std::vector<char>& objects, size_t from, size_t to) -> std::unique_ptr<char[]>;
+template auto Arrays::copyOfRange(std::vector<long>& objects, size_t from, size_t to) -> std::unique_ptr<long[]>;
+template auto Arrays::copyOfRange(std::vector<long long>& objects, size_t from, size_t to) -> std::unique_ptr<long long[]>;
+template auto Arrays::copyOfRange(std::vector<long double>& objects, size_t from, size_t to) -> std::unique_ptr<long double[]>;
+template auto Arrays::copyOfRange(std::vector<short>& objects, size_t from, size_t to) -> std::unique_ptr<short[]>;
+template auto Arrays::copyOfRange(std::vector<int8_t>& objects, size_t from, size_t to) -> std::unique_ptr<int8_t[]>;
+template auto Arrays::copyOfRange(std::vector<uint8_t>& objects, size_t from, size_t to) -> std::unique_ptr<uint8_t[]>;
+template auto Arrays::copyOfRange(std::vector<uint64_t>& objects, size_t from, size_t to) -> std::unique_ptr<uint64_t[]>;
+template auto Arrays::copyOfRange(std::vector<bool>& objects, size_t from, size_t to) -> std::unique_ptr<bool[]>;
