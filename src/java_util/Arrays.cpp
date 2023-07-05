@@ -1567,61 +1567,169 @@ void Arrays::sort(uint64_t *ubyteArr, size_t arrSize)
     Arrays::quickSort(ubyteArr, 0, arrSize - 1);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param intArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(int *intArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(intArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param floatArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(float *floatArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(floatArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param doubleArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(double *doubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(doubleArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param charArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(char *charArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(charArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param shortArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(short *shortArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(shortArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param longArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(long *longArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(longArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param longLongArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(long long *longLongArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(longLongArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param byteArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(int8_t *byteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(byteArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param ubyteArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(uint8_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(ubyteArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param longDoubleArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(long double *longDoubleArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(longDoubleArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param boolArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(bool *boolArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(boolArr, arrSize, fromIndex, toIndex);
 }
 
+/**
+ * @brief Sort an array from the specified beginning to the end indices.
+ * @param ubyteArr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 void Arrays::sort(uint64_t *ubyteArr, size_t arrSize, size_t fromIndex, size_t toIndex)
 {
     Arrays::sortArray(ubyteArr, arrSize, fromIndex, toIndex);
@@ -1637,6 +1745,15 @@ void Arrays::sort(std::vector<T> &objects, size_t fromIndex, size_t toIndex)
     std::sort(objects.begin() + fromIndex, objects.begin() + toIndex);
 }
 
+/**
+ * @brief A helper function to sort an array from the specified beginning to the end indices.
+ * @param arr The array to sort.
+ * @param arrSize The size of the array.
+ * @param fromIndex The beginning index, inclusive.
+ * @param toIndex The ending index, exclusive.
+ * @throw std::invalid_argument If fromIndex > toIndex.
+ * @throw std::out_of_range If fromIndex < 0 or toIndex > arrSize.
+ */
 template<typename T>
 auto Arrays::sortArray(T *arr, size_t arrSize, size_t fromIndex, size_t toIndex) -> void
 {
