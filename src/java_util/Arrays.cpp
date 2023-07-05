@@ -1436,6 +1436,150 @@ auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<
 }
 
 /**
+ * Sorts an array of integers in ascending order.
+ *
+ * @param intArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(int *intArr, size_t arrSize)
+{
+    Arrays::quickSort(intArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of floats in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(float *floatArr, size_t arrSize)
+{
+    Arrays::quickSort(floatArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of doubles in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(double *doubleArr, size_t arrSize)
+{
+    Arrays::quickSort(doubleArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of chars in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(char *charArr, size_t arrSize)
+{
+    Arrays::quickSort(charArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of shorts in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(short *shortArr, size_t arrSize)
+{
+    Arrays::quickSort(shortArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of long in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(long *longArr, size_t arrSize)
+{
+    Arrays::quickSort(longArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of long long in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(long long *longLongArr, size_t arrSize)
+{
+    Arrays::quickSort(longLongArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of int8_t's in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(int8_t *byteArr, size_t arrSize)
+{
+    Arrays::quickSort(byteArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of uint8_t's in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(uint8_t *ubyteArr, size_t arrSize)
+{
+    Arrays::quickSort(ubyteArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of long doubles in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(long double *longDoubleArr, size_t arrSize)
+{
+    Arrays::quickSort(longDoubleArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of bools in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(bool *boolArr, size_t arrSize)
+{
+    Arrays::quickSort(boolArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of uint64_t's in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+void Arrays::sort(uint64_t *ubyteArr, size_t arrSize)
+{
+    Arrays::quickSort(ubyteArr, 0, arrSize - 1);
+}
+
+/**
+ * Sorts an array of objects in ascending order.
+ *
+ * @param floatArr Pointer to the array to be sorted.
+ * @param arrSize Size of the array.
+ */
+template<typename T>
+void Arrays::sort(std::vector<T> &objects)
+{
+    std::sort(objects.begin(), objects.end());
+}
+
+/**
  * Copy a range of elements from an object array.
  *
  * @param objects The source int array.
@@ -1778,6 +1922,45 @@ auto Arrays::copyOfRangeArray(T *objects, size_t arrSize, size_t from, size_t to
     return copy;
 }
 
+template <typename T>
+auto Arrays::quickSort(T arr[], int left, int right) -> void
+{
+    if (left < right)
+    {
+        T pivot1 = arr[left];
+        T pivot2 = arr[right];
+
+        if (pivot1 > pivot2) std::swap(pivot1, pivot2);
+
+        int i = left + 1;
+        int lt = left + 1;
+        int gt = right - 1;
+
+        while (i <= gt)
+        {
+            if (arr[i] < pivot1)
+            {
+                std::swap(arr[i], arr[lt]);
+                i++;
+                lt++;
+            }
+            else if (pivot2 < arr[i])
+            {
+                std::swap(arr[i], arr[gt]);
+                gt--;
+            }
+            else
+                i++;
+
+        }
+        std::swap(arr[left], arr[lt - 1]);
+        std::swap(arr[right], arr[gt + 1]);
+
+        quickSort(arr, left, lt - 2);
+        quickSort(arr, lt, gt);
+        quickSort(arr, gt + 2, right);
+    }
+}
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;
