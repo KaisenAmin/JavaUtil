@@ -1537,6 +1537,33 @@ auto Arrays::copyArray(T *arr, size_t arrSize, size_t newSize) -> std::unique_pt
     return copy;
 }
 
+template <typename T>
+auto Arrays::copyOfRangeArray(T *objects, size_t arrSize, size_t from, size_t to) -> std::unique_ptr<T[]>
+{
+    if (objects == nullptr)
+        throw std::invalid_argument("original should not be null");
+
+    if (from < 0 || from > to)
+        throw std::invalid_argument("from should be between 0 and the length of original, and not greater than to");
+
+    size_t originalLength = arrSize;
+
+    if (from > originalLength)
+        throw std::out_of_range("from is greater than the length of the original array");
+
+    size_t newSize = to - from;
+    auto copy = std::make_unique<T[]>(newSize);
+
+    for (size_t i = 0; i < newSize; ++i) {
+        if ((from + i) < originalLength) {
+            copy[i] = objects[from + i];
+        } else {
+            copy[i] = T();
+        }
+    }
+
+    return copy;
+}
 
 template auto Arrays::toString(std::vector<std::string> &objects) -> std::string;
 template auto Arrays::toString(std::vector<double> &objects) -> std::string;

@@ -48,6 +48,9 @@ private:
     template<typename T>
     static auto copyArray(T* arr, size_t arrSize, size_t newSize) -> std::unique_ptr<T[]>;
 
+    template<typename T>
+    static auto copyOfRangeArray(T* objects, size_t arrSize, size_t from, size_t to) -> std::unique_ptr<T[]>;
+
 public:
     static auto toString(int intArray[], size_t size) -> std::string;
     static auto toString(float floatArray[], size_t size) -> std::string;
@@ -166,6 +169,23 @@ public:
 
     template<typename T>
     static auto copyOf(std::vector<T>& objects, size_t newSize) -> std::unique_ptr<T[]>;
+
+    [[maybe_unused]] static auto copyOfRange(int intArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<int[]>;
+    [[maybe_unused]] static auto copyOfRange(float floatArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<float[]>;
+    [[maybe_unused]] static auto copyOfRange(double doubleArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<double[]>;
+    [[maybe_unused]] static auto copyOfRange(char charArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<char[]>;
+    [[maybe_unused]] static auto copyOfRange(short shortArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<short[]>;
+    [[maybe_unused]] static auto copyOfRange(long longArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long[]>;
+    [[maybe_unused]] static auto copyOfRange(long long longLongArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long long[]>;
+    [[maybe_unused]] static auto copyOfRange(int8_t byteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<int8_t[]>;
+    [[maybe_unused]] static auto copyOfRange(uint8_t ubyteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<uint8_t[]>;
+    [[maybe_unused]] static auto copyOfRange(long double longDoubleArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long double[]>;
+    [[maybe_unused]] static auto copyOfRange(bool boolArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<bool[]>;
+    [[maybe_unused]] static auto copyOfRange(uint64_t ubyteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<uint64_t[]>;
+
+    template<typename T>
+    [[maybe_unused]] static auto copyOfRange(std::vector<T>& objects, size_t from, size_t to) -> std::unique_ptr<T[]>;
+
 
 };
 
