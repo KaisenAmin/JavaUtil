@@ -1267,6 +1267,90 @@ auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<
     return Arrays::copyArray(arr.get(), objects.size(), newSize);
 }
 
+[[maybe_unused]] auto Arrays::copyOfRange(int intArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<int[]>
+{
+    return Arrays::copyOfRangeArray(intArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(float floatArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<float[]>
+{
+    return Arrays::copyOfRangeArray(floatArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(double doubleArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<double[]>
+{
+    return Arrays::copyOfRangeArray(doubleArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(char charArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<char[]>
+{
+    return Arrays::copyOfRangeArray(charArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(short shortArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<short[]>
+{
+    return Arrays::copyOfRangeArray(shortArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(long longArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long[]>
+{
+    return Arrays::copyOfRangeArray(longArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(long long longLongArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long long[]>
+{
+    return Arrays::copyOfRangeArray(longLongArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(int8_t byteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<int8_t[]>
+{
+    return Arrays::copyOfRangeArray(byteArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(uint8_t ubyteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<uint8_t[]>
+{
+    Arrays::copyOfRangeArray(ubyteArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(long double longDoubleArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<long double[]>
+{
+    return Arrays::copyOfRangeArray(longDoubleArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(bool boolArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<bool[]>
+{
+    return Arrays::copyOfRangeArray(boolArr, arrSize, from, to);
+}
+
+[[maybe_unused]] auto Arrays::copyOfRange(uint64_t ubyteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<uint64_t[]>
+{
+    return Arrays::copyOfRangeArray(ubyteArr, arrSize, from, to);
+}
+
+template<typename T>
+[[maybe_unused]] auto Arrays::copyOfRange(std::vector<T>& objects, size_t from, size_t to) -> std::unique_ptr<T[]>
+{
+    if (from > to)
+        throw std::invalid_argument("from should not be greater than to");
+    if (from > objects.size())
+            throw std::out_of_range("from is greater than the length of the original array");
+
+    size_t newSize = to - from;
+    auto copy = std::make_unique<T[]>(newSize);
+
+    for (size_t i = 0; i < newSize; ++i)
+    {
+        if ((from + i) < objects.size())
+            copy[i] = objects[from + i];
+        else
+            copy[i] = T();
+
+    }
+
+    return copy;
+}
+
+
 /**
  * @brief Checks if two given arrays of generic vector are equal.
  *
