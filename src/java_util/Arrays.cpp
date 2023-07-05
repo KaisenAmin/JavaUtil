@@ -1390,7 +1390,7 @@ auto Arrays::copyOf(std::vector<T> &objects, size_t newSize) -> std::unique_ptr<
  */
 [[maybe_unused]] auto Arrays::copyOfRange(uint8_t ubyteArr[], size_t arrSize, size_t from, size_t to) -> std::unique_ptr<uint8_t[]>
 {
-    Arrays::copyOfRangeArray(ubyteArr, arrSize, from, to);
+    return Arrays::copyOfRangeArray(ubyteArr, arrSize, from, to);
 }
 
 /**
@@ -2076,3 +2076,16 @@ template auto Arrays::copyOfRange(std::vector<int8_t>& objects, size_t from, siz
 template auto Arrays::copyOfRange(std::vector<uint8_t>& objects, size_t from, size_t to) -> std::unique_ptr<uint8_t[]>;
 template auto Arrays::copyOfRange(std::vector<uint64_t>& objects, size_t from, size_t to) -> std::unique_ptr<uint64_t[]>;
 template auto Arrays::copyOfRange(std::vector<bool>& objects, size_t from, size_t to) -> std::unique_ptr<bool[]>;
+
+template void Arrays::sort(std::vector<int>& objects);
+template void Arrays::sort(std::vector<float>& objects);
+template void Arrays::sort(std::vector<double>& objects);
+template void Arrays::sort(std::vector<char>& objects);
+template void Arrays::sort(std::vector<long>& objects);
+template void Arrays::sort(std::vector<long long>& objects);
+template void Arrays::sort(std::vector<long double>& objects);
+template void Arrays::sort(std::vector<short>& objects);
+template void Arrays::sort(std::vector<int8_t>& objects);
+template void Arrays::sort(std::vector<uint8_t>& objects);
+template void Arrays::sort(std::vector<uint64_t>& objects);
+template void Arrays::sort(std::vector<bool>& objects);
