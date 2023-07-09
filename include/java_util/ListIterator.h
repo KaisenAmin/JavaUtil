@@ -1,0 +1,8 @@
+//
+// Created by Kaisen on 7/9/2023.
+//
+
+#ifndef JAVAUTIL_LISTITERATOR_H
+#define JAVAUTIL_LISTITERATOR_H
+
+#endif //JAVAUTIL_LISTITERATOR_H

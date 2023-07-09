@@ -45,13 +45,18 @@ public:
     T firstElement();
     void forEach(const std::function<void(const T &)> &action);
     size_t hashCode();
-    int indexOf(const T &value);
+
+    [[maybe_unused]] int indexOf(const T &value);
     int indexOf(const T &value, int index);
     void insertElementAt(const T &value, int index);
     bool isEmpty();
     T lastElement();
     typename std::vector<T>::iterator iterator();
     typename std::vector<T>::iterator begin();
+
+    int lastIndexOf(T o);
+    int lastIndexOf(T o, int index);
+    T remove(int index);
 };
 
 #include "../../src/java_util/Vector.cpp"

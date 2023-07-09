@@ -224,7 +224,7 @@ size_t Vector<T>::hashCode()
 }
 
 template <typename T>
-int Vector<T>::indexOf(const T& value)
+[[maybe_unused]] int Vector<T>::indexOf(const T& value)
 {
     auto it = std::find(elementData.begin(), elementData.end(), value);
     if(it != elementData.end())
@@ -286,4 +286,46 @@ template <typename T>
 typename std::vector<T>::iterator Vector<T>::begin()
 {
     return elementData.begin();
+}
+
+template <typename T>
+int Vector<T>::lastIndexOf(T o)
+{
+    auto it = std::find(elementData.rbegin(), elementData.rend(), o);
+    if (it != elementData.rend()) {
+        return elementData.size() - 1 - std::distance(elementData.rbegin(), it);
+    } else {
+        return -1;
+    }
+}
+
+template <typename T>
+int Vector<T>::lastIndexOf(T o, int index)
+{
+    if(index < 0 || index >= elementData.size())
+    {
+        throw std::out_of_range("Index out of range");
+    }
+    auto it = std::find(elementData.rbegin() + (elementData.size() - 1 - index), elementData.rend(), o);
+    if (it != elementData.rend())
+    {
+        return elementData.size() - 1 - std::distance(elementData.rbegin(), it);
+    }
+    else
+    {
+        return -1;
+    }
+}
+
+template <typename T>
+T Vector<T>::remove(int index)
+{
+    if(index < 0 || index >= elementData.size())
+    {
+        throw std::out_of_range("Index out of range");
+    }
+    T removedElement = elementData.at(index);
+    elementData.erase(elementData.begin() + index);
+
+    return removedElement;
 }
