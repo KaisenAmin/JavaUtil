@@ -66,6 +66,9 @@ public:
     bool removeElement(T obj);
     void removeElementAt(int index);
 
+    void removeRange(int fromIndex, int toIndex);
+    void replaceAll(std::function<T(const T &)> func);
+    void print();
 };
 
 #include "../../src/java_util/Vector.cpp"

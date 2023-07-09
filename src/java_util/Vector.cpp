@@ -380,3 +380,30 @@ void Vector<T>::removeElementAt(int index)
 {
     removeByIndex(index);
 }
+
+template <typename T>
+void Vector<T>::removeRange(int fromIndex, int toIndex)
+{
+    if (fromIndex < 0 || toIndex > elementData.size() || fromIndex > toIndex)
+    {
+        throw std::out_of_range("Invalid index range");
+    }
+
+    elementData.erase(elementData.begin() + fromIndex, elementData.begin() + toIndex);
+}
+
+template <typename T>
+void Vector<T>::replaceAll(std::function<T(const T&)> func)
+{
+    std::transform(elementData.begin(), elementData.end(), elementData.begin(), func);
+}
+
+template <typename T>
+void Vector<T>::print()
+{
+    for(const T& elem : elementData)
+    {
+        std::cout << elem << ' ';
+    }
+    std::cout << std::endl;
+}
