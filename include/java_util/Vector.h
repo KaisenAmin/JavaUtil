@@ -28,6 +28,10 @@ public:
     void add(int index, const T& value);
     bool addAll(const std::vector<T>& c);
     int size() const;
+    void addElement(const T& obj);
+    [[maybe_unused]] int capacity() const;
+    void clear();
+    Vector<T>clone() const;
 };
 
 #include "../../src/java_util/Vector.cpp"

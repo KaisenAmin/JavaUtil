@@ -92,9 +92,36 @@ bool Vector<T>::addAll(const std::vector<T>& c)
     return true;
 }
 
-
 template <typename T>
 int Vector<T>::size() const
 {
     return elementCount;
 }
+
+template <typename T>
+void Vector<T>::addElement(const T& obj)
+{
+    add(obj);
+}
+
+template <typename T>
+[[maybe_unused]] int Vector<T>::capacity() const
+{
+    return elementData.capacity();
+}
+
+template <typename T>
+void Vector<T>::clear()
+{
+    elementData.clear();
+    elementCount = 0;
+}
+
+template <typename T>
+Vector<T> Vector<T>::clone() const
+{
+    Vector<T> copy(*this);
+    return copy;
+}
+
+
