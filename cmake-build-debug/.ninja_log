@@ -1,8 +1,5 @@
 # ninja log v5
-800	2118	7102936063436747	JavaUtil.exe	35db59ef21fa16a
-2	2734	7102935232678158	CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj	d1d181beb63fd890
-3	799	7102936050286445	CMakeFiles/JavaUtil.dir/main.cpp.obj	e81c2ca8faa83747
-2	134	7102949650653116	build.ninja	130a34541cd87d1f
-3	934	7102952782630448	CMakeFiles/JavaUtil.dir/main.cpp.obj	e81c2ca8faa83747
-9	2797	7102952801200137	CMakeFiles/JavaUtil.dir/src/java_util/Arrays.cpp.obj	d1d181beb63fd890
-2797	4080	7102952814050412	JavaUtil.exe	35db59ef21fa16a
+4	1357	7105923574890984	CMakeFiles/JavaUtil.dir/main.cpp.obj	d94fc118fd3a18b5
+10	1152	7105921034424120	CMakeFiles/JavaUtil.dir/src/java_util/Vector.cpp.obj	5546f3ec8e737bf2
+6	154	7105924517820898	build.ninja	897fc8c2ba741f4
+1358	1532	7105923576590975	JavaUtil.exe	433b476d0692b03d
