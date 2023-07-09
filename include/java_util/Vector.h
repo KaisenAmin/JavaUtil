@@ -8,7 +8,8 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-
+#include <stdexcept>
+#include <iterator>
 
 template <typename T>
 class Vector
@@ -25,6 +26,8 @@ public:
     void add(const T& value);
     T get(int index) const;
     void add(int index, const T& value);
+    bool addAll(const std::vector<T>& c);
+    int size() const;
 };
 
 #include "../../src/java_util/Vector.cpp"

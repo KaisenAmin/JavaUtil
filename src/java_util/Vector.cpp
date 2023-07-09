@@ -57,3 +57,44 @@ void Vector<T>::add(int index, const T& value)
     ++elementCount;
 }
 
+template <typename T>
+bool Vector<T>::addAll(const std::vector<T>& c)
+{
+    if(c.empty())
+    {
+        throw std::invalid_argument("The specified collection is null");
+    }
+
+    // Calculate the new required size
+    int requiredSize = elementCount + c.size();
+
+    // Check if we need to expand the capacity
+    if(requiredSize > elementData.capacity())
+    {
+        // Determine the new capacity
+        int newCapacity;
+        if(capacityIncrement != 0) {
+            newCapacity = elementData.capacity() + ((requiredSize - elementData.capacity()) / capacityIncrement + 1) * capacityIncrement;
+        } else {
+            newCapacity = requiredSize; // If capacityIncrement is 0, set newCapacity directly to requiredSize
+        }
+
+        // Reserve the new capacity
+        elementData.reserve(newCapacity);
+    }
+
+    // Add all elements from the collection to the vector
+    elementData.insert(elementData.end(), c.begin(), c.end());
+
+    // Update the element count
+    elementCount = requiredSize;
+
+    return true;
+}
+
+
+template <typename T>
+int Vector<T>::size() const
+{
+    return elementCount;
+}
