@@ -318,7 +318,7 @@ int Vector<T>::lastIndexOf(T o, int index)
 }
 
 template <typename T>
-T Vector<T>::remove(int index)
+T Vector<T>::removeByIndex(int index)
 {
     if(index < 0 || index >= elementData.size())
     {
@@ -328,4 +328,55 @@ T Vector<T>::remove(int index)
     elementData.erase(elementData.begin() + index);
 
     return removedElement;
+}
+
+template <typename T>
+bool Vector<T>::removeAll(const std::vector<T>& objects)
+{
+    std::size_t oldSize = elementData.size();
+
+    // Create a set from objects for efficient lookups
+    std::unordered_set<T> objects_set(objects.begin(), objects.end());
+
+    // Use std::remove_if to remove elements from elementData
+    auto newEnd = std::remove_if(elementData.begin(), elementData.end(),
+                                 [&](const T& obj) {
+                                     return objects_set.find(obj) != objects_set.end();
+                                 });
+
+    // Erase the "removed" elements from the vector
+    elementData.erase(newEnd, elementData.end());
+
+    // Return whether any elements were removed
+    return oldSize != elementData.size();
+}
+
+
+
+template <typename T>
+bool Vector<T>::removeElementValue(T o) {
+    auto it = std::find(elementData.begin(), elementData.end(), o);
+    if (it != elementData.end()) {
+        elementData.erase(it);
+        return true;
+    }
+    return false;
+}
+
+template <typename T>
+void Vector<T>::removeAllElements()
+{
+    elementData.clear();
+}
+
+template <typename T>
+bool Vector<T>::removeElement(T obj)
+{
+    return removeElementValue(obj);
+}
+
+template <typename T>
+void Vector<T>::removeElementAt(int index)
+{
+    removeByIndex(index);
 }

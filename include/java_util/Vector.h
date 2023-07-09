@@ -11,6 +11,8 @@
 #include <stdexcept>
 #include <iterator>
 #include <functional>
+#include <unordered_set>
+#include <iostream>
 
 template <typename T>
 class Vector
@@ -56,7 +58,14 @@ public:
 
     int lastIndexOf(T o);
     int lastIndexOf(T o, int index);
-    T remove(int index);
+
+    T removeByIndex(int index);
+    bool removeElementValue(T o);
+    bool removeAll(const std::vector<T>& object);
+    void removeAllElements();
+    bool removeElement(T obj);
+    void removeElementAt(int index);
+
 };
 
 #include "../../src/java_util/Vector.cpp"
