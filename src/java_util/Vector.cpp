@@ -192,3 +192,47 @@ bool Vector<T>::equals(const Vector<T>& o) const
     return elementData == o.elementData;
 }
 
+template <typename T>
+T Vector<T>::firstElement()
+{
+    if(elementData.empty())
+    {
+        throw std::out_of_range("No elements in the vector");
+    }
+    return elementData.front();
+}
+
+template <typename T>
+void Vector<T>::forEach(const std::function<void(const T&)>& action)
+{
+    for(const auto& element : elementData)
+    {
+        action(element);
+    }
+}
+
+template <typename T>
+size_t Vector<T>::hashCode()
+{
+    size_t hash = 0;
+    std::hash<T> hasher;
+    for(const auto& element : elementData)
+    {
+        hash ^= hasher(element) + 0x9e3779b9 + (hash << 6) + (hash >> 2);
+    }
+    return hash;
+}
+
+template <typename T>
+int Vector<T>::indexOf(const T& value)
+{
+    auto it = std::find(elementData.begin(), elementData.end(), value);
+    if(it != elementData.end())
+    {
+        return std::distance(elementData.begin(), it);
+    }
+    return -1;
+}
+
+
+

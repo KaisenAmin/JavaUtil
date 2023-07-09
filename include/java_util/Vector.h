@@ -10,6 +10,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <iterator>
+#include <functional>
 
 template <typename T>
 class Vector
@@ -41,6 +42,10 @@ public:
     typename std::vector<T>::iterator end();
     void ensureCapacity(int minCapacity);
     bool equals(const Vector<T> &o) const;
+    T firstElement();
+    void forEach(const std::function<void(const T &)> &action);
+    size_t hashCode();
+    int indexOf(const T &value);
 };
 
 #include "../../src/java_util/Vector.cpp"
