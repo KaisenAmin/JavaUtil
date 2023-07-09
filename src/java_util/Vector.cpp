@@ -154,3 +154,41 @@ void Vector<T>::copyInto(std::vector<T>& anArray) const
     std::copy(elementData.begin(), elementData.end(), anArray.begin());
 }
 
+template <typename T>
+T Vector<T>::elementAt(int index) const
+{
+    if(index < 0 || index >= size())
+    {
+        throw std::out_of_range("Index is out of range");
+    }
+
+    return elementData[index];
+}
+
+template <typename T>
+typename std::vector<T>::iterator Vector<T>::elements()
+{
+    return elementData.begin();
+}
+
+template <typename T>
+typename std::vector<T>::iterator Vector<T>::end()
+{
+    return elementData.end();
+}
+
+template <typename T>
+void Vector<T>::ensureCapacity(int minCapacity)
+{
+    if(minCapacity > elementData.capacity())
+    {
+        elementData.reserve(minCapacity);
+    }
+}
+
+template <typename T>
+bool Vector<T>::equals(const Vector<T>& o) const
+{
+    return elementData == o.elementData;
+}
+

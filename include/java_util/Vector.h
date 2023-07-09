@@ -35,6 +35,12 @@ public:
     bool contains(const T& o) const;
     bool containsAll(const std::vector<T>& c) const;
     void copyInto(std::vector<T>& anArray) const;
+
+    T elementAt(int index) const;
+    typename std::vector<T>::iterator elements();
+    typename std::vector<T>::iterator end();
+    void ensureCapacity(int minCapacity);
+    bool equals(const Vector<T> &o) const;
 };
 
 #include "../../src/java_util/Vector.cpp"
