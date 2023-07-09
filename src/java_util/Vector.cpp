@@ -234,5 +234,56 @@ int Vector<T>::indexOf(const T& value)
     return -1;
 }
 
+template <typename T>
+int Vector<T>::indexOf(const T& value, int index)
+{
+    if(index < 0 || index >= elementData.size())
+    {
+        throw std::out_of_range("Index is out of range");
+    }
 
+    auto it = std::find(elementData.begin() + index, elementData.end(), value);
+    if(it != elementData.end())
+    {
+        return std::distance(elementData.begin(), it);
+    }
+    return -1;
+}
 
+template <typename T>
+void Vector<T>::insertElementAt(const T& value, int index)
+{
+    if(index < 0 || index > elementData.size())
+    {
+        throw std::out_of_range("Index is out of range");
+    }
+    elementData.insert(elementData.begin() + index, value);
+}
+
+template <typename T>
+bool Vector<T>::isEmpty()
+{
+    return elementData.empty();
+}
+
+template <typename T>
+T Vector<T>::lastElement()
+{
+    if(elementData.empty())
+    {
+        throw std::out_of_range("No elements in the vector");
+    }
+    return elementData.back();
+}
+
+template <typename T>
+typename std::vector<T>::iterator Vector<T>::iterator()
+{
+    return elementData.begin();
+}
+
+template <typename T>
+typename std::vector<T>::iterator Vector<T>::begin()
+{
+    return elementData.begin();
+}

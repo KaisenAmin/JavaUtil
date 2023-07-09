@@ -46,6 +46,12 @@ public:
     void forEach(const std::function<void(const T &)> &action);
     size_t hashCode();
     int indexOf(const T &value);
+    int indexOf(const T &value, int index);
+    void insertElementAt(const T &value, int index);
+    bool isEmpty();
+    T lastElement();
+    typename std::vector<T>::iterator iterator();
+    typename std::vector<T>::iterator begin();
 };
 
 #include "../../src/java_util/Vector.cpp"
