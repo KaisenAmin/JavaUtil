@@ -3,5 +3,5 @@ project(JavaUtil)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(JavaUtil main.cpp examples/java_util/Vector_11.cpp)
+add_executable(JavaUtil main.cpp)
 include_directories(include)

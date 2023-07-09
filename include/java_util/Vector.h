@@ -2,6 +2,22 @@
 // Created by Amin Tahmasebi on 7/5/2023.
 //
 
+/**
+ * @class Vector
+ *
+ * @brief Implementation of the Java Vector class in C++
+ *
+ * This class template replicates functionality of the Vector class from Java in C++.
+ * It stores elements and allows operations such as adding, removing, inserting, and replacing elements.
+ * The class allows for dynamic resizing, cloning, and other utility functions such as checking if the
+ * Vector contains a certain element.
+ *
+ * @author Amin Tahmasebi
+ * @date 7/5/2023
+ * @note The exact implementation details might be different based on how you have defined the `Vector` class and its methods.
+ *
+ */
+
 #ifndef JAVAUTIL_VECTOR_H
 #define JAVAUTIL_VECTOR_H
 
@@ -13,14 +29,15 @@
 #include <functional>
 #include <unordered_set>
 #include <iostream>
+#include <sstream>
 
 template <typename T>
 class Vector
 {
 private:
-    std::vector<T> elementData;
-    int elementCount = 0;
-    int capacityIncrement;
+    std::vector<T> elementData; /**< The underlying array to store the elements. */
+    int capacityIncrement; /**< The amount by which the capacity should be incremented when additional capacity is needed. */
+    int elementCount; /**< The number of elements currently stored in the Vector. */
 
 public:
     Vector();
@@ -72,6 +89,13 @@ public:
 
     T set(int index, const T &element);
     bool retainAll(const std::vector<T> &c);
+
+    void setElementAt(const T &obj, int index);
+    void setSize(int newSize);
+    void sort();
+    void trimToSize();
+    std::string toString();
+    std::vector<T> toArray();
 };
 
 #include "../../src/java_util/Vector.cpp"
