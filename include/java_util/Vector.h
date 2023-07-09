@@ -69,6 +69,9 @@ public:
     void removeRange(int fromIndex, int toIndex);
     void replaceAll(std::function<T(const T &)> func);
     void print();
+
+    T set(int index, const T &element);
+    bool retainAll(const std::vector<T> &c);
 };
 
 #include "../../src/java_util/Vector.cpp"

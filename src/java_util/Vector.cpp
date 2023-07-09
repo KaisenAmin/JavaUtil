@@ -407,3 +407,39 @@ void Vector<T>::print()
     }
     std::cout << std::endl;
 }
+
+template <typename T>
+bool Vector<T>::retainAll(const std::vector<T>& c)
+{
+    bool isChanged = false;
+
+    for (auto it = elementData.begin(); it != elementData.end();)
+    {
+        // if element in Vector is not found in c, erase it from Vector
+        if (std::find(c.begin(), c.end(), *it) == c.end())
+        {
+            it = elementData.erase(it);
+            isChanged = true;
+        }
+        else
+        {
+            ++it;
+        }
+    }
+
+    return isChanged; // return true if any element was removed
+}
+
+template <typename T>
+T Vector<T>::set(int index, const T& element)
+{
+    if(index < 0 || index >= elementData.size())
+    {
+        throw std::out_of_range("Index out of range");
+    }
+
+    T oldElement = elementData.at(index);
+    elementData[index] = element;
+
+    return oldElement; // return the element previously at the specified position
+}
