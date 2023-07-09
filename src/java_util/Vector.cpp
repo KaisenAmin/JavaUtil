@@ -124,4 +124,33 @@ Vector<T> Vector<T>::clone() const
     return copy;
 }
 
+template <typename T>
+bool Vector<T>::contains(const T& o) const
+{
+    return std::find(elementData.begin(), elementData.end(), o) != elementData.end();
+}
+
+template <typename T>
+bool Vector<T>::containsAll(const std::vector<T>& c) const
+{
+    for(const T& elem : c)
+    {
+        if(!contains(elem))
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+template <typename T>
+void Vector<T>::copyInto(std::vector<T>& anArray) const
+{
+    if(anArray.size() < elementData.size())
+    {
+        throw std::out_of_range("The specified array is not large enough");
+    }
+
+    std::copy(elementData.begin(), elementData.end(), anArray.begin());
+}
 

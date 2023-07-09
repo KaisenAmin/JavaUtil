@@ -32,6 +32,9 @@ public:
     [[maybe_unused]] int capacity() const;
     void clear();
     Vector<T>clone() const;
+    bool contains(const T& o) const;
+    bool containsAll(const std::vector<T>& c) const;
+    void copyInto(std::vector<T>& anArray) const;
 };
 
 #include "../../src/java_util/Vector.cpp"
