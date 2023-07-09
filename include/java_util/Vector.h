@@ -24,6 +24,7 @@ public:
     Vector(int initialCapacity, int capacityIncrement);
     void add(const T& value);
     T get(int index) const;
+    void add(int index, const T& value);
 };
 
 #include "../../src/java_util/Vector.cpp"

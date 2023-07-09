@@ -42,3 +42,18 @@ T Vector<T>::get(int index) const
     return elementData[index];
 }
 
+template <typename T>
+void Vector<T>::add(int index, const T& value)
+{
+    if(index < 0 || index > elementCount)
+    {
+        throw std::out_of_range("Index out of range");
+    }
+    if(elementCount >= elementData.capacity())
+    {
+        elementData.reserve(elementData.capacity() + (capacityIncrement > 0 ? capacityIncrement : 1));
+    }
+    elementData.insert(elementData.begin() + index, value);
+    ++elementCount;
+}
+
